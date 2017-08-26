@@ -1,8 +1,9 @@
+package com.breakout.game;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 
-public class Paddle implements GameElementInterface{
+public class GamePaddle implements GameElementsInterface{
 	
 	private int posX;
 	private int posY;
@@ -11,7 +12,7 @@ public class Paddle implements GameElementInterface{
 	private Color paddleColor;
 	
 	
-	public Paddle(int posX, int posY, int width, int height, Color paddleColor) {
+	public GamePaddle(int posX, int posY, int width, int height, Color paddleColor) {
 		this.posX = posX;
 		this.posY = posY;
 		this.width = width;
@@ -20,25 +21,25 @@ public class Paddle implements GameElementInterface{
 	}
 
 	@Override
-	public int getX() {
+	public int getPosX() {
 		// TODO Auto-generated method stub
 		return posX;
 	}
 
 	@Override
-	public int getY() {
+	public int getPosY() {
 		// TODO Auto-generated method stub
 		return posY;
 	}
 
 	@Override
-	public void setX(int posX) {
+	public void setPosX(int posX) {
 		// TODO Auto-generated method stub
 		this.posX = posX;
 	}
 
 	@Override
-	public void setY(int posY) {
+	public void setPosY(int posY) {
 		// TODO Auto-generated method stub
 		this.posY = posY;
 	}
