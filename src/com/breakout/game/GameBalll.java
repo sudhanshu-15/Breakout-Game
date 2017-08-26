@@ -3,7 +3,7 @@ package com.breakout.game;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Ball implements GameElementInterface{
+public class GameBalll implements GameElementsInterface{
 	
 	//Ball class for the game
 	
@@ -11,14 +11,25 @@ public class Ball implements GameElementInterface{
 	private int posY;	//Y-coordinate position of ball
 	private int velX;	//Velocity on X-axis
 	private int velY;	//Velocity on Y-axis
+	private Color ballColor;  //Ball Color
 	
-	public Ball(int posX, int posY){
+	public GameBalll(int posX, int posY,int velX, int velY, Color ballColor ){
 		this.posX = posX;
 		this.posY = posY;
 		
-		velX = 0;
-		velY = 0;
+		this.velX = velX;
+		this.velY = velY;
+		this.ballColor = ballColor;
 		
+	}
+	
+	public GameBalll(int posX, int posY){
+		this.posX = posX;
+		this.posY = posY;
+		
+		this.velX = -1;
+		this.velY = -2;
+		this.ballColor = Color.RED;
 	}
 
 	public int getPosX() {
@@ -54,7 +65,16 @@ public class Ball implements GameElementInterface{
 	}
 	
 	public void draw(Graphics g){
-		g.setColor(Color.ORANGE);				//TO-DO: Add variable for color
+		g.setColor(ballColor);				// Fixed Color variable for setting ballColor
 		g.fillOval(posX, posY, 20, 20); 		//TO-DO: Add import for constants and add dimensions
+	}
+	
+	public void checkBounds(int boundaryX, int boundaryY){		// Function to check for boundary of the game window
+		if (posX < 0 || posX > boundaryX){						//Changes velocity to negative if boundary in reached
+			velX = -velX;
+		}
+		if (posY < 0 || posY > boundaryY){
+			velY = -velY;
+		}
 	}
 }
