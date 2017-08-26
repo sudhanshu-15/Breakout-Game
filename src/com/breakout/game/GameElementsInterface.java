@@ -2,11 +2,11 @@ package com.breakout.game;
 
 public interface GameElementsInterface {
 
-	public int getX();
+	public int getPosX();
 	
-	public int getY();
+	public int getPosY();
 	
-	public void setX(int xCoOrdinate);
+	public void setPosX(int posX);
 	
-	public void setY(int yCoOrdinate);
+	public void setPosY(int posY);
 }
