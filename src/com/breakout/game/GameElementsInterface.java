@@ -6,7 +6,7 @@ public interface GameElementsInterface {
 	
 	public int getY();
 	
-	public void setX(int xCoOrdinate);
+	public void setX(int posX);
 	
-	public void setY(int yCoOrdinate);
+	public void setY(int posY);
 }

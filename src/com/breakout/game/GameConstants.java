@@ -9,6 +9,6 @@ import java.awt.Dimension;
 public class GameConstants {
 
 	protected static final int BOARD_LENGTH = 600;
-	protected static final int BOARD_WIDTH = 400;
+	protected static final int BOARD_WIDTH = 600;
 	protected static final Dimension boardDimensions= new Dimension(BOARD_LENGTH, BOARD_WIDTH);
 }
