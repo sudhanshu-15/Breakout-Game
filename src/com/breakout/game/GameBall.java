@@ -3,7 +3,7 @@ package com.breakout.game;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class GameBalll implements GameElementsInterface{
+public class GameBall implements GameElementsInterface{
 	
 	//Ball class for the game
 	
@@ -13,7 +13,7 @@ public class GameBalll implements GameElementsInterface{
 	private int velY;	//Velocity on Y-axis
 	private Color ballColor;  //Ball Color
 	
-	public GameBalll(int posX, int posY,int velX, int velY, Color ballColor ){
+	public GameBall(int posX, int posY,int velX, int velY, Color ballColor ){
 		this.posX = posX;
 		this.posY = posY;
 		
@@ -23,7 +23,7 @@ public class GameBalll implements GameElementsInterface{
 		
 	}
 	
-	public GameBalll(int posX, int posY){
+	public GameBall(int posX, int posY){
 		this.posX = posX;
 		this.posY = posY;
 		
