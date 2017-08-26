@@ -9,4 +9,5 @@ public interface GameElementsInterface {
 	public void setPosX(int posX);
 	
 	public void setPosY(int posY);
+
 }
