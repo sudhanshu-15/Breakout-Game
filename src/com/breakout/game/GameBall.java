@@ -31,19 +31,23 @@ public class GameBall implements GameElementsInterface{
 		this.velY = -2;
 		this.ballColor = Color.RED;
 	}
-
+	
+	@Override
 	public int getPosX() {
 		return posX;
 	}
-
+	
+	@Override
 	public void setPosX(int posX) {
 		this.posX = posX;
 	}
-
+	
+	@Override
 	public int getPosY() {
 		return posY;
 	}
 
+	@Override
 	public void setPosY(int posY) {
 		this.posY = posY;
 	}
@@ -73,7 +77,7 @@ public class GameBall implements GameElementsInterface{
 		if (posX < 0 || posX > boundaryX){						//Changes velocity to negative if boundary in reached
 			velX = -velX;
 		}
-		if (posY < 0 || posY > boundaryY){
+		if (posY < 0 || posY > boundaryY){						//TO-DO: Add logic for game-over when ball goes beyond max Y
 			velY = -velY;
 		}
 	}
