@@ -19,6 +19,14 @@ public class GamePaddle implements GameElementsInterface{
 		this.height = height;
 		this.paddleColor = paddleColor;
 	}
+	
+	public GamePaddle(int posX, int posY){
+		this.posX = posX;
+		this.posY = posY;
+		this.width = 40;
+		this.height = 15;
+		this.paddleColor = Color.GREEN;
+	}
 
 	@Override
 	public int getPosX() {
@@ -64,31 +72,32 @@ public class GamePaddle implements GameElementsInterface{
 		g.setColor(paddleColor);				
 		g.fillRect(posX, posY, width, height);
 	}
-
 	
-
-//	public void checkBounds(int boundaryX){
-//		if (posX < 0){
-//			posX = 0;
-//		}else {
-//			moveLeft();
-//		}
-//		if (posX > boundaryX){
-//			posX = boundaryX;
-//		}else {
-//			moveRight();
-//		}
-//	}
+	//Function checks for the direction key pressed and also takes in the parameters for
+	//Max and Min boundary
+	//If the paddle reaches Max/Min boundary it sticks to the boundary 
+	public void checkBounds(int direction, int boundaryMax, int boundaryMin){
+		if (direction == KeyEvent.VK_RIGHT) {
+			if (posX >= boundaryMax) {
+				posX = boundaryMax;
+			}else {
+				moveRight();
+			}
+		}else if (direction == KeyEvent.VK_LEFT) {
+			if (posX <= boundaryMin) {
+				posX = boundaryMin;
+			}else {
+				moveLeft();
+			}
+		}
+	}
 	
-//	public void moveRight() {
-//		posX += 20;
-//	}
+	public void moveRight() {
+		posX += 20;
+	}
 	
-//	public void moveLeft() {
-//		posY -= 20;
-//	}
-	
-	
-	
+	public void moveLeft() {
+		posX -= 20;
+	}	
 	
 }
