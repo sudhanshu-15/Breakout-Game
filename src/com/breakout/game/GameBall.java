@@ -1,7 +1,10 @@
 package com.breakout.game;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
+
+import javax.swing.JOptionPane;
 
 public class GameBall implements GameElementsInterface{
 	
@@ -69,15 +72,20 @@ public class GameBall implements GameElementsInterface{
 	}
 	
 	public void draw(Graphics g){
+		if(posY > GameConstants.BOARD_HEIGHT){
+			g.setColor(Color.RED);
+			g.setFont(new Font("serif", Font.BOLD, 25));
+			g.drawString("Game Over", 190, 300);
+		}
 		g.setColor(ballColor);				// Fixed Color variable for setting ballColor
-		g.fillOval(posX, posY, 20, 20); 		//TO-DO: Add import for constants and add dimensions
+		g.fillOval(posX, posY, 20, 20); 		//TO-DO: Add import for constants and add dimensions		
 	}
 	
 	public void checkBounds(int boundaryX, int boundaryY){		// Function to check for boundary of the game window
 		if (posX < 0 || posX > boundaryX){						//Changes velocity to negative if boundary in reached
 			velX = -velX;
 		}
-		if (posY < 0 || posY > boundaryY){						//TO-DO: Add logic for game-over when ball goes beyond max Y
+		if (posY < 0){						//TO-DO: Add logic for game-over when ball goes beyond max Y
 			velY = -velY;
 		}
 	}

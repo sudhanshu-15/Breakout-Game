@@ -25,7 +25,7 @@ public class GameConstants {
 	
 	//Ball Constants
 	public static int ballPosX = 120; 	//X-coordinate position of ball
-	public static int ballPosY = 100;	//Y-coordinate position of ball
+	public static int ballPosY = 200;	//Y-coordinate position of ball
 	public static int ballVelX = -1;	//Velocity on X-axis
 	public static int ballVelY = -2;	//Velocity on Y-axis
 	public static Color ballColor = Color.RED;  //Ball Color

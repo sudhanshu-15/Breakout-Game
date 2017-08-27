@@ -13,12 +13,12 @@ import javax.swing.Timer;
 
 public class GameBoard extends JPanel implements ActionListener, KeyListener{
 
+	public boolean play = false;
 	private GameBrick brick;
 	private GameBall ball;
 	private GamePaddle paddle;
 	private int delay = 8;
 	private Timer timer;
-
 	
 	public GameBoard(GameBrick brick, GameBall ball, GamePaddle paddle) {
 		this.brick = brick;
@@ -30,15 +30,15 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.requestFocusInWindow();
 		this.setFocusTraversalKeysEnabled(false);
 		this.timer = new Timer(delay, this);
-//		this.timer.start();
+		this.timer.start();
 	}
 	
 	public void paint(Graphics g){
+		timer.start();
 		super.paint(g);		
 		ball.draw(g);
 		paddle.draw(g);
 		brick.draw((Graphics2D)g);
-		timer.start();
 	}	
 	
 	public void draw(){
@@ -60,13 +60,15 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 		if(e.getKeyCode() == KeyEvent.VK_LEFT){
 			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 50 , 10);
-		}
-		
+		}		
 		repaint();
 	}
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		timer.start();
+		ball.checkBounds(559, 559);
+		if(paddle.play){
 			ball.setPosX(ball.getPosX()+ball.getVelX());
 			ball.setPosY(ball.getPosY()+ ball.getVelY());
 			
@@ -103,6 +105,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 					}
 				}
 			}
+		}
 		repaint();
 	}
 }
