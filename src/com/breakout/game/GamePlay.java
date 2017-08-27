@@ -30,23 +30,18 @@ public class GamePlay {
 		JFrame gameFrame = new JFrame();
 		gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		gameFrame.setTitle("Breakout");
-		gameFrame.setSize(600,600);		//TO-DO: Fix the dimension from GameConstants
 		
-		/*Constant part needs to be fixed.
-		 * */
+		gameFrame.setSize(GameConstants.BOARD_WIDTH, GameConstants.BOARD_HEIGHT);
 		
-		ball = new GameBall(120, 10, -1, -2, Color.RED); //TO-DO: From Constants
-		paddle = new GamePaddle(300, 500, 30, 10, Color.GREEN);
-		brick = new GameBrick(3, 3);
-		
-		/*Constant part fix ends*/
+		ball = new GameBall(GameConstants.ballPosX, GameConstants.ballPosY, GameConstants.ballVelX, GameConstants.ballVelY, GameConstants.ballColor);
+		paddle = new GamePaddle(GameConstants.paddlePosX, GameConstants.paddlePosY, GameConstants.paddleWidth, GameConstants.paddleHeight, GameConstants.paddleColor);
+		brick = new GameBrick(GameConstants.brickRow, GameConstants.brickColumn);
 		
 		board = new GameBoard(brick, ball, paddle);
 		board.draw();
 		
 		gameFrame.add(board);
-		gameFrame.setVisible(true);
-		
+		gameFrame.setVisible(true);		
 	}
 
 }

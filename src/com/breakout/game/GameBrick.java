@@ -10,8 +10,8 @@ public class GameBrick{
 	public int brickWidth;
 	
 	public GameBrick(int rows, int columns){
-		brickHeight = 40;
-		brickWidth = 80;
+		brickHeight = GameConstants.brickHeight;
+		brickWidth = GameConstants.brickWidth;
 		brickArray = new int[rows][columns];
 		
 		for(int i = 0; i<brickArray.length;++i){

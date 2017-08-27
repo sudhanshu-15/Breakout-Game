@@ -10,6 +10,7 @@ public class GamePaddle implements GameElementsInterface{
 	private int width;
 	private int height;
 	private Color paddleColor;
+	private boolean play;
 	
 	
 	public GamePaddle(int posX, int posY, int width, int height, Color paddleColor) {
@@ -93,10 +94,12 @@ public class GamePaddle implements GameElementsInterface{
 	}
 	
 	public void moveRight() {
+		play = true;
 		posX += 20;
 	}
 	
 	public void moveLeft() {
+		play = true;
 		posX -= 20;
 	}	
 	
