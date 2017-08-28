@@ -73,7 +73,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			g.setFont(new Font("serif", Font.BOLD, 20));
 			g.drawString("Press Enter to Restart", 170, 340);
 			paddle.play = false;
-			runningTime =0;
+			runningTime = 0;
 			timeDisplay.updateText(runningTime);
 			
 		}

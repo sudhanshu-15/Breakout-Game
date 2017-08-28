@@ -6,11 +6,13 @@ public class GameTime extends JLabel{
 
 	private String text;
 	
+	//Constructor for game time display, initializes to 00:00
 	public GameTime(){
 		text = "00:00";
 		this.setText(text);
 	}
 	
+	//Calculates time and updates game time display.
 	public void updateText(int runningTime){
 		if (runningTime % 1000 == 0 ) {
 			int currTime = runningTime/1000;

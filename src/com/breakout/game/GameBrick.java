@@ -9,6 +9,7 @@ public class GameBrick{
 	public int brickHeight;
 	public int brickWidth;
 	
+	//Constructor which creates a Brick matrix
 	public GameBrick(int rows, int columns){
 		brickHeight = GameConstants.BRICK_HEIGHT;
 		brickWidth = GameConstants.BRICK_WIDTH;
