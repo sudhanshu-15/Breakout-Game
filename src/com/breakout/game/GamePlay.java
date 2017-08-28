@@ -37,9 +37,9 @@ public class GamePlay {
 		gameFrame.setSize(GameConstants.BOARD_WIDTH, GameConstants.BOARD_HEIGHT);
 		gameFrame.setLocationRelativeTo(null);
 		
-		ball = new GameBall(GameConstants.ballPosX, GameConstants.ballPosY, GameConstants.ballVelX, GameConstants.ballVelY, GameConstants.ballColor);
-		paddle = new GamePaddle(GameConstants.paddlePosX, GameConstants.paddlePosY, GameConstants.paddleWidth, GameConstants.paddleHeight, GameConstants.paddleColor);
-		brick = new GameBrick(GameConstants.brickRow, GameConstants.brickColumn);
+		ball = new GameBall(GameConstants.BALL_POS_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
+		paddle = new GamePaddle(GameConstants.PADDLE_POS_X, GameConstants.PADDLE_POS_Y, GameConstants.PADDLE_WIDTH, GameConstants.PADDLE_HEIGHT, GameConstants.PADDLE_COLOR);
+		brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
 		timeDisplay = new GameTime();
 		
 		board = new GameBoard(brick, ball, paddle, timeDisplay);

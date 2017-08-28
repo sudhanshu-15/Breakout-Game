@@ -30,7 +30,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.ball = ball;
 		this.paddle = paddle;
 		this.timeDisplay = timeDisplay;
-		this.setSize(GameConstants.boardDimensions);
+		this.setSize(GameConstants.BOARD_DIMENSIONS);
 		this.setBackground(Color.WHITE);
 		this.setBounds(1, 10, GameConstants.BOARD_WIDTH,GameConstants.BOARD_HEIGHT-10);
 		this.addKeyListener(this);
@@ -51,7 +51,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		brick.draw((Graphics2D)g);
 		timer.start();
 		
-		if(GameConstants.totalBricks <= 0){
+		if(GameConstants.TOTAL_BRICKS <= 0){
 			paddle.play = false;
 			g.setColor(Color.RED);
 			g.setFont(new Font("serif", Font.BOLD, 25));
@@ -102,13 +102,13 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		if(e.getKeyCode() == KeyEvent.VK_ENTER){
 			if(!paddle.play){
 				paddle.play = true;
-				ball.setPosX(GameConstants.ballPosX);
-				ball.setPosY(GameConstants.ballPosY);
-				ball.setVelX(GameConstants.ballVelX);
-				ball.setVelY(GameConstants.ballVelY);
-				paddle.setPosX(GameConstants.paddlePosX);
-				brick = new GameBrick(GameConstants.brickRow, GameConstants.brickColumn);
-				GameConstants.totalBricks = GameConstants.brickRow * GameConstants.brickColumn;
+				ball.setPosX(GameConstants.BALL_POS_X);
+				ball.setPosY(GameConstants.BALL_POS_Y);
+				ball.setVelX(GameConstants.BALL_VEL_X);
+				ball.setVelY(GameConstants.BALL_VEL_Y);
+				paddle.setPosX(GameConstants.PADDLE_POS_X);
+				brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
+				GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
 				//repaint();
 			}
 		}
@@ -148,7 +148,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 						
 						if(ballRect.intersects(brickRect)){
 							brick.setBrickValue(0, i, j);
-							GameConstants.totalBricks--;
+							GameConstants.TOTAL_BRICKS--;
 							
 							if(ball.getPosX() + 19 <= brickRect.x || ball.getPosX() + 1 >= brickRect.x + brickRect.width){
 								ball.setVelX(-(ball.getVelX()));

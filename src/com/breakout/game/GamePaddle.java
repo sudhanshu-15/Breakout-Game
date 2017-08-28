@@ -95,12 +95,12 @@ public class GamePaddle implements GameElementsInterface{
 	
 	public void moveRight() {
 		play = true;
-		posX += 20;
+		posX += 30;
 	}
 	
 	public void moveLeft() {
 		play = true;
-		posX -= 20;
+		posX -= 30;
 	}	
 	
 }
