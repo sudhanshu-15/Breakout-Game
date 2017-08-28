@@ -11,6 +11,7 @@ public class GamePlay {
 	private GameBrick brick;
 	private GameBall ball;
 	private GamePaddle paddle;
+	private GameTime timeDisplay;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -36,8 +37,9 @@ public class GamePlay {
 		ball = new GameBall(GameConstants.ballPosX, GameConstants.ballPosY, GameConstants.ballVelX, GameConstants.ballVelY, GameConstants.ballColor);
 		paddle = new GamePaddle(GameConstants.paddlePosX, GameConstants.paddlePosY, GameConstants.paddleWidth, GameConstants.paddleHeight, GameConstants.paddleColor);
 		brick = new GameBrick(GameConstants.brickRow, GameConstants.brickColumn);
+		timeDisplay = new GameTime();
 		
-		board = new GameBoard(brick, ball, paddle);
+		board = new GameBoard(brick, ball, paddle, timeDisplay);
 		board.draw();
 		
 		gameFrame.add(board);

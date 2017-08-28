@@ -17,28 +17,35 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private GameBrick brick;
 	private GameBall ball;
 	private GamePaddle paddle;
-	private int delay = 8;
+	private GameTime timeDisplay;
+	private int delay = 5;
 	private Timer timer;
 	
-	public GameBoard(GameBrick brick, GameBall ball, GamePaddle paddle) {
+	private int runningTime;
+	
+	public GameBoard(GameBrick brick, GameBall ball, GamePaddle paddle, GameTime timeDisplay) {
 		this.brick = brick;
 		this.ball = ball;
-		this.paddle = paddle;		
+		this.paddle = paddle;
+		this.timeDisplay = timeDisplay;
 		this.setSize(GameConstants.boardDimensions);
 		this.addKeyListener(this);
 		this.setFocusable(true);
 		this.requestFocusInWindow();
 		this.setFocusTraversalKeysEnabled(false);
 		this.timer = new Timer(delay, this);
-		this.timer.start();
+		runningTime = 0;
+//		this.timer.start();
 	}
 	
 	public void paint(Graphics g){
-		timer.start();
-		super.paint(g);		
+//		timer.start();
+		super.paint(g);	
+		this.add(timeDisplay);
 		ball.draw(g);
 		paddle.draw(g);
 		brick.draw((Graphics2D)g);
+		timer.start();
 	}	
 	
 	public void draw(){
@@ -66,8 +73,10 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		timer.start();
+//		timer.start();
 		ball.checkBounds(559, 559);
+		runningTime += 5;
+		timeDisplay.updateText(runningTime);
 		if(paddle.play){
 			ball.setPosX(ball.getPosX()+ball.getVelX());
 			ball.setPosY(ball.getPosY()+ ball.getVelY());
