@@ -1,5 +1,6 @@
 package com.breakout.game;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
@@ -13,7 +14,7 @@ import javax.swing.Timer;
 
 public class GameBoard extends JPanel implements ActionListener, KeyListener{
 
-	public boolean play = false;
+	//public boolean play = false;
 	private GameBrick brick;
 	private GameBall ball;
 	private GamePaddle paddle;
@@ -29,6 +30,8 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.paddle = paddle;
 		this.timeDisplay = timeDisplay;
 		this.setSize(GameConstants.boardDimensions);
+		this.setBackground(Color.WHITE);
+		this.setBounds(1, 10, GameConstants.BOARD_WIDTH,GameConstants.BOARD_HEIGHT-10);
 		this.addKeyListener(this);
 		this.setFocusable(true);
 		this.requestFocusInWindow();
@@ -67,14 +70,26 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 		if(e.getKeyCode() == KeyEvent.VK_LEFT){
 			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 50 , 10);
-		}		
+		}	
+		if(e.getKeyCode() == KeyEvent.VK_ENTER){
+			if(!paddle.play){
+				paddle.play = true;
+				ball.setPosX(GameConstants.ballPosX);
+				ball.setPosY(GameConstants.ballPosY);
+				ball.setVelX(GameConstants.ballVelX);
+				ball.setVelY(GameConstants.ballVelY);
+				paddle.setPosX(GameConstants.paddlePosX);
+				brick = new GameBrick(GameConstants.brickRow, GameConstants.brickColumn);
+				repaint();
+			}
+		}
 		repaint();
 	}
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 //		timer.start();
-		ball.checkBounds(559, 559);
+		ball.checkBounds(559,559);
 		runningTime += 5;
 		timeDisplay.updateText(runningTime);
 		if(paddle.play){
