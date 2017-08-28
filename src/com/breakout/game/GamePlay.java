@@ -31,7 +31,7 @@ public class GamePlay {
 		JFrame gameFrame = new JFrame();
 		gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		gameFrame.setTitle("Breakout");
-		
+		gameFrame.setResizable(false);
 		gameFrame.setSize(GameConstants.BOARD_WIDTH, GameConstants.BOARD_HEIGHT);
 		
 		ball = new GameBall(GameConstants.ballPosX, GameConstants.ballPosY, GameConstants.ballVelX, GameConstants.ballVelY, GameConstants.ballColor);

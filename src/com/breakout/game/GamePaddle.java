@@ -10,7 +10,7 @@ public class GamePaddle implements GameElementsInterface{
 	private int width;
 	private int height;
 	private Color paddleColor;
-	public boolean play;
+	public static boolean play = false;
 	
 	
 	public GamePaddle(int posX, int posY, int width, int height, Color paddleColor) {

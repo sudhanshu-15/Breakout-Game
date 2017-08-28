@@ -26,11 +26,11 @@ public class GameBrick{
 			for(int j = 0; j<brickArray[0].length;++j){
 				if(brickArray[i][j]>0){
 					g.setColor(Color.BLACK);
-					g.fillRect(j*brickWidth+10, i*brickHeight+40, brickWidth, brickHeight);
+					g.fillRect(j*brickWidth+40, i*brickHeight+40, brickWidth, brickHeight);
 					
 					g.setStroke(new BasicStroke(3));
 					g.setColor(Color.WHITE);
-					g.drawRect(j*brickWidth+10, i*brickHeight+40, brickWidth, brickHeight);
+					g.drawRect(j*brickWidth+40, i*brickHeight+40, brickWidth, brickHeight);
 				}
 			}
 		}

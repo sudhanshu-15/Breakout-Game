@@ -18,10 +18,10 @@ public class GameConstants {
 	public static boolean play = false;
 	
 	//Brick constants
-	public static int brickHeight = 40;
-	public static int brickWidth = 80;
+	public static int brickHeight = 30;
+	public static int brickWidth = 50;
 	public static int brickRow = 3;
-	public static int brickColumn = 6;
+	public static int brickColumn = 10;
 	
 	//Ball Constants
 	public static int ballPosX = 120; 	//X-coordinate position of ball

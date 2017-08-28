@@ -75,7 +75,13 @@ public class GameBall implements GameElementsInterface{
 		if(posY > GameConstants.BOARD_HEIGHT){
 			g.setColor(Color.RED);
 			g.setFont(new Font("serif", Font.BOLD, 25));
-			g.drawString("Game Over", 190, 300);
+			g.drawString("Game Over", 200, 300);
+			
+			//Restart Button
+			g.setFont(new Font("serif", Font.BOLD, 20));
+			g.drawString("Press Enter to Restart", 170, 340);
+			GamePaddle.play = false;
+			
 		}
 		g.setColor(ballColor);				// Fixed Color variable for setting ballColor
 		g.fillOval(posX, posY, 20, 20); 		//TO-DO: Add import for constants and add dimensions		
@@ -88,5 +94,8 @@ public class GameBall implements GameElementsInterface{
 		if (posY < 0){						//TO-DO: Add logic for game-over when ball goes beyond max Y
 			velY = -velY;
 		}
+//		if(posY > boundaryY){
+//			GamePaddle.play = false;
+//		}
 	}
 }
