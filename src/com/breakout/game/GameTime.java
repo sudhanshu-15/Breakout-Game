@@ -22,4 +22,5 @@ public class GameTime extends JLabel{
 			this.setText(text);
 		}
 	}
+	
 }

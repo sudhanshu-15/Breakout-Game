@@ -1,6 +1,7 @@
 package com.breakout.game;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
@@ -49,6 +50,33 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		paddle.draw(g);
 		brick.draw((Graphics2D)g);
 		timer.start();
+		
+		if(GameConstants.totalBricks <= 0){
+			paddle.play = false;
+			g.setColor(Color.RED);
+			g.setFont(new Font("serif", Font.BOLD, 25));
+			g.drawString("Congratualtions", 200, 300);
+			
+			//Restart Button
+			g.setFont(new Font("serif", Font.BOLD, 20));
+			g.drawString("Play Again", 170, 340);	
+			runningTime = 0;
+			timeDisplay.updateText(runningTime);
+		}
+		
+		if(ball.getPosY() > GameConstants.BOARD_HEIGHT){
+			g.setColor(Color.RED);
+			g.setFont(new Font("serif", Font.BOLD, 25));
+			g.drawString("Game Over", 200, 300);
+			
+			//Restart Button
+			g.setFont(new Font("serif", Font.BOLD, 20));
+			g.drawString("Press Enter to Restart", 170, 340);
+			paddle.play = false;
+			runningTime =0;
+			timeDisplay.updateText(runningTime);
+			
+		}
 	}	
 	
 	public void draw(){
@@ -66,10 +94,10 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT){
-			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 50 , 10);
+			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
 		}
 		if(e.getKeyCode() == KeyEvent.VK_LEFT){
-			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 50 , 10);
+			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
 		}	
 		if(e.getKeyCode() == KeyEvent.VK_ENTER){
 			if(!paddle.play){
@@ -80,7 +108,8 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 				ball.setVelY(GameConstants.ballVelY);
 				paddle.setPosX(GameConstants.paddlePosX);
 				brick = new GameBrick(GameConstants.brickRow, GameConstants.brickColumn);
-				repaint();
+				GameConstants.totalBricks = GameConstants.brickRow * GameConstants.brickColumn;
+				//repaint();
 			}
 		}
 		repaint();
@@ -92,6 +121,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		ball.checkBounds(559,559);
 		runningTime += 5;
 		timeDisplay.updateText(runningTime);
+		
 		if(paddle.play){
 			ball.setPosX(ball.getPosX()+ball.getVelX());
 			ball.setPosY(ball.getPosY()+ ball.getVelY());
@@ -118,6 +148,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 						
 						if(ballRect.intersects(brickRect)){
 							brick.setBrickValue(0, i, j);
+							GameConstants.totalBricks--;
 							
 							if(ball.getPosX() + 19 <= brickRect.x || ball.getPosX() + 1 >= brickRect.x + brickRect.width){
 								ball.setVelX(-(ball.getVelX()));

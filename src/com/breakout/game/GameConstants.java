@@ -22,6 +22,7 @@ public class GameConstants {
 	public static int brickWidth = 50;
 	public static int brickRow = 3;
 	public static int brickColumn = 10;
+	public static int totalBricks = brickRow * brickColumn;
 	
 	//Ball Constants
 	public static int ballPosX = 120; 	//X-coordinate position of ball

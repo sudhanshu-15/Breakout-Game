@@ -72,17 +72,7 @@ public class GameBall implements GameElementsInterface{
 	}
 	
 	public void draw(Graphics g){
-		if(posY > GameConstants.BOARD_HEIGHT){
-			g.setColor(Color.RED);
-			g.setFont(new Font("serif", Font.BOLD, 25));
-			g.drawString("Game Over", 200, 300);
-			
-			//Restart Button
-			g.setFont(new Font("serif", Font.BOLD, 20));
-			g.drawString("Press Enter to Restart", 170, 340);
-			GamePaddle.play = false;
-			
-		}
+		
 		g.setColor(ballColor);				// Fixed Color variable for setting ballColor
 		g.fillOval(posX, posY, 20, 20); 		//TO-DO: Add import for constants and add dimensions		
 	}
