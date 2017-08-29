@@ -10,8 +10,10 @@ public class GamePaddle implements GameElementsInterface{
 	private int width;
 	private int height;
 	private Color paddleColor;
+	public static boolean play = false;
 	
 	
+	//Constuctor for paddle : needs postion, dimensions, color
 	public GamePaddle(int posX, int posY, int width, int height, Color paddleColor) {
 		this.posX = posX;
 		this.posY = posY;
@@ -20,6 +22,7 @@ public class GamePaddle implements GameElementsInterface{
 		this.paddleColor = paddleColor;
 	}
 	
+	//Constuctor with only position
 	public GamePaddle(int posX, int posY){
 		this.posX = posX;
 		this.posY = posY;
@@ -92,12 +95,16 @@ public class GamePaddle implements GameElementsInterface{
 		}
 	}
 	
+	//Function to move paddle to right
 	public void moveRight() {
-		posX += 20;
+		play = true;
+		posX += 30;
 	}
 	
+	//Function to move paddle to left
 	public void moveLeft() {
-		posX -= 20;
+		play = true;
+		posX -= 30;
 	}	
 	
 }
