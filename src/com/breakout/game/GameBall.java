@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 public class GameBall implements GameElementsInterface{
 	
-	//Ball class for the game
+	//Ball class for the game breakout
 	
 	private int posX; 	//X-coordinate position of ball
 	private int posY;	//Y-coordinate position of ball
