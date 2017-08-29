@@ -8,6 +8,7 @@ import java.awt.Toolkit;
 import javax.swing.JFrame;
 
 public class GamePlay {
+	//check change - again
 	
 	private GameBoard board;
 	private GameBrick brick;
