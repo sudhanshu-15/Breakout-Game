@@ -17,6 +17,7 @@ public class GamePlay {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/*
 		EventQueue.invokeLater(new Runnable(){
 
 			@Override
@@ -26,7 +27,8 @@ public class GamePlay {
 			}
 			
 		});
-		
+		*/
+		new GamePlay();
 	}
 	
 	public GamePlay() {

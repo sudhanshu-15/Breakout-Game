@@ -6,7 +6,7 @@ import java.awt.Graphics;
 
 import javax.swing.JOptionPane;
 
-public class GameBall implements GameElementsInterface{
+public class GameBall implements Observer, GameElementsInterface{
 	
 	//Ball class for the game breakout
 	
@@ -81,11 +81,28 @@ public class GameBall implements GameElementsInterface{
 		if (posX < 0 || posX > boundaryX){						//Changes velocity to negative if boundary in reached
 			velX = -velX;
 		}
+		/*
+		if (posX == boundaryX) {
+			velX = -velX;
+		}
+		if (posX == 0) {
+			velX = velX;
+		}
+		*/
 		if (posY < 0){						//TO-DO: Add logic for game-over when ball goes beyond max Y
 			velY = -velY;
 		}
 //		if(posY > boundaryY){
 //			GamePaddle.play = false;
 //		}
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		//setPosX(getPosX() + getVelX());
+		//setPosY(getPosY() + getVelY());
+		posX += getVelX();
+		posY += getVelY();
 	}
 }

@@ -13,7 +13,7 @@ import java.awt.event.KeyListener;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class GameBoard extends JPanel implements ActionListener, KeyListener{
+public class GameBoard extends JPanel implements KeyListener, Runnable, Observable {
 
 	//public boolean play = false;
 	private GameBrick brick;
@@ -22,6 +22,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private GameTime timeDisplay;
 	private int delay = 5;
 	private Timer timer;
+	private Thread game;
 	
 	private int runningTime;
 	
@@ -37,8 +38,10 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.setFocusable(true);
 		this.requestFocusInWindow();
 		this.setFocusTraversalKeysEnabled(false);
-		this.timer = new Timer(delay, this);
+		//this.timer = new Timer(delay, this);
 		runningTime = 0;
+		game = new Thread(this);
+		game.start();
 //		this.timer.start();
 	}
 	
@@ -49,7 +52,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		ball.draw(g);
 		paddle.draw(g);
 		brick.draw((Graphics2D)g);
-		timer.start();
+		//timer.start();
 		
 		if(GameConstants.TOTAL_BRICKS <= 0){
 			paddle.play = false;
@@ -112,9 +115,9 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 				//repaint();
 			}
 		}
-		repaint();
+		//repaint();
 	}
-	
+	/*
 	@Override
 	public void actionPerformed(ActionEvent e) {
 //		timer.start();
@@ -162,5 +165,46 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			}
 		}
 		repaint();
+	}
+*/
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while (true) {
+			int xBall = ball.getPosX();
+			int yBall = ball.getPosY();
+			System.out.println(xBall + ":" + yBall);
+			ball.checkBounds(xBall, yBall);
+			ball.update();
+			
+			repaint();
+			
+			try {
+				Thread.sleep(30);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}
+	}
+
+	@Override
+	public void register(Observer o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void unregister(Observer o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifyObservers() {
+		// TODO Auto-generated method stub
+		
 	}
 }
