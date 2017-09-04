@@ -95,6 +95,7 @@ public class GamePaddle implements GameElementsInterface{
 		}
 	}
 	
+	
 	//Function to move paddle to right
 	public void moveRight() {
 		play = true;

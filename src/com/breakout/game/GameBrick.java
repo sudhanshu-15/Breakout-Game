@@ -40,4 +40,5 @@ public class GameBrick{
 	public void setBrickValue(int value, int row, int column){
 		brickArray[row][column] = value;
 	}
+	
 }

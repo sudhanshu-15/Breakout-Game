@@ -9,6 +9,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -18,18 +20,23 @@ public class GameBoard extends JPanel implements KeyListener, Runnable, Observab
 	//public boolean play = false;
 	private GameBrick brick;
 	private GameBall ball;
+	//private Rectangle ballRect;
 	private GamePaddle paddle;
+	//private Rectangle paddleRect;
 	private GameTime timeDisplay;
 	private int delay = 5;
 	private Timer timer;
 	private Thread game;
+	private List<Observer> observers;
 	
 	private int runningTime;
 	
 	public GameBoard(GameBrick brick, GameBall ball, GamePaddle paddle, GameTime timeDisplay) {
 		this.brick = brick;
 		this.ball = ball;
+		//ballRect = new Rectangle(ball.getPosX(), ball.getPosY(), 20, 20);
 		this.paddle = paddle;
+		//paddleRect = new Rectangle(paddle.getPosX(), paddle.getPosY(), paddle.getWidth(), paddle.getHeight());
 		this.timeDisplay = timeDisplay;
 		this.setSize(GameConstants.BOARD_DIMENSIONS);
 		this.setBackground(Color.WHITE);
@@ -167,20 +174,78 @@ public class GameBoard extends JPanel implements KeyListener, Runnable, Observab
 		repaint();
 	}
 */
-	@Override
+	
+	public void paddleCollision(Rectangle ballRect, Rectangle paddleRect) {
+		if(ballRect.intersects(paddleRect)){
+			ball.setVelY(-(ball.getVelY()));
+		}
+	}
+	
+	public void brickCollision(Rectangle ballRect) {
+		for(int i =0;i< brick.brickArray.length;++i){
+			for(int j = 0;j<brick.brickArray[0].length;++j){
+				if(brick.brickArray[i][j]>0){
+					int brickWidth = brick.brickWidth;
+					int brickHeight = brick.brickHeight;
+					int brickX = j*brickWidth+10;
+					int brickY = i*brickHeight+40;
+					
+					Rectangle rect = new Rectangle(brickX, brickY, brickWidth, brickHeight);
+					Rectangle brickRect = rect;
+					
+					// hit bottom
+					//if ((ball.getPosX() >= brickRect.getX()) && (ball.getPosX() <= brickRect.getX() + 1) && (ball.getPosY() == brickRect.getY() + brickRect.getHeight())) {
+						//ball.setVelY(1);
+					//}
+					
+					//if(ballRect.getY() == brickRect.y + brickHeight) {
+						//ball.setVelY(1);
+						//brick.setBrickValue(0, i, j);
+					//}
+					
+					if(ballRect.intersects(brickRect)){
+						brick.setBrickValue(0, i, j);
+						GameConstants.TOTAL_BRICKS--;
+						
+						if(ball.getPosX() + 19 <= brickRect.x || ball.getPosX() + 1 >= brickRect.x + brickRect.width){
+							ball.setVelX(-(ball.getVelX()));
+						}
+						else{
+							ball.setVelY(-(ball.getVelY()));
+						}
+						
+					}
+				}
+			}
+		}
+	}
+ 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		while (true) {
+			observers = new ArrayList<Observer>();
+			register(ball);
+			register(timeDisplay);
+			//int rT = 0;
+			//rT += 20;
 			int xBall = ball.getPosX();
 			int yBall = ball.getPosY();
-			System.out.println(xBall + ":" + yBall);
-			ball.checkBounds(xBall, yBall);
-			ball.update();
+			Rectangle ballRect = new Rectangle(ball.getPosX(), ball.getPosY(), 20, 20);
+			Rectangle paddleRect = new Rectangle(paddle.getPosX(), paddle.getPosY(), paddle.getWidth(), paddle.getHeight());
+			//System.out.println(xBall + ":" + yBall);
+			ball.checkBounds(559, 559);
+			brickCollision(ballRect);
+			paddleCollision(ballRect, paddleRect);
+			//timeDisplay.updateText(rT);
+			//System.out.println(rT);
+			notifyObservers();
 			
 			repaint();
 			
 			try {
-				Thread.sleep(30);
+				//rT += 20;
+				Thread.sleep(20);
+				
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -193,18 +258,20 @@ public class GameBoard extends JPanel implements KeyListener, Runnable, Observab
 	@Override
 	public void register(Observer o) {
 		// TODO Auto-generated method stub
-		
+		observers.add(o);
 	}
 
 	@Override
 	public void unregister(Observer o) {
 		// TODO Auto-generated method stub
-		
+		observers.remove(o);
 	}
 
 	@Override
 	public void notifyObservers() {
 		// TODO Auto-generated method stub
-		
+		for (Observer o: observers) {
+			o.update();
+		}
 	}
 }
