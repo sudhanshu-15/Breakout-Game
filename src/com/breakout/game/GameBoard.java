@@ -63,6 +63,8 @@ public class GameBoard extends JPanel implements KeyListener, Runnable, Observab
 		
 		if(GameConstants.TOTAL_BRICKS <= 0){
 			paddle.play = false;
+			unregister(ball);
+			unregister(timeDisplay);
 			g.setColor(Color.RED);
 			g.setFont(new Font("serif", Font.BOLD, 25));
 			g.drawString("Congratualtions", 200, 300);
@@ -78,6 +80,8 @@ public class GameBoard extends JPanel implements KeyListener, Runnable, Observab
 			g.setColor(Color.RED);
 			g.setFont(new Font("serif", Font.BOLD, 25));
 			g.drawString("Game Over", 200, 300);
+			unregister(ball);
+			unregister(timeDisplay);
 			
 			//Restart Button
 			g.setFont(new Font("serif", Font.BOLD, 20));
@@ -119,6 +123,9 @@ public class GameBoard extends JPanel implements KeyListener, Runnable, Observab
 				paddle.setPosX(GameConstants.PADDLE_POS_X);
 				brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
 				GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
+				//this.remove(timeDisplay);
+				//timeDisplay = new GameTime();
+				timeDisplay.reset();
 				//repaint();
 			}
 		}

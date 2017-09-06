@@ -34,11 +34,15 @@ public class GameTime extends JLabel implements Observer{
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-		int rT = 0;
-		rT += 20;
+		//int rT = 0;
+		//rT += 20;
 		time = (time + 20) % (3600 * 1000);
 		//System.out.println(time);
 		updateText(time);
+	}
+	
+	public void reset() {
+		time = 0;
 	}
 	
 }
