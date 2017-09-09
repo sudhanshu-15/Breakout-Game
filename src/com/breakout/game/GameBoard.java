@@ -187,7 +187,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			Boolean hit = false;
 			
 			for(GameBrick brick : brickList){
-				if(ballCollider.intersects(brick.getBrickCollider())){
+				if(ballCollider.intersects(brick.getBrickCollider()) && !brick.isDead()){
 					hit = true;
 					deadBrick = brick;
 					ball.setVelY(-ball.getVelY());

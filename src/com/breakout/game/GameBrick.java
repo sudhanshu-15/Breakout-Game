@@ -32,6 +32,22 @@ public class GameBrick{
 		
 	}
 	
+	public int getPosX() {
+		return posX;
+	}
+
+	public int getPosY() {
+		return posY;
+	}
+
+	public int getBrickHeight() {
+		return brickHeight;
+	}
+
+	public int getBrickWidth() {
+		return brickWidth;
+	}
+
 	public boolean isDead() {
 		return dead;
 	}
