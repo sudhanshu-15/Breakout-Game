@@ -9,9 +9,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
+import com.breakout.command.BallCommand;
 
 public class GameBoard extends JPanel implements ActionListener, KeyListener{
 
@@ -22,6 +26,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private GameTime timeDisplay;
 	private int delay = 5;
 	private Timer timer;
+	private List<BallCommand> ballcmdList;
 	
 	private int runningTime;
 	
@@ -40,6 +45,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.timer = new Timer(delay, this);
 		runningTime = 0;
 //		this.timer.start();
+		ballcmdList = new ArrayList<BallCommand>();
 	}
 	
 	public void paint(Graphics g){
@@ -118,15 +124,22 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 //		timer.start();
-		ball.checkBounds(559,559);
+		ball.checkBounds(this.getWidth() - 20, this.getHeight()-20);
+		
 		runningTime += 5;
 		timeDisplay.updateText(runningTime);
 		
 		if(paddle.play){
-			ball.setPosX(ball.getPosX()+ball.getVelX());
-			ball.setPosY(ball.getPosY()+ ball.getVelY());
 			
-			Rectangle ballRect = new Rectangle(ball.getPosX(), ball.getPosY(), 20, 20);
+			BallCommand ballCmd = new BallCommand(ball);
+			
+			ballCmd.execute();
+			ballcmdList.add(ballCmd);
+			
+//			ball.setPosX(ball.getPosX()+ball.getVelX());
+//			ball.setPosY(ball.getPosY()+ ball.getVelY());
+			
+			Rectangle ballRect = ball.createCollider(ball.getPosX(), ball.getPosY(), 20, 20);
 			Rectangle paddleRect = new Rectangle(paddle.getPosX(), paddle.getPosY(), paddle.getWidth(), paddle.getHeight());
 			
 			//manage ball and paddle interaction
