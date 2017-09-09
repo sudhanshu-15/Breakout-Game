@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 import com.breakout.command.BallCommand;
+import com.breakout.command.TimerCommand;
 
 public class GameBoard extends JPanel implements ActionListener, KeyListener{
 
@@ -27,6 +28,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private int delay = 5;
 	private Timer timer;
 	private List<BallCommand> ballcmdList;
+	private List<TimerCommand> timercmdList;
 	
 	private int runningTime;
 	
@@ -127,14 +129,18 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		ball.checkBounds(this.getWidth() - 20, this.getHeight()-20);
 		
 		runningTime += 5;
-		timeDisplay.updateText(runningTime);
+		//timeDisplay.updateText(runningTime);
 		
 		if(paddle.play){
 			
 			BallCommand ballCmd = new BallCommand(ball);
+			TimerCommand timerCmd = new TimerCommand(timeDisplay);
 			
 			ballCmd.execute();
 			ballcmdList.add(ballCmd);
+			
+			timerCmd.execute();
+			timercmdList.add(timerCmd);
 			
 //			ball.setPosX(ball.getPosX()+ball.getVelX());
 //			ball.setPosY(ball.getPosY()+ ball.getVelY());
