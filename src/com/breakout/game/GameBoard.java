@@ -97,22 +97,6 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 					pauseButton.setText("PAUSE");
 				}
 			}
-
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				// TODO Auto-generated method stub
-//				if(!paddle.play){
-//					paddle.play = true;
-//					ball.setPosX(GameConstants.BALL_POS_X);
-//					ball.setPosY(GameConstants.BALL_POS_Y);
-//					ball.setVelX(GameConstants.BALL_VEL_X);
-//					ball.setVelY(GameConstants.BALL_VEL_Y);
-//					paddle.setPosX(GameConstants.PADDLE_POS_X);
-//					//brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
-//					GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
-//					//repaint();
-//				}
-//			}
 			
 		});
 		this.add(pauseButton);
@@ -183,22 +167,9 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		if(e.getKeyCode() == KeyEvent.VK_LEFT){
 				paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
 		}	
-		/*if(e.getKeyCode() == KeyEvent.VK_ENTER){
-			if(!paddle.play){
-				paddle.play = true;
-				ball.setPosX(GameConstants.BALL_POS_X);
-				ball.setPosY(GameConstants.BALL_POS_Y);
-				ball.setVelX(GameConstants.BALL_VEL_X);
-				ball.setVelY(GameConstants.BALL_VEL_Y);
-				paddle.setPosX(GameConstants.PADDLE_POS_X);
-				brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
-				GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
-				//repaint();
-			}
-		}*/
 		repaint();
 	}
-	}
+}
 	@Override
 	public void actionPerformed(ActionEvent e) {
 //		timer.start();
