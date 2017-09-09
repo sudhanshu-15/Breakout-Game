@@ -1,43 +1,71 @@
 package com.breakout.game;
 
-import java.awt.BasicStroke;
 import java.awt.Color;
-import java.awt.Graphics2D;
+import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.util.Random;
 
 public class GameBrick{
-	public int brickArray[][];
-	public int brickHeight;
-	public int brickWidth;
+	
+	private int posX;
+	private int posY;
+	private int brickHeight;
+	private int brickWidth;
+	private boolean dead;
+	private Color brickColor;
+	private Rectangle brickCollider;
 	
 	//Constructor which creates a Brick matrix
-	public GameBrick(int rows, int columns){
+	public GameBrick(int posX, int posY){
+		this.posX = posX;
+		this.posY = posY;
 		brickHeight = GameConstants.BRICK_HEIGHT;
 		brickWidth = GameConstants.BRICK_WIDTH;
-		brickArray = new int[rows][columns];
+		this.dead = false;
+		this.brickCollider = this.createCollider(posX, posY, brickWidth, brickHeight);
 		
-		for(int i = 0; i<brickArray.length;++i){
-			for(int j = 0;j<brickArray[0].length;++j){
-				brickArray[i][j] = 1;
-			}
-		}
+		Random random = new Random();
+		int red = random.nextInt(256);
+		int green = random.nextInt(256);
+		int blue = random.nextInt(256);
+		this.brickColor = new Color(red, green, blue);
+		
 	}
 	
-	public void draw(Graphics2D g){
-		for(int i =0; i<brickArray.length;++i){
-			for(int j = 0; j<brickArray[0].length;++j){
-				if(brickArray[i][j]>0){
-					g.setColor(Color.BLACK);
-					g.fillRect(j*brickWidth+45, i*brickHeight+40, brickWidth, brickHeight);
-					
-					g.setStroke(new BasicStroke(3));
-					g.setColor(Color.WHITE);
-					g.drawRect(j*brickWidth+45, i*brickHeight+40, brickWidth, brickHeight);
-				}
-			}
-		}
+	public int getPosX() {
+		return posX;
+	}
+
+	public int getPosY() {
+		return posY;
+	}
+
+	public int getBrickHeight() {
+		return brickHeight;
+	}
+
+	public int getBrickWidth() {
+		return brickWidth;
+	}
+
+	public boolean isDead() {
+		return dead;
+	}
+
+	public void setDead(boolean dead) {
+		this.dead = dead;
+	}
+
+	public Rectangle getBrickCollider() {
+		return brickCollider;
+	}
+
+	public void draw(Graphics g){
+		g.setColor(brickColor);
+		g.fillRect(posX, posY, brickWidth, brickHeight);
 	}
 	
-	public void setBrickValue(int value, int row, int column){
-		brickArray[row][column] = value;
+	public Rectangle createCollider(int posX, int posY, int width, int height){
+		return new Rectangle(posX, posY, width, height);
 	}
 }
