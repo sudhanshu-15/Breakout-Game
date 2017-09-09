@@ -29,7 +29,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private Timer timer;
 	private List<BallCommand> ballcmdList;
 	private JButton startButton;
-	private JButton restartButton;
+	private JButton pauseButton;
 	private JButton undoButton;
 	private JButton replayButton;
 	
@@ -49,27 +49,73 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.setFocusTraversalKeysEnabled(false);
 		this.timer = new Timer(delay, this);
 		startButton = new JButton("START");
+		startButton.setFocusable(false);
 		startButton.addActionListener(new ActionListener(){
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
+				System.out.println("startButton Pressed");
 				paddle.play = !paddle.play;
 				if (paddle.play) {
-					startButton.setText("PAUSE");
+					startButton.setText("RESTART");
 					timer.start();
-					startButton.setFocusable(false);
 				}
+				
 				else {
 					startButton.setText("START");
 					timer.stop();
+					ball.setPosX(GameConstants.BALL_POS_X);
+					ball.setPosY(GameConstants.BALL_POS_Y);
+					ball.setVelX(GameConstants.BALL_VEL_X);
+					ball.setVelY(GameConstants.BALL_VEL_Y);
+					paddle.setPosX(GameConstants.PADDLE_POS_X);
+					//brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
+					GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
+					runningTime = 0;
+					timeDisplay.updateText(runningTime);
+					repaint();
 				}
 			}
 			
 		});
 		this.add(startButton);
-		restartButton = new JButton("RESTART");
-		this.add(restartButton);
+		pauseButton = new JButton("PAUSE");
+		pauseButton.setFocusable(false);
+		pauseButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				paddle.play = !paddle.play;
+				if (!paddle.play) {
+					timer.stop();
+					pauseButton.setText("UNPAUSE");
+				}
+				else {
+					timer.start();
+					pauseButton.setText("PAUSE");
+				}
+			}
+
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				// TODO Auto-generated method stub
+//				if(!paddle.play){
+//					paddle.play = true;
+//					ball.setPosX(GameConstants.BALL_POS_X);
+//					ball.setPosY(GameConstants.BALL_POS_Y);
+//					ball.setVelX(GameConstants.BALL_VEL_X);
+//					ball.setVelY(GameConstants.BALL_VEL_Y);
+//					paddle.setPosX(GameConstants.PADDLE_POS_X);
+//					//brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
+//					GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
+//					//repaint();
+//				}
+//			}
+			
+		});
+		this.add(pauseButton);
 		undoButton = new JButton("UNDO");
 		this.add(undoButton);
 		replayButton = new JButton("REPLAY");
@@ -108,7 +154,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			
 			//Restart Button
 			g.setFont(new Font("serif", Font.BOLD, 20));
-			g.drawString("Press Enter to Restart", 170, 340);
+			g.drawString("Press Restart button to restart", 170, 340);
 			paddle.play = false;
 			runningTime = 0;
 			timeDisplay.updateText(runningTime);
@@ -129,14 +175,15 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	
 	@Override
 	public void keyPressed(KeyEvent e) {
+		if (paddle.play) {
 		// TODO Auto-generated method stub
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT){
-			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
+				paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
 		}
 		if(e.getKeyCode() == KeyEvent.VK_LEFT){
-			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
+				paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
 		}	
-		if(e.getKeyCode() == KeyEvent.VK_ENTER){
+		/*if(e.getKeyCode() == KeyEvent.VK_ENTER){
 			if(!paddle.play){
 				paddle.play = true;
 				ball.setPosX(GameConstants.BALL_POS_X);
@@ -148,10 +195,10 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 				GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
 				//repaint();
 			}
-		}
+		}*/
 		repaint();
 	}
-	
+	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
 //		timer.start();
