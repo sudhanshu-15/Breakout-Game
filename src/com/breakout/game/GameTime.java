@@ -5,6 +5,7 @@ import javax.swing.JLabel;
 public class GameTime extends JLabel{
 
 	private String text;
+	private int time;
 	
 	//Constructor for game time display, initializes to 00:00
 	public GameTime(){
@@ -12,8 +13,8 @@ public class GameTime extends JLabel{
 		this.setText(text);
 	}
 	
-	//Calculates time and updates game time display.
-	public void updateText(int runningTime){
+public void updateText(int runningTime){
+		
 		if (runningTime % 1000 == 0 ) {
 			int currTime = runningTime/1000;
 			int gameMin = currTime / 60;
@@ -25,4 +26,11 @@ public class GameTime extends JLabel{
 		}
 	}
 	
+	public int getTime() {
+		return time;
+	}
+	
+	public void setTime(int time) {
+		this.time = time;
+	}
 }
