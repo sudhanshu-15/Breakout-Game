@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 import com.breakout.command.BallCommand;
+import com.breakout.command.BrickCommand;
 
 public class GameBoard extends JPanel implements ActionListener, KeyListener{
 
@@ -27,11 +28,11 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private int delay = 5;
 	private Timer timer;
 	private List<BallCommand> ballcmdList;
+	private List<GameBrick> brickList;
 	
 	private int runningTime;
 	
-	public GameBoard(GameBrick brick, GameBall ball, GamePaddle paddle, GameTime timeDisplay) {
-		this.brick = brick;
+	public GameBoard(GameBall ball, GamePaddle paddle, GameTime timeDisplay) {
 		this.ball = ball;
 		this.paddle = paddle;
 		this.timeDisplay = timeDisplay;
@@ -46,6 +47,8 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		runningTime = 0;
 //		this.timer.start();
 		ballcmdList = new ArrayList<BallCommand>();
+		brickList = new ArrayList<GameBrick>();
+		this.spawnBricks();
 	}
 	
 	public void paint(Graphics g){
@@ -54,7 +57,13 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.add(timeDisplay);
 		ball.draw(g);
 		paddle.draw(g);
-		brick.draw((Graphics2D)g);
+		
+		for (GameBrick brick: brickList){
+			if(!brick.isDead()){
+				brick.draw(g);
+			}
+		}
+		
 		timer.start();
 		
 		if(GameConstants.TOTAL_BRICKS <= 0){
@@ -139,41 +148,70 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 //			ball.setPosX(ball.getPosX()+ball.getVelX());
 //			ball.setPosY(ball.getPosY()+ ball.getVelY());
 			
-			Rectangle ballRect = ball.createCollider(ball.getPosX(), ball.getPosY(), 20, 20);
+			Rectangle ballCollider = ball.createCollider(ball.getPosX(), ball.getPosY(), 20, 20);
 			Rectangle paddleRect = new Rectangle(paddle.getPosX(), paddle.getPosY(), paddle.getWidth(), paddle.getHeight());
 			
 			//manage ball and paddle interaction
-			if(ballRect.intersects(paddleRect)){
+			if(ballCollider.intersects(paddleRect)){
 				ball.setVelY(-(ball.getVelY()));
 			}
 			
 			//manage ball and brick interaction
-			GAME: for(int i =0;i< brick.brickArray.length;++i){
-				for(int j = 0;j<brick.brickArray[0].length;++j){
-					if(brick.brickArray[i][j]>0){
-						int brickWidth = brick.brickWidth;
-						int brickHeight = brick.brickHeight;
-						int brickX = j*brickWidth+10;
-						int brickY = i*brickHeight+40;
-						
-						Rectangle rect = new Rectangle(brickX, brickY, brickWidth, brickHeight);
-						Rectangle brickRect = rect;
-						
-						if(ballRect.intersects(brickRect)){
-							brick.setBrickValue(0, i, j);
-							GameConstants.TOTAL_BRICKS--;
-							
-							if(ball.getPosX() + 19 <= brickRect.x || ball.getPosX() + 1 >= brickRect.x + brickRect.width){
-								ball.setVelX(-(ball.getVelX()));
-							}else{
-								ball.setVelY(-(ball.getVelY()));
-							}
-							break GAME;
-						}
-					}
+//			GAME: for(int i =0;i< brick.brickArray.length;++i){
+//				for(int j = 0;j<brick.brickArray[0].length;++j){
+//					if(brick.brickArray[i][j]>0){
+//						int brickWidth = brick.brickWidth;
+//						int brickHeight = brick.brickHeight;
+//						int brickX = j*brickWidth+10;
+//						int brickY = i*brickHeight+40;
+//						
+//						Rectangle rect = new Rectangle(brickX, brickY, brickWidth, brickHeight);
+//						Rectangle brickRect = rect;
+//						
+//						if(ballRect.intersects(brickRect)){
+//							brick.setBrickValue(0, i, j);
+//							GameConstants.TOTAL_BRICKS--;
+//							
+//							if(ball.getPosX() + 19 <= brickRect.x || ball.getPosX() + 1 >= brickRect.x + brickRect.width){
+//								ball.setVelX(-(ball.getVelX()));
+//							}else{
+//								ball.setVelY(-(ball.getVelY()));
+//							}
+//							break GAME;
+//						}
+//					}
+//				}
+//			}
+			
+			GameBrick deadBrick = brickList.get(0);
+			Boolean hit = false;
+			
+			for(GameBrick brick : brickList){
+				if(ballCollider.intersects(brick.getBrickCollider())){
+					hit = true;
+					deadBrick = brick;
+					ball.setVelY(-ball.getVelY());
 				}
 			}
+			
+			if(hit){
+				BrickCommand brickCmd = new BrickCommand(deadBrick, true);
+				brickCmd.execute();
+			}else{
+				BrickCommand brickCmd = new BrickCommand(deadBrick, false);
+				brickCmd.execute();
+				
+			}
+			
 		}
 		repaint();
+	}
+	
+	public void spawnBricks(){
+		for (int x = 1; x < 11; x++){
+			for (int y = 2; y < 6; y++){
+				brickList.add(new GameBrick(x * GameConstants.BRICK_WIDTH, y * GameConstants.BRICK_HEIGHT));
+			}
+		}
 	}
 }
