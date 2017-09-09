@@ -55,15 +55,19 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				System.out.println("startButton Pressed");
+				System.out.println("startButton Pressed: "+paddle.play);
 				paddle.play = !paddle.play;
-				if (paddle.play) {
+				if (paddle.play && startButton.getText().equals("START")) {
 					startButton.setText("RESTART");
 					timer.start();
+					pauseButton.setEnabled(true);
 				}
 				
 				else {
+					pauseButton.setEnabled(false);
+					pauseButton.setText("PAUSE");
 					startButton.setText("START");
+					paddle.play = false;
 					timer.stop();
 					ball.setPosX(GameConstants.BALL_POS_X);
 					ball.setPosY(GameConstants.BALL_POS_Y);
@@ -82,6 +86,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.add(startButton);
 		pauseButton = new JButton("PAUSE");
 		pauseButton.setFocusable(false);
+		pauseButton.setEnabled(false);
 		pauseButton.addActionListener(new ActionListener() {
 
 			@Override
