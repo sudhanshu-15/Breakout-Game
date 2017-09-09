@@ -23,6 +23,8 @@ public class GamePlay {
 			public void run() {
 				// TODO Auto-generated method stub
 				new GamePlay();
+				
+				
 			}
 			
 		});

@@ -12,6 +12,7 @@ import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
@@ -27,6 +28,10 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private int delay = 5;
 	private Timer timer;
 	private List<BallCommand> ballcmdList;
+	private JButton startButton;
+	private JButton restartButton;
+	private JButton undoButton;
+	private JButton replayButton;
 	
 	private int runningTime;
 	
@@ -43,6 +48,32 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.requestFocusInWindow();
 		this.setFocusTraversalKeysEnabled(false);
 		this.timer = new Timer(delay, this);
+		startButton = new JButton("START");
+		startButton.addActionListener(new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				paddle.play = !paddle.play;
+				if (paddle.play) {
+					startButton.setText("PAUSE");
+					timer.start();
+					startButton.setFocusable(false);
+				}
+				else {
+					startButton.setText("START");
+					timer.stop();
+				}
+			}
+			
+		});
+		this.add(startButton);
+		restartButton = new JButton("RESTART");
+		this.add(restartButton);
+		undoButton = new JButton("UNDO");
+		this.add(undoButton);
+		replayButton = new JButton("REPLAY");
+		this.add(replayButton);
 		runningTime = 0;
 //		this.timer.start();
 		ballcmdList = new ArrayList<BallCommand>();
@@ -55,7 +86,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		ball.draw(g);
 		paddle.draw(g);
 		brick.draw((Graphics2D)g);
-		timer.start();
+		//timer.start();
 		
 		if(GameConstants.TOTAL_BRICKS <= 0){
 			paddle.play = false;

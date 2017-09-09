@@ -10,7 +10,7 @@ public class GamePaddle implements GameElementsInterface{
 	private int width;
 	private int height;
 	private Color paddleColor;
-	public static boolean play = false;
+	public boolean play = false;
 	
 	
 	//Constuctor for paddle : needs postion, dimensions, color
