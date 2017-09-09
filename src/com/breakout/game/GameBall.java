@@ -3,6 +3,7 @@ package com.breakout.game;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Rectangle;
 
 import javax.swing.JOptionPane;
 
@@ -87,5 +88,9 @@ public class GameBall implements GameElementsInterface{
 //		if(posY > boundaryY){
 //			GamePaddle.play = false;
 //		}
+	}
+	
+	public Rectangle createCollider(int x, int y, int width, int height){
+		return new Rectangle(x, y, width, height);
 	}
 }
