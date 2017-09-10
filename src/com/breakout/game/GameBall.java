@@ -82,7 +82,7 @@ public class GameBall implements GameElementsInterface{
 		if (posX < 0 || posX > boundaryX){						//Changes velocity to negative if boundary in reached
 			velX = -velX;
 		}
-		if (posY < 0){						//TO-DO: Add logic for game-over when ball goes beyond max Y
+		if (posY < GameConstants.BUTTON_BOTTOM_X_VALUE){//0){						//TO-DO: Add logic for game-over when ball goes beyond max Y
 			velY = -velY;
 		}
 //		if(posY > boundaryY){

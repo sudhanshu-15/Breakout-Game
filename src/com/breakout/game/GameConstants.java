@@ -27,8 +27,8 @@ public class GameConstants {
 	//Ball Constants
 	public static int BALL_POS_X = 120; 	//X-coordinate position of ball
 	public static int BALL_POS_Y = 200;	//Y-coordinate position of ball
-	public static int BALL_VEL_X = -1;	//Velocity on X-axis
-	public static int BALL_VEL_Y = -2;	//Velocity on Y-axis
+	public static int BALL_VEL_X = -1;	//Velocity on X-axis -1
+	public static int BALL_VEL_Y = -2;	//Velocity on Y-axis -2
 	public static Color BALL_COLOR = Color.RED;  //Ball Color
 	
 	//Paddle Constants
@@ -42,5 +42,8 @@ public class GameConstants {
 	
 	public static int PADDLE_RIGHT_BOUND = BOARD_WIDTH - 60;
 	public static int PADDLE_LEFT_BOUND = 5;
+	
+	//button Constants
+	public static int BUTTON_BOTTOM_X_VALUE = 31;
 	
 }
