@@ -9,11 +9,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
 import com.breakout.command.BallCommand;
@@ -28,7 +32,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private GameBall ball;
 	private GamePaddle paddle;
 	private GameTime timeDisplay;
-	private int delay = 5;
+	private int delay = 30;
 	private Timer timer;
 	private JButton startButton;
 	private JButton pauseButton;
@@ -39,6 +43,12 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private List<BrickCommand> brickcmdList;
 	private List<PaddleCommand> paddlecmdList;
 	private List<GameBrick> brickList;
+	private int undoCount;
+	private static Iterator<BallCommand> replayBallIterator;
+	private static Iterator<BrickCommand> replayBrickIterator;
+	private static Iterator<PaddleCommand> replayPaddleIterator;
+	private static Iterator<TimerCommand> replayTimerIterator;
+	
 	
 	private int runningTime;
 	private static PaddleCommand paddleMoveKey;
@@ -57,80 +67,41 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		this.setFocusTraversalKeysEnabled(false);
 		this.timer = new Timer(delay, this);
 		runningTime = 0;
-//		this.timer.start();
 		ballcmdList = new ArrayList<BallCommand>();
 		timercmdList = new ArrayList<TimerCommand>();
 		brickcmdList = new ArrayList<BrickCommand>();
 		paddlecmdList = new ArrayList<PaddleCommand>();
 		brickList = new ArrayList<GameBrick>();
 		this.spawnBricks();
+		this.keyPress = false;
+		ActionClass actionEvent = new ActionClass();
 		startButton = new JButton("START");
 		startButton.setFocusable(false);
-		this.keyPress = false;
-		startButton.addActionListener(new ActionListener(){
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				System.out.println("startButton Pressed: "+paddle.play);
-				paddle.play = !paddle.play;
-				if (paddle.play && startButton.getText().equals("START")) {
-					startButton.setText("RESTART");
-					timer.start();
-					pauseButton.setEnabled(true);
-				}
-				
-				else {
-					pauseButton.setEnabled(false);
-					pauseButton.setText("PAUSE");
-					startButton.setText("START");
-					paddle.play = false;
-					timer.stop();
-					ball.setPosX(GameConstants.BALL_POS_X);
-					ball.setPosY(GameConstants.BALL_POS_Y);
-					ball.setVelX(GameConstants.BALL_VEL_X);
-					ball.setVelY(GameConstants.BALL_VEL_Y);
-					paddle.setPosX(GameConstants.PADDLE_POS_X);
-					//brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
-					GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
-					runningTime = 0;
-					timeDisplay.updateText(runningTime);
-					timeDisplay.setTime(runningTime);
-					repaint();
-				}
-			}
-			
-		});
+		startButton.addActionListener(actionEvent);
+		startButton.setActionCommand("Start");
 		this.add(startButton);
 		pauseButton = new JButton("PAUSE");
 		pauseButton.setFocusable(false);
 		pauseButton.setEnabled(false);
-		pauseButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				paddle.play = !paddle.play;
-				if (!paddle.play) {
-					timer.stop();
-					pauseButton.setText("UNPAUSE");
-				}
-				else {
-					timer.start();
-					pauseButton.setText("PAUSE");
-				}
-			}
-			
-		});
+		pauseButton.addActionListener(actionEvent);
+		pauseButton.setActionCommand("Pause");
 		this.add(pauseButton);
 		undoButton = new JButton("UNDO");
+		undoButton.setFocusable(false);
+		undoButton.setEnabled(false);
+		undoButton.addActionListener(actionEvent);
+		undoButton.setActionCommand("Undo");
 		this.add(undoButton);
 		replayButton = new JButton("REPLAY");
+		replayButton.setFocusable(false);
+		replayButton.setEnabled(false);
+		replayButton.addActionListener(actionEvent);
+		replayButton.setActionCommand("Replay");
 		this.add(replayButton);
+		undoCount = 1;
 	}
 	
 	public void paint(Graphics g){
-//		timer.start();
 		super.paint(g);	
 		this.add(timeDisplay);
 		ball.draw(g);
@@ -213,9 +184,6 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			timerCmd.execute();
 			timercmdList.add(timerCmd);
 			
-//			ball.setPosX(ball.getPosX()+ball.getVelX());
-//			ball.setPosY(ball.getPosY()+ ball.getVelY());
-			
 			Rectangle ballCollider = ball.createCollider(ball.getPosX(), ball.getPosY(), 20, 20);
 			Rectangle paddleCollider = paddle.createCollider(paddle.getPosX(), paddle.getPosY(), paddle.getWidth(), paddle.getHeight());
 			
@@ -291,5 +259,154 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 				brickList.add(new GameBrick(x * GameConstants.BRICK_WIDTH, y * GameConstants.BRICK_HEIGHT));
 			}
 		}
+	}
+	
+	private class ActionClass implements ActionListener{
+		
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			String action = e.getActionCommand();
+			
+			switch(action){
+			case "Start":
+				System.out.println("Start");
+				startPress();
+				break;
+			case "Pause":
+				System.out.println("Pause");
+				pausePress();
+				break;
+			case "Undo":
+				System.out.println("Undo");
+				undoPress();
+				break;
+			case "Replay":
+				System.out.println("Replay");
+				replayPress();
+				break;
+			}
+			
+		}
+		
+		private void startPress(){
+			System.out.println("Start pressed");
+			paddle.play = !paddle.play;
+			if (paddle.play && startButton.getText().equals("START")) {
+				startButton.setText("RESTART");
+				timer.start();
+				pauseButton.setEnabled(true);
+			}else{
+				System.out.println("Reset pressed");
+				pauseButton.setEnabled(false);
+				pauseButton.setText("PAUSE");
+				startButton.setText("START");
+				paddle.play = false;
+				resetPress();
+			}
+			
+		}
+
+		private void resetPress(){
+			timer.stop();
+			ball.setPosX(GameConstants.BALL_POS_X);
+			ball.setPosY(GameConstants.BALL_POS_Y);
+			ball.setVelX(GameConstants.BALL_VEL_X);
+			ball.setVelY(GameConstants.BALL_VEL_Y);
+			paddle.setPosX(GameConstants.PADDLE_POS_X);
+			runningTime = 0;
+			timeDisplay.updateText(runningTime);
+			timeDisplay.setTime(runningTime);
+			for(GameBrick brick : brickList){
+				brick.setDead(false);
+			}
+			repaint();
+		}
+		
+		private void pausePress(){
+			paddle.play = !paddle.play;
+			if (!paddle.play) {
+				timer.stop();
+				pauseButton.setText("UNPAUSE");
+				undoButton.setEnabled(true);
+				replayButton.setEnabled(true);
+			}else{
+				timer.start();
+				pauseButton.setText("PAUSE");
+				undoButton.setEnabled(false);
+				replayButton.setEnabled(false);
+			}
+		}
+		
+		private void undoPress(){
+			System.out.println(ballcmdList.size());
+			System.out.println(brickcmdList.size());
+			System.out.println(paddlecmdList.size());
+			System.out.println(timercmdList.size());
+			int position = ballcmdList.size() - undoCount;
+			if (position >= 0){
+				BallCommand undoBall = ballcmdList.get(position);
+				BrickCommand undoBrick = brickcmdList.get(position);
+				PaddleCommand undoPaddle = paddlecmdList.get(position);
+				TimerCommand undoTimer = timercmdList.get(position);
+				undoBall.undo();
+				undoBrick.undo();
+				undoPaddle.undo();
+				undoTimer.undo();
+				undoCount += 1;
+			}else{
+				undoButton.setEnabled(false);
+			}
+		}
+		
+		private void replayPress(){
+			replayBallIterator = ballcmdList.iterator();
+			replayBrickIterator = brickcmdList.iterator();
+			replayPaddleIterator = paddlecmdList.iterator();
+			replayTimerIterator = timercmdList.iterator();
+			resetPress();
+			System.out.println("Replay Pressed");
+			new Thread(){
+				public void run(){
+					while(replayBallIterator.hasNext() && replayBrickIterator.hasNext() && replayPaddleIterator.hasNext() && replayTimerIterator.hasNext()){
+						BallCommand replayBall = replayBallIterator.next();
+						BrickCommand replayBrick = replayBrickIterator.next();
+						PaddleCommand replayPaddle = replayPaddleIterator.next();
+						TimerCommand replayTimer = replayTimerIterator.next();
+						
+						replayBall.undo();
+						replayBrick.execute();
+						replayPaddle.undo();
+						replayTimer.undo();
+						try {
+							SwingUtilities.invokeAndWait(new Runnable(){
+
+								@Override
+								public void run() {
+									// TODO Auto-generated method stub
+									repaint();
+									try {
+										java.lang.Thread.sleep(30, 0);
+									} catch (InterruptedException e) {
+										// TODO Auto-generated catch block
+										e.printStackTrace();
+									}
+								}
+								
+							});
+						} catch (InvocationTargetException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+			}.start();
+			
+		}
+		
 	}
 }
