@@ -22,17 +22,12 @@ public class GamePlay {
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				new GamePlay();
-				
-				
-			}
-			
-		});
-		
+				new GamePlay();	
+			}			
+		});		
 	}
 	
 	public GamePlay() {
-		
 		//Create JFrame and initialize GameBoard object and add it to the Frame
 		JFrame gameFrame = new JFrame();
 		gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,5 +48,4 @@ public class GamePlay {
 		gameFrame.add(board);
 		gameFrame.setVisible(true);		
 	}
-
 }
