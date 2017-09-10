@@ -12,6 +12,7 @@ import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
@@ -176,28 +177,16 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	@Override
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
+		if (paddle.play) {
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT){
 			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
 		}
 		if(e.getKeyCode() == KeyEvent.VK_LEFT){
 			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
 		}	
-		if(e.getKeyCode() == KeyEvent.VK_ENTER){
-			if(!paddle.play){
-				paddle.play = true;
-				ball.setPosX(GameConstants.BALL_POS_X);
-				ball.setPosY(GameConstants.BALL_POS_Y);
-				ball.setVelX(GameConstants.BALL_VEL_X);
-				ball.setVelY(GameConstants.BALL_VEL_Y);
-				paddle.setPosX(GameConstants.PADDLE_POS_X);
-				brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
-				GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
-				//repaint();
-			}
-		}
 		repaint();
 	}
-	
+}	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 //		timer.start();
