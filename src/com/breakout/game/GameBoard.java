@@ -28,6 +28,10 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private GameTime timeDisplay;
 	private int delay = 5;
 	private Timer timer;
+	private JButton startButton;
+	private JButton pauseButton;
+	private JButton undoButton;
+	private JButton replayButton;
 	private List<BallCommand> ballcmdList;
 	private List<TimerCommand> timercmdList;
 	private List<GameBrick> brickList;
@@ -52,6 +56,67 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		timercmdList = new ArrayList<TimerCommand>();
 		brickList = new ArrayList<GameBrick>();
 		this.spawnBricks();
+		startButton = new JButton("START");
+		startButton.setFocusable(false);
+		startButton.addActionListener(new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("startButton Pressed: "+paddle.play);
+				paddle.play = !paddle.play;
+				if (paddle.play && startButton.getText().equals("START")) {
+					startButton.setText("RESTART");
+					timer.start();
+					pauseButton.setEnabled(true);
+				}
+				
+				else {
+					pauseButton.setEnabled(false);
+					pauseButton.setText("PAUSE");
+					startButton.setText("START");
+					paddle.play = false;
+					timer.stop();
+					ball.setPosX(GameConstants.BALL_POS_X);
+					ball.setPosY(GameConstants.BALL_POS_Y);
+					ball.setVelX(GameConstants.BALL_VEL_X);
+					ball.setVelY(GameConstants.BALL_VEL_Y);
+					paddle.setPosX(GameConstants.PADDLE_POS_X);
+					//brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
+					GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
+					runningTime = 0;
+					timeDisplay.updateText(runningTime);
+					repaint();
+				}
+			}
+			
+		});
+		this.add(startButton);
+		pauseButton = new JButton("PAUSE");
+		pauseButton.setFocusable(false);
+		pauseButton.setEnabled(false);
+		pauseButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				paddle.play = !paddle.play;
+				if (!paddle.play) {
+					timer.stop();
+					pauseButton.setText("UNPAUSE");
+				}
+				else {
+					timer.start();
+					pauseButton.setText("PAUSE");
+				}
+			}
+			
+		});
+		this.add(pauseButton);
+		undoButton = new JButton("UNDO");
+		this.add(undoButton);
+		replayButton = new JButton("REPLAY");
+		this.add(replayButton);
 	}
 	
 	public void paint(Graphics g){
