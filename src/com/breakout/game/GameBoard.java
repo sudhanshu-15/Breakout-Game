@@ -312,6 +312,10 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 				pauseButton.setText("PAUSE");
 				startButton.setText("START");
 				paddle.play = false;
+				ballcmdList = new ArrayList<BallCommand>();
+				timercmdList = new ArrayList<TimerCommand>();
+				brickcmdList = new ArrayList<BrickCommand>();
+				paddlecmdList = new ArrayList<PaddleCommand>();
 				resetPress();
 			}
 			
@@ -374,11 +378,11 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 		
 		private void replayPress(){
+			resetPress();
 			replayBallIterator = ballcmdList.iterator();
 			replayBrickIterator = brickcmdList.iterator();
 			replayPaddleIterator = paddlecmdList.iterator();
 			replayTimerIterator = timercmdList.iterator();
-			resetPress();
 			log.info("Replay Pressed");
 			//System.out.println("Replay Pressed");
 			new Thread(){
