@@ -87,6 +87,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 					GameConstants.TOTAL_BRICKS = GameConstants.BRICK_ROW * GameConstants.BRICK_COLUMN;
 					runningTime = 0;
 					timeDisplay.updateText(runningTime);
+					timeDisplay.setTime(runningTime);
 					repaint();
 				}
 			}
