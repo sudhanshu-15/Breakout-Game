@@ -1,0 +1,1435 @@
+2017-09-10 13:45:33,895 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:33,909 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:33,910 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 0
+2017-09-10 13:45:33,931 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:33,931 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:33,931 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 10
+2017-09-10 13:45:33,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:33,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:33,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 20
+2017-09-10 13:45:34,005 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,006 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,007 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 30
+2017-09-10 13:45:34,047 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,047 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,047 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 40
+2017-09-10 13:45:34,078 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,078 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,078 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 50
+2017-09-10 13:45:34,110 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,110 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,111 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 60
+2017-09-10 13:45:34,154 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,154 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,154 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 70
+2017-09-10 13:45:34,185 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,185 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,185 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 80
+2017-09-10 13:45:34,231 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,231 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,231 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 90
+2017-09-10 13:45:34,262 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,262 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,262 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 100
+2017-09-10 13:45:34,293 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,293 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,293 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 110
+2017-09-10 13:45:34,331 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,331 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,331 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 120
+2017-09-10 13:45:34,362 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,362 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,362 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 130
+2017-09-10 13:45:34,393 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,393 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,393 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 140
+2017-09-10 13:45:34,431 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,431 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,431 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 150
+2017-09-10 13:45:34,462 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,462 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,462 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 160
+2017-09-10 13:45:34,493 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,493 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,493 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 170
+2017-09-10 13:45:34,528 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,528 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,528 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 180
+2017-09-10 13:45:34,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 190
+2017-09-10 13:45:34,595 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,595 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,595 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 200
+2017-09-10 13:45:34,628 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,628 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,628 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 210
+2017-09-10 13:45:34,665 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,665 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,665 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 220
+2017-09-10 13:45:34,696 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,696 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,696 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 230
+2017-09-10 13:45:34,731 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,731 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,731 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 240
+2017-09-10 13:45:34,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 250
+2017-09-10 13:45:34,794 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,794 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,794 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 260
+2017-09-10 13:45:34,832 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,832 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,832 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 270
+2017-09-10 13:45:34,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 280
+2017-09-10 13:45:34,894 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,894 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,894 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 290
+2017-09-10 13:45:34,932 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,932 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,932 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 300
+2017-09-10 13:45:34,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 310
+2017-09-10 13:45:34,994 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:34,994 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:34,994 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 320
+2017-09-10 13:45:35,032 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,032 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,033 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 330
+2017-09-10 13:45:35,071 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,071 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,071 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 340
+2017-09-10 13:45:35,102 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,103 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,104 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 350
+2017-09-10 13:45:35,137 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,137 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,137 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 360
+2017-09-10 13:45:35,181 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,181 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,181 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 370
+2017-09-10 13:45:35,231 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,231 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,231 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 380
+2017-09-10 13:45:35,263 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,263 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,263 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 390
+2017-09-10 13:45:35,294 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,294 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,294 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 400
+2017-09-10 13:45:35,332 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,332 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,332 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 410
+2017-09-10 13:45:35,363 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,363 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,363 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 420
+2017-09-10 13:45:35,394 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,394 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,394 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 430
+2017-09-10 13:45:35,432 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,432 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,432 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 440
+2017-09-10 13:45:35,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 450
+2017-09-10 13:45:35,494 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,494 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,494 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 460
+2017-09-10 13:45:35,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 470
+2017-09-10 13:45:35,567 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,567 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,567 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 480
+2017-09-10 13:45:35,598 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,598 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,598 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 490
+2017-09-10 13:45:35,635 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,635 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,635 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 500
+2017-09-10 13:45:35,666 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,666 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,666 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 510
+2017-09-10 13:45:35,697 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,697 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,697 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 520
+2017-09-10 13:45:35,735 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,735 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,735 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 530
+2017-09-10 13:45:35,766 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,766 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,766 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 540
+2017-09-10 13:45:35,810 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,811 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,811 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 550
+2017-09-10 13:45:35,850 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,850 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,850 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 560
+2017-09-10 13:45:35,882 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,882 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,882 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 570
+2017-09-10 13:45:35,913 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,914 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,914 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 580
+2017-09-10 13:45:35,951 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,951 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,951 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 590
+2017-09-10 13:45:35,982 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:35,982 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:35,982 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 600
+2017-09-10 13:45:36,014 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,014 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,015 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 610
+2017-09-10 13:45:36,051 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,051 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,051 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 620
+2017-09-10 13:45:36,082 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,082 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,082 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 630
+2017-09-10 13:45:36,114 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,115 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,115 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 640
+2017-09-10 13:45:36,151 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,151 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,151 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 650
+2017-09-10 13:45:36,182 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,182 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,182 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 660
+2017-09-10 13:45:36,219 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,219 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,219 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 670
+2017-09-10 13:45:36,251 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,251 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,251 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 680
+2017-09-10 13:45:36,282 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,282 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,282 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 690
+2017-09-10 13:45:36,314 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,314 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,315 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 700
+2017-09-10 13:45:36,350 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,350 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,350 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 710
+2017-09-10 13:45:36,382 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,382 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,382 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 720
+2017-09-10 13:45:36,413 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,414 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,414 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 730
+2017-09-10 13:45:36,450 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,450 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,450 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 740
+2017-09-10 13:45:36,482 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,482 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,482 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 750
+2017-09-10 13:45:36,513 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,514 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,515 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 760
+2017-09-10 13:45:36,557 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,557 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,557 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 770
+2017-09-10 13:45:36,588 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,588 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,588 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 780
+2017-09-10 13:45:36,635 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,635 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,635 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 790
+2017-09-10 13:45:36,666 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,666 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,666 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 800
+2017-09-10 13:45:36,697 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,697 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,697 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 810
+2017-09-10 13:45:36,734 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,734 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,734 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 820
+2017-09-10 13:45:36,765 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,765 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,765 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 830
+2017-09-10 13:45:36,797 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,797 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,797 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 840
+2017-09-10 13:45:36,834 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,834 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,834 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 850
+2017-09-10 13:45:36,866 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,866 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,866 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 860
+2017-09-10 13:45:36,897 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,897 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,897 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 870
+2017-09-10 13:45:36,934 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,934 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,934 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 880
+2017-09-10 13:45:36,965 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,965 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,965 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 890
+2017-09-10 13:45:36,997 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:36,997 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:36,997 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 900
+2017-09-10 13:45:37,034 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,034 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,034 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 910
+2017-09-10 13:45:37,065 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,065 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,065 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 920
+2017-09-10 13:45:37,097 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,097 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,097 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 930
+2017-09-10 13:45:37,134 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,134 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,134 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 940
+2017-09-10 13:45:37,165 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,165 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,165 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 950
+2017-09-10 13:45:37,197 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,197 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,197 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 960
+2017-09-10 13:45:37,234 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,234 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,234 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 970
+2017-09-10 13:45:37,265 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,265 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,265 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 980
+2017-09-10 13:45:37,297 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,297 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,297 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 990
+2017-09-10 13:45:37,339 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,339 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:00
+2017-09-10 13:45:37,339 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1000
+2017-09-10 13:45:37,370 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,370 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,370 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1010
+2017-09-10 13:45:37,401 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,401 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,401 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1020
+2017-09-10 13:45:37,443 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,443 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,443 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1030
+2017-09-10 13:45:37,474 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,474 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,474 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1040
+2017-09-10 13:45:37,505 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,505 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,505 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1050
+2017-09-10 13:45:37,536 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,536 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,536 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1060
+2017-09-10 13:45:37,574 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,574 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,574 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1070
+2017-09-10 13:45:37,605 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,605 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,605 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1080
+2017-09-10 13:45:37,644 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,644 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,644 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1090
+2017-09-10 13:45:37,677 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,677 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,677 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1100
+2017-09-10 13:45:37,717 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,718 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,718 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1110
+2017-09-10 13:45:37,760 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,760 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,760 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1120
+2017-09-10 13:45:37,791 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,791 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,791 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1130
+2017-09-10 13:45:37,823 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,824 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,824 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1140
+2017-09-10 13:45:37,862 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,862 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,862 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1150
+2017-09-10 13:45:37,893 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,893 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,893 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1160
+2017-09-10 13:45:37,925 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,925 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,926 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1170
+2017-09-10 13:45:37,960 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,960 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,960 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1180
+2017-09-10 13:45:37,991 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:37,991 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:37,991 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1190
+2017-09-10 13:45:38,023 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,024 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,024 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1200
+2017-09-10 13:45:38,060 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,060 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,060 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1210
+2017-09-10 13:45:38,092 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,092 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,092 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1220
+2017-09-10 13:45:38,123 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,124 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,124 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1230
+2017-09-10 13:45:38,161 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,161 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,161 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1240
+2017-09-10 13:45:38,192 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,192 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,192 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1250
+2017-09-10 13:45:38,224 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,224 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,225 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1260
+2017-09-10 13:45:38,261 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,261 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,261 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1270
+2017-09-10 13:45:38,292 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,292 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,292 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1280
+2017-09-10 13:45:38,324 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,324 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,325 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1290
+2017-09-10 13:45:38,360 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,360 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,360 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1300
+2017-09-10 13:45:38,392 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,392 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,392 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1310
+2017-09-10 13:45:38,423 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,424 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,424 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1320
+2017-09-10 13:45:38,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1330
+2017-09-10 13:45:38,494 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,494 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,494 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1340
+2017-09-10 13:45:38,526 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,526 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1350
+2017-09-10 13:45:38,568 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,568 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,568 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1360
+2017-09-10 13:45:38,599 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,599 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,599 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1370
+2017-09-10 13:45:38,631 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,632 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,632 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1380
+2017-09-10 13:45:38,663 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,663 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,663 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1390
+2017-09-10 13:45:38,695 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,695 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,695 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1400
+2017-09-10 13:45:38,726 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,727 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,727 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1410
+2017-09-10 13:45:38,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1420
+2017-09-10 13:45:38,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1430
+2017-09-10 13:45:38,826 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,827 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,827 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1440
+2017-09-10 13:45:38,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1450
+2017-09-10 13:45:38,894 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,894 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,894 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1460
+2017-09-10 13:45:38,926 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,927 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,927 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1470
+2017-09-10 13:45:38,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,963 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1480
+2017-09-10 13:45:38,994 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:38,994 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:38,994 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1490
+2017-09-10 13:45:39,025 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,026 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,027 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1500
+2017-09-10 13:45:39,063 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,063 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,063 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1510
+2017-09-10 13:45:39,094 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,094 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,094 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1520
+2017-09-10 13:45:39,126 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,127 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,127 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1530
+2017-09-10 13:45:39,163 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,163 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,163 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1540
+2017-09-10 13:45:39,194 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,194 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,194 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1550
+2017-09-10 13:45:39,226 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,227 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,227 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1560
+2017-09-10 13:45:39,263 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,263 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,263 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1570
+2017-09-10 13:45:39,295 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,295 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,295 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1580
+2017-09-10 13:45:39,326 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,327 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,327 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1590
+2017-09-10 13:45:39,363 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,363 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,363 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1600
+2017-09-10 13:45:39,394 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,394 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,394 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1610
+2017-09-10 13:45:39,426 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,427 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,427 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1620
+2017-09-10 13:45:39,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,463 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1630
+2017-09-10 13:45:39,495 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,495 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,495 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1640
+2017-09-10 13:45:39,526 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1650
+2017-09-10 13:45:39,563 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,563 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,563 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1660
+2017-09-10 13:45:39,594 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,594 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,594 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1670
+2017-09-10 13:45:39,626 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,627 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,627 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1680
+2017-09-10 13:45:39,663 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,663 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,663 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1690
+2017-09-10 13:45:39,694 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,694 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,694 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1700
+2017-09-10 13:45:39,726 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,727 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,727 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1710
+2017-09-10 13:45:39,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,763 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1720
+2017-09-10 13:45:39,794 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,794 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,794 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1730
+2017-09-10 13:45:39,826 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,827 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,827 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1740
+2017-09-10 13:45:39,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,863 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1750
+2017-09-10 13:45:39,895 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,895 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,895 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1760
+2017-09-10 13:45:39,926 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,927 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,927 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1770
+2017-09-10 13:45:39,964 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,964 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,964 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1780
+2017-09-10 13:45:39,995 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:39,995 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:39,995 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1790
+2017-09-10 13:45:40,027 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,028 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,028 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1800
+2017-09-10 13:45:40,070 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,070 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,070 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1810
+2017-09-10 13:45:40,102 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,102 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,102 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1820
+2017-09-10 13:45:40,132 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,132 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,132 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1830
+2017-09-10 13:45:40,164 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,164 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,164 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1840
+2017-09-10 13:45:40,198 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,198 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,198 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1850
+2017-09-10 13:45:40,248 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,248 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,248 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1860
+2017-09-10 13:45:40,280 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,280 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,280 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1870
+2017-09-10 13:45:40,311 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,311 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,311 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1880
+2017-09-10 13:45:40,348 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,348 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,348 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1890
+2017-09-10 13:45:40,379 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,380 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,380 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1900
+2017-09-10 13:45:40,425 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,425 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,426 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1910
+2017-09-10 13:45:40,464 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,464 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,464 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1920
+2017-09-10 13:45:40,495 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,495 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,495 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1930
+2017-09-10 13:45:40,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,528 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,528 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1940
+2017-09-10 13:45:40,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1950
+2017-09-10 13:45:40,596 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,596 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,596 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1960
+2017-09-10 13:45:40,628 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,628 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,629 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1970
+2017-09-10 13:45:40,664 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,664 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,664 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1980
+2017-09-10 13:45:40,696 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,696 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,696 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 1990
+2017-09-10 13:45:40,727 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,728 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:01
+2017-09-10 13:45:40,728 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2000
+2017-09-10 13:45:40,764 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,764 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:40,764 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2010
+2017-09-10 13:45:40,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:40,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2020
+2017-09-10 13:45:40,827 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,828 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:40,828 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2030
+2017-09-10 13:45:40,864 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,864 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:40,864 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2040
+2017-09-10 13:45:40,896 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,896 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:40,896 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2050
+2017-09-10 13:45:40,930 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,930 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:40,931 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2060
+2017-09-10 13:45:40,965 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,965 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:40,965 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2070
+2017-09-10 13:45:40,996 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:40,996 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:40,996 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2080
+2017-09-10 13:45:41,028 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,028 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,029 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2090
+2017-09-10 13:45:41,065 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,065 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,065 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2100
+2017-09-10 13:45:41,096 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,096 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,096 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2110
+2017-09-10 13:45:41,130 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,130 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,130 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2120
+2017-09-10 13:45:41,162 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,162 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,162 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2130
+2017-09-10 13:45:41,208 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,208 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,208 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2140
+2017-09-10 13:45:41,249 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,249 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,249 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2150
+2017-09-10 13:45:41,281 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,281 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,281 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2160
+2017-09-10 13:45:41,328 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,329 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,329 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2170
+2017-09-10 13:45:41,365 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,365 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,365 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2180
+2017-09-10 13:45:41,396 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,396 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,396 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2190
+2017-09-10 13:45:41,427 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,428 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,429 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2200
+2017-09-10 13:45:41,464 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,464 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,464 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2210
+2017-09-10 13:45:41,496 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:41,496 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:41,496 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2220
+2017-09-10 13:45:45,185 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,185 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,185 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2230
+2017-09-10 13:45:45,216 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,216 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,216 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2240
+2017-09-10 13:45:45,262 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,262 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,262 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2250
+2017-09-10 13:45:45,294 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,294 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,294 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2260
+2017-09-10 13:45:45,325 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,325 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,325 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2270
+2017-09-10 13:45:45,364 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,364 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,364 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2280
+2017-09-10 13:45:45,395 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,395 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,395 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2290
+2017-09-10 13:45:45,426 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,426 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,426 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2300
+2017-09-10 13:45:45,465 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,465 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,465 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2310
+2017-09-10 13:45:45,496 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,496 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,496 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2320
+2017-09-10 13:45:45,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,527 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2330
+2017-09-10 13:45:45,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,564 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2340
+2017-09-10 13:45:45,596 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,596 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,596 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2350
+2017-09-10 13:45:45,627 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,627 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,627 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2360
+2017-09-10 13:45:45,664 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,664 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,664 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2370
+2017-09-10 13:45:45,695 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,695 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,695 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2380
+2017-09-10 13:45:45,726 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,726 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,726 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2390
+2017-09-10 13:45:45,764 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,764 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,764 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2400
+2017-09-10 13:45:45,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,795 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2410
+2017-09-10 13:45:45,827 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 21 - in time execute
+2017-09-10 13:45:45,827 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 24 - 00:02
+2017-09-10 13:45:45,827 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 27 - 2420
+2017-09-10 14:19:05,519  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 276 - Start
+2017-09-10 14:19:05,535  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.startPress 300 - Start pressed
+2017-09-10 14:19:05,557 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:00
+2017-09-10 14:19:07,894  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 281 - Pause
+2017-09-10 14:19:09,227  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 286 - Undo
+2017-09-10 14:19:09,227  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 351 - 71
+2017-09-10 14:19:09,227  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 353 - 71
+2017-09-10 14:19:09,227  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 355 - 71
+2017-09-10 14:19:09,227  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 357 - 71
+2017-09-10 14:19:09,227 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:09,865  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 286 - Undo
+2017-09-10 14:19:09,865  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 351 - 71
+2017-09-10 14:19:09,865  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 353 - 71
+2017-09-10 14:19:09,865  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 355 - 71
+2017-09-10 14:19:09,865  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 357 - 71
+2017-09-10 14:19:09,865 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:09,881  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 286 - Undo
+2017-09-10 14:19:09,881  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 351 - 71
+2017-09-10 14:19:09,881  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 353 - 71
+2017-09-10 14:19:09,881  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 355 - 71
+2017-09-10 14:19:09,881  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 357 - 71
+2017-09-10 14:19:09,881 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:10,228  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 286 - Undo
+2017-09-10 14:19:10,228  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 351 - 71
+2017-09-10 14:19:10,228  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 353 - 71
+2017-09-10 14:19:10,228  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 355 - 71
+2017-09-10 14:19:10,228  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 357 - 71
+2017-09-10 14:19:10,228 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:10,228  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 286 - Undo
+2017-09-10 14:19:10,244  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 351 - 71
+2017-09-10 14:19:10,244  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 353 - 71
+2017-09-10 14:19:10,244  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 355 - 71
+2017-09-10 14:19:10,244  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 357 - 71
+2017-09-10 14:19:10,244 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:10,628  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 286 - Undo
+2017-09-10 14:19:10,628  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 351 - 71
+2017-09-10 14:19:10,628  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 353 - 71
+2017-09-10 14:19:10,628  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 355 - 71
+2017-09-10 14:19:10,628  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.undoPress 357 - 71
+2017-09-10 14:19:10,628 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,429  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 291 - Replay
+2017-09-10 14:19:12,429  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.replayPress 381 - Replay Pressed
+2017-09-10 14:19:12,439 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,482 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,513 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,545 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,589 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,621 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,652 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,690 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,730 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,762 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,805 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,837 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,868 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,905 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,937 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:12,968 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,006 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,037 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,068 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,106 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,137 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,168 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,206 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,253 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,291 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,322 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,353 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,391 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,422 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,454 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,491 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,522 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,556 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,607 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,638 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,669 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,707 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,754 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,794 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,825 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,856 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,892 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,923 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,955 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:13,993 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,024 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,055 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,092 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,123 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,155 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,195 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,226 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,258 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,294 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,325 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,356 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,394 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,425 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,456 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,495 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,527 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,560 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,596 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,627 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,658 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,696 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,727 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,759 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,796 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,827 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 14:19:14,858 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:01:46,928  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 276 - Start
+2017-09-10 15:01:46,944  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.startPress 300 - Start pressed
+2017-09-10 15:01:46,966 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:00
+2017-09-10 15:01:50,343 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:01
+2017-09-10 15:01:53,720 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:02
+2017-09-10 15:01:57,077 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:03
+2017-09-10 15:02:00,438 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:04
+2017-09-10 15:02:03,779 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:05
+2017-09-10 15:02:06,121  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 281 - Pause
+2017-09-10 15:02:07,994  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 291 - Replay
+2017-09-10 15:02:07,994  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.replayPress 381 - Replay Pressed
+2017-09-10 15:02:07,994 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,048 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,090 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,121 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,163 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,194 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,226 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,263 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,295 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,326 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,363 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,395 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,426 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,464 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,495 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,526 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,568 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,600 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,631 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,664 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,695 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,726 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,764 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,795 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,826 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,864 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,895 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,926 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,964 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:08,995 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,026 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,064 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,095 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,126 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,164 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,195 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,226 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,264 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,295 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,326 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,364 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,395 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,426 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,464 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,495 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,526 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,564 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,595 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,627 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,664 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,695 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,726 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,764 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,795 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,826 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,864 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,895 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,926 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,964 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:09,995 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,027 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,065 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,096 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,127 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,164 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,195 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,227 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,264 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,296 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,327 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,362 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,409 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,449 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,480 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,511 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,549 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,583 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,614 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,649 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,680 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,712 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,749 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,780 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,811 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,849 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,880 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,912 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,949 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:10,980 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,011 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,049 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,080 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,112 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,149 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,180 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,211 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,249 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,280 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,311 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,349 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,380 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:00
+2017-09-10 15:02:11,413 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,465 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,496 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,527 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,571 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,602 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,633 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,665 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,697 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,728 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,765 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,797 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,828 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,865 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,896 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,928 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,965 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:11,996 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,027 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,065 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,106 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,149 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,181 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,212 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,250 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,281 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,312 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,350 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,381 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,412 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,450 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,481 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,512 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,547 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,591 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,622 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,666 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,697 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,728 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,766 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,797 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,828 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,866 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,897 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,928 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,966 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:12,997 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,028 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,077 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,108 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,150 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,182 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,213 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,251 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,282 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,313 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,351 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,383 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,414 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,451 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,483 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,514 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,547 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,579 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,611 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,652 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,683 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,714 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,752 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,783 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,814 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,852 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,883 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,914 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,952 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:13,983 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,014 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,052 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,083 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,114 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,152 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,183 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,214 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,252 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,283 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,315 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,352 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,383 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,415 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,452 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,483 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,515 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,552 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,584 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,615 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,657 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,688 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,719 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,757 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,788 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:01
+2017-09-10 15:02:14,820 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:14,857 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:14,901 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:14,932 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:14,973 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,004 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,036 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,074 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,105 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,136 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,174 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,205 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,237 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,274 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,306 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,337 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,374 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,405 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,436 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,474 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,505 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,537 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,573 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,609 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,640 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,675 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,706 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,737 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,775 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,806 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,837 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,875 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,906 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,937 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:15,975 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,006 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,037 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,075 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,117 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,159 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,190 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,222 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,255 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,299 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,330 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,364 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,395 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,426 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,464 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,495 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,527 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,557 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,597 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,628 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,664 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,695 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,726 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,764 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,796 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,827 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,865 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,900 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,944 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:16,981 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,012 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,043 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,082 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,118 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,148 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,181 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,225 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,265 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,296 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,327 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,365 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,396 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,428 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,465 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,496 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,530 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,566 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,602 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,633 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,664 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,707 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,739 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,781 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,812 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,843 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,881 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,912 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,943 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:17,981 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:18,012 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:18,043 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:18,087 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:18,119 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:18,150 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:18,182 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:18,213 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:02
+2017-09-10 15:02:18,244 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,282 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,313 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,344 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,382 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,413 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,444 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,482 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,513 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,544 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,588 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,619 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,650 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,683 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,714 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,745 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,783 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,814 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,845 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,883 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,914 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,945 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:18,983 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,014 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,046 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,084 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,115 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,151 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,184 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,216 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,247 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,284 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,315 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,347 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,384 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,416 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,447 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,484 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,515 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,546 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,590 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,621 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,652 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,687 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,718 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,749 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,787 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,818 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,849 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,887 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,918 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,949 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:19,987 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,018 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,050 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,087 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,131 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,172 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,203 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,235 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,272 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,303 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,334 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,372 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,403 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,435 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,477 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,508 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,540 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,573 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,606 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,637 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,678 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,709 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,740 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,778 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,809 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,840 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,878 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,909 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,940 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:20,978 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,009 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,040 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,078 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,109 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,140 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,178 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,210 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,241 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,278 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,309 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,340 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,378 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,409 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,440 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,479 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,510 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,541 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,575 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:03
+2017-09-10 15:02:21,608 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,639 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,679 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,710 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,742 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,779 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,810 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,842 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,879 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,911 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,942 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:21,980 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,011 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,042 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,080 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,111 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,143 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,180 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,211 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,242 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,280 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,311 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,342 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,380 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,411 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,443 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,480 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,512 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,543 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,577 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,609 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,640 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,680 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,711 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,743 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,780 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,812 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,843 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,880 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,912 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,943 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:22,981 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,012 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,043 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,081 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,119 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,151 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,196 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,228 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,259 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,297 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,328 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,359 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,397 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,428 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,459 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,497 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,528 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,559 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,594 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,625 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,656 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,697 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,728 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,760 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,797 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,829 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,860 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,897 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,929 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,960 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:23,998 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,029 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,060 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,098 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,135 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,166 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,198 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,229 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,261 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,291 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,333 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,364 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,399 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,430 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,461 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,498 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,530 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,582 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,614 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,645 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,682 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,714 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,745 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,783 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,814 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,845 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,883 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,914 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,945 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:04
+2017-09-10 15:02:24,983 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,014 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,045 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,083 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,114 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,145 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,183 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,214 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,245 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,283 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,314 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,346 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,383 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,414 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,445 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,483 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,515 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,546 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,580 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,619 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,651 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,683 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,714 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,746 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,783 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,815 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,846 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,884 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,915 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,946 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:25,983 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,015 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,046 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,083 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,115 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,146 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,183 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,215 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,246 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,283 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,315 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,346 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,383 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,414 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,445 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,483 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,514 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,546 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,583 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,614 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,646 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,683 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,714 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,746 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,788 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,819 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,850 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,888 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,919 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,950 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:26,988 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:27,019 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:27,050 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:27,092 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:27,123 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:27,154 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:27,192 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:27,223 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:27,254 DEBUG [Thread-2] - com.breakout.command.TimerCommand.undo 49 - 00:05
+2017-09-10 15:02:30,130  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 281 - Pause
+2017-09-10 15:02:30,177 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:00
+2017-09-10 15:02:33,574 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:01
+2017-09-10 15:02:36,955 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:02
+2017-09-10 15:02:40,309 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:03
+2017-09-10 15:02:43,677 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:04
+2017-09-10 15:02:47,029 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:05
+2017-09-10 15:09:46,495  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 276 - Start
+2017-09-10 15:09:46,510  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.startPress 300 - Start pressed
+2017-09-10 15:09:46,526 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:00
+2017-09-10 15:09:49,881 DEBUG [AWT-EventQueue-0] - com.breakout.command.TimerCommand.execute 40 - 00:01
+2017-09-10 15:09:51,366  INFO [AWT-EventQueue-0] - com.breakout.game.GameBoard.actionPerformed 281 - Pause

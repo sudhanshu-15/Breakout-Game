@@ -24,10 +24,12 @@ import com.breakout.command.BallCommand;
 import com.breakout.command.TimerCommand;
 import com.breakout.command.BrickCommand;
 import com.breakout.command.PaddleCommand;
+import org.apache.log4j.Logger;
 
 public class GameBoard extends JPanel implements ActionListener, KeyListener{
 
 	//public boolean play = false;
+	private static Logger log = Logger.getLogger(GameBoard.class);
 	private GameBrick brick;
 	private GameBall ball;
 	private GamePaddle paddle;
@@ -271,19 +273,23 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			
 			switch(action){
 			case "Start":
-				System.out.println("Start");
+				log.info("Start");
+				//System.out.println("Start");
 				startPress();
 				break;
 			case "Pause":
-				System.out.println("Pause");
+				log.info("Pause");
+				//System.out.println("Pause");
 				pausePress();
 				break;
 			case "Undo":
-				System.out.println("Undo");
+				log.info("Undo");
+				//System.out.println("Undo");
 				undoPress();
 				break;
 			case "Replay":
-				System.out.println("Replay");
+				log.info("Replay");
+				//System.out.println("Replay");
 				replayPress();
 				break;
 			}
@@ -291,14 +297,16 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 		
 		private void startPress(){
-			System.out.println("Start pressed");
+			log.info("Start pressed");
+			//System.out.println("Start pressed");
 			paddle.play = !paddle.play;
 			if (paddle.play && startButton.getText().equals("START")) {
 				startButton.setText("RESTART");
 				timer.start();
 				pauseButton.setEnabled(true);
 			}else{
-				System.out.println("Reset pressed");
+				log.info("Reset presses");
+				//System.out.println("Reset pressed");
 				pauseButton.setEnabled(false);
 				pauseButton.setText("PAUSE");
 				startButton.setText("START");
@@ -340,10 +348,14 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 		
 		private void undoPress(){
-			System.out.println(ballcmdList.size());
-			System.out.println(brickcmdList.size());
-			System.out.println(paddlecmdList.size());
-			System.out.println(timercmdList.size());
+			log.info(ballcmdList.size());
+			//System.out.println(ballcmdList.size());
+			log.info(brickcmdList.size());
+			//System.out.println(brickcmdList.size());
+			log.info(paddlecmdList.size());
+			//System.out.println(paddlecmdList.size());
+			log.info(timercmdList.size());
+			//System.out.println(timercmdList.size());
 			int position = ballcmdList.size() - undoCount;
 			if (position >= 0){
 				BallCommand undoBall = ballcmdList.get(position);
@@ -366,7 +378,8 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			replayPaddleIterator = paddlecmdList.iterator();
 			replayTimerIterator = timercmdList.iterator();
 			resetPress();
-			System.out.println("Replay Pressed");
+			log.info("Replay Pressed");
+			//System.out.println("Replay Pressed");
 			new Thread(){
 				public void run(){
 					while(replayBallIterator.hasNext() && replayBrickIterator.hasNext() && replayPaddleIterator.hasNext() && replayTimerIterator.hasNext()){
