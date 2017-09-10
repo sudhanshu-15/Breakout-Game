@@ -29,7 +29,10 @@ import org.apache.log4j.Logger;
 public class GameBoard extends JPanel implements ActionListener, KeyListener{
 
 	//public boolean play = false;
-	private static Logger log = Logger.getLogger(GameBoard.class);
+	private static Logger startlog = Logger.getLogger("startLogger");
+	private static Logger pauselog = Logger.getLogger("pauseLogger");
+	private static Logger undolog = Logger.getLogger("undoLogger");
+	private static Logger replaylog = Logger.getLogger("replayLogger");
 	private GameBrick brick;
 	private GameBall ball;
 	private GamePaddle paddle;
@@ -274,23 +277,19 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			
 			switch(action){
 			case "Start":
-				log.info("Start");
-				//System.out.println("Start");
+				startlog.info("Start");
 				startPress();
 				break;
 			case "Pause":
-				log.info("Pause");
-				//System.out.println("Pause");
+				pauselog.info("Pause");
 				pausePress();
 				break;
 			case "Undo":
-				log.info("Undo");
-				//System.out.println("Undo");
+				undolog.info("Undo");
 				undoPress();
 				break;
 			case "Replay":
-				log.info("Replay");
-				//System.out.println("Replay");
+				replaylog.info("Replay");
 				replayPress();
 				break;
 			}
@@ -298,16 +297,14 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 		
 		private void startPress(){
-			log.info("Start pressed");
-			//System.out.println("Start pressed");
+			startlog.info("Start pressed");
 			paddle.play = !paddle.play;
 			if (paddle.play && startButton.getText().equals("START")) {
 				startButton.setText("RESTART");
 				timer.start();
 				pauseButton.setEnabled(true);
 			}else{
-				log.info("Reset presses");
-				//System.out.println("Reset pressed");
+				startlog.info("Reset presses");
 				pauseButton.setEnabled(false);
 				pauseButton.setText("PAUSE");
 				startButton.setText("START");
@@ -353,14 +350,14 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 		
 		private void undoPress(){
-			log.info(ballcmdList.size());
-			//System.out.println(ballcmdList.size());
-			log.info(brickcmdList.size());
-			//System.out.println(brickcmdList.size());
-			log.info(paddlecmdList.size());
-			//System.out.println(paddlecmdList.size());
-			log.info(timercmdList.size());
-			//System.out.println(timercmdList.size());
+			undolog.info(ballcmdList.size());
+			
+			undolog.info(brickcmdList.size());
+			
+			undolog.info(paddlecmdList.size());
+			
+			undolog.info(timercmdList.size());
+			
 			int position = ballcmdList.size() - undoCount;
 			if (position >= 0){
 				BallCommand undoBall = ballcmdList.get(position);
@@ -383,8 +380,7 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			replayBrickIterator = brickcmdList.iterator();
 			replayPaddleIterator = paddlecmdList.iterator();
 			replayTimerIterator = timercmdList.iterator();
-			log.info("Replay Pressed");
-			//System.out.println("Replay Pressed");
+			replaylog.info("Replay Pressed");
 			new Thread(){
 				public void run(){
 					while(replayBallIterator.hasNext() && replayBrickIterator.hasNext() && replayPaddleIterator.hasNext() && replayTimerIterator.hasNext()){
@@ -408,17 +404,17 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 										java.lang.Thread.sleep(30, 0);
 									} catch (InterruptedException e) {
 										// TODO Auto-generated catch block
-										e.printStackTrace();
+										replaylog.error("Interrupted exception", e);
 									}
 								}
 								
 							});
 						} catch (InvocationTargetException e) {
 							// TODO Auto-generated catch block
-							e.printStackTrace();
+							replaylog.error("Invocation exception", e);
 						} catch (InterruptedException e) {
 							// TODO Auto-generated catch block
-							e.printStackTrace();
+							replaylog.error("Interrupted exception",e);
 						}
 					}
 				}
