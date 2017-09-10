@@ -6,7 +6,8 @@ import com.breakout.game.GameTime;
 import org.apache.log4j.Logger;
 
 public class TimerCommand implements Command{
-	private static Logger log = Logger.getLogger(TimerCommand.class);
+	private static Logger log = Logger.getLogger("timerLogger");
+	//private static Logger logDebug = Logger.getLogger("debugLog");
 	private GameTime timeDisplay;
 	private String initTime, text;
 	private int runningTime;
@@ -19,16 +20,12 @@ public class TimerCommand implements Command{
 	public void execute() {
 		// TODO Auto-generated method stub
 		//log.debug("in time execute");
-		//System.out.println("in time execute");
 		initTime = timeDisplay.getText();
 		//log.debug(initTime);
-		//System.out.println(initTime);
 		runningTime = timeDisplay.getTime();
 		//log.debug(runningTime);
-		//System.out.println(runningTime);
 		timeDisplay.setTime(runningTime + 10);
 		//log.debug(time);
-		//System.out.println(time);
 		
 		if (runningTime % 1000 == 0 ) {
 			int currTime = runningTime/1000;
@@ -38,7 +35,6 @@ public class TimerCommand implements Command{
 			String secText = (gameSec < 10 ? "0" : "") + gameSec;
 			text = minText + ":" + secText;
 			log.debug(text);
-			//System.out.println(text);
 			timeDisplay.setText(text);
 		}
 	}
@@ -47,7 +43,6 @@ public class TimerCommand implements Command{
 	public void undo() {
 		// TODO Auto-generated method stub
 		log.debug(initTime);
-		//System.out.println(initTime);
 		timeDisplay.setText(initTime);
 	}
 }
