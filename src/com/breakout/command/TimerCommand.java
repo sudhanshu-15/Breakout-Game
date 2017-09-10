@@ -26,7 +26,7 @@ public class TimerCommand implements Command{
 		runningTime = timeDisplay.getTime();
 		//log.debug(runningTime);
 		//System.out.println(runningTime);
-		timeDisplay.setTime(runningTime + 10);
+		timeDisplay.setTime(runningTime + 25);
 		//log.debug(time);
 		//System.out.println(time);
 		

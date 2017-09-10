@@ -104,7 +104,8 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	}
 	
 	public void paint(Graphics g){
-		super.paint(g);	
+		super.paint(g);
+		g.drawLine(0, GameConstants.BUTTON_BOTTOM_X_VALUE, this.getWidth(), GameConstants.BUTTON_BOTTOM_X_VALUE);
 		this.add(timeDisplay);
 		ball.draw(g);
 		paddle.draw(g);
