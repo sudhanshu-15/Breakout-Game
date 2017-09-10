@@ -38,4 +38,9 @@ public class GameConstants {
 	public static int PADDLE_HEIGHT = 10;
 	public static Color PADDLE_COLOR = Color.GREEN;
 	
+	public static int PADDLE_MOVE = 30;
+	
+	public static int PADDLE_RIGHT_BOUND = BOARD_WIDTH - 60;
+	public static int PADDLE_LEFT_BOUND = 5;
+	
 }
