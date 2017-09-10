@@ -19,6 +19,7 @@ import javax.swing.Timer;
 import com.breakout.command.BallCommand;
 import com.breakout.command.TimerCommand;
 import com.breakout.command.BrickCommand;
+import com.breakout.command.PaddleCommand;
 
 public class GameBoard extends JPanel implements ActionListener, KeyListener{
 
@@ -35,9 +36,13 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	private JButton replayButton;
 	private List<BallCommand> ballcmdList;
 	private List<TimerCommand> timercmdList;
+	private List<BrickCommand> brickcmdList;
+	private List<PaddleCommand> paddlecmdList;
 	private List<GameBrick> brickList;
 	
 	private int runningTime;
+	private static PaddleCommand paddleMoveKey;
+	private static boolean keyPress;
 	
 	public GameBoard(GameBall ball, GamePaddle paddle, GameTime timeDisplay) {
 		this.ball = ball;
@@ -55,10 +60,13 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 //		this.timer.start();
 		ballcmdList = new ArrayList<BallCommand>();
 		timercmdList = new ArrayList<TimerCommand>();
+		brickcmdList = new ArrayList<BrickCommand>();
+		paddlecmdList = new ArrayList<PaddleCommand>();
 		brickList = new ArrayList<GameBrick>();
 		this.spawnBricks();
 		startButton = new JButton("START");
 		startButton.setFocusable(false);
+		this.keyPress = false;
 		startButton.addActionListener(new ActionListener(){
 
 			@Override
@@ -179,15 +187,13 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
 		if (paddle.play) {
-		if(e.getKeyCode() == KeyEvent.VK_RIGHT){
-			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
+			if(e.getKeyCode() == KeyEvent.VK_RIGHT || e.getKeyCode() == KeyEvent.VK_LEFT){
+				paddleMoveKey = new PaddleCommand(paddle, e.getKeyCode());
+				paddleMoveKey.execute();
+				keyPress = true;
+			}
 		}
-		if(e.getKeyCode() == KeyEvent.VK_LEFT){
-			paddle.checkBounds(e.getKeyCode(), GameConstants.BOARD_WIDTH - 60 , 5);
-		}	
-		repaint();
-	}
-}	
+	}	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 //		timer.start();
@@ -211,10 +217,10 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 //			ball.setPosY(ball.getPosY()+ ball.getVelY());
 			
 			Rectangle ballCollider = ball.createCollider(ball.getPosX(), ball.getPosY(), 20, 20);
-			Rectangle paddleRect = new Rectangle(paddle.getPosX(), paddle.getPosY(), paddle.getWidth(), paddle.getHeight());
+			Rectangle paddleCollider = paddle.createCollider(paddle.getPosX(), paddle.getPosY(), paddle.getWidth(), paddle.getHeight());
 			
 			//manage ball and paddle interaction
-			if(ballCollider.intersects(paddleRect)){
+			if(ballCollider.intersects(paddleCollider)){
 				ball.setVelY(-(ball.getVelY()));
 			}
 			
@@ -259,10 +265,20 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 			if(hit){
 				BrickCommand brickCmd = new BrickCommand(deadBrick, true);
 				brickCmd.execute();
+				brickcmdList.add(brickCmd);
 			}else{
 				BrickCommand brickCmd = new BrickCommand(deadBrick, false);
 				brickCmd.execute();
+				brickcmdList.add(brickCmd);
 				
+			}
+			
+			if(keyPress){
+				paddlecmdList.add(paddleMoveKey);
+			}else{
+				PaddleCommand paddleMove = new PaddleCommand(paddle, 1000);
+				paddleMove.execute();
+				paddlecmdList.add(paddleMove);
 			}
 			
 		}
