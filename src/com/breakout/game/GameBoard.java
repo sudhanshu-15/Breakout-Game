@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
@@ -120,33 +121,6 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 		
 		timer.start();
-		
-		if(GameConstants.TOTAL_BRICKS <= 0){
-			paddle.play = false;
-			g.setColor(Color.RED);
-			g.setFont(new Font("serif", Font.BOLD, 25));
-			g.drawString("Congratualtions", 200, 300);
-			
-			//Restart Button
-			g.setFont(new Font("serif", Font.BOLD, 20));
-			g.drawString("Play Again", 170, 340);	
-			runningTime = 0;
-			timeDisplay.updateText(runningTime);
-		}
-		
-		if(ball.getPosY() > GameConstants.BOARD_HEIGHT){
-			g.setColor(Color.RED);
-			g.setFont(new Font("serif", Font.BOLD, 25));
-			g.drawString("Game Over", 200, 300);
-			
-			//Restart Button
-			g.setFont(new Font("serif", Font.BOLD, 20));
-			g.drawString("Press Enter to Restart", 170, 340);
-			paddle.play = false;
-			runningTime = 0;
-			timeDisplay.updateText(runningTime);
-			
-		}
 	}	
 	
 	public void draw(){
@@ -255,15 +229,49 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 				paddlecmdList.add(paddleMove);
 			}
 			
+			if (allDead()) {
+				JOptionPane.showMessageDialog(null, "Congradulations!!! Press Restart to play again.");
+			}
+			
+			if (gameOver()) {
+				JOptionPane.showMessageDialog(null, "Game Over! :( Press Restart to play again.");
+			}
 		}
 		repaint();
 	}
 	
 	public void spawnBricks(){
-		for (int x = 1; x < 11; x++){
-			for (int y = 2; y < 6; y++){
+		for (int x = 1; x <= GameConstants.BRICK_COLUMN; x++){
+			for (int y = 2; y <= GameConstants.BRICK_ROW+2; y++){
 				brickList.add(new GameBrick(x * GameConstants.BRICK_WIDTH, y * GameConstants.BRICK_HEIGHT));
 			}
+		}
+	}
+	
+	public boolean allDead() {
+		int deadCount = 0;
+		for (GameBrick brick : brickList) {
+			if (brick.isDead()) {
+				deadCount++;
+			}
+		}
+		if (deadCount == GameConstants.TOTAL_BRICKS) {
+			paddle.play = false;
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public boolean gameOver() {
+		if (ball.getPosY() > GameConstants.BOARD_HEIGHT) {
+			ball.setPosY(GameConstants.BALL_POS_Y);
+			paddle.play = false;
+			return true;
+		}
+		else {
+			return false;
 		}
 	}
 	
