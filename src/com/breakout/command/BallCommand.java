@@ -21,6 +21,14 @@ public class BallCommand implements Command {
 		ball.setPosY(initY + ball.getVelY());
 	}
 
+	public int getInitX() {
+		return initX;
+	}
+
+	public void setInitX(int initX) {
+		this.initX = initX;
+	}
+
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub

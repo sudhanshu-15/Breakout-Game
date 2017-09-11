@@ -248,6 +248,70 @@ public class GameBoard extends JPanel implements ActionListener, KeyListener{
 		}
 	}
 	
+	public GameBall getBall() {
+		return ball;
+	}
+
+	public void setBall(GameBall ball) {
+		this.ball = ball;
+	}
+
+	public GamePaddle getPaddle() {
+		return paddle;
+	}
+
+	public void setPaddle(GamePaddle paddle) {
+		this.paddle = paddle;
+	}
+
+	public List<BallCommand> getBallcmdList() {
+		return ballcmdList;
+	}
+
+	public void setBallcmdList(List<BallCommand> ballcmdList) {
+		this.ballcmdList = ballcmdList;
+	}
+
+	public List<TimerCommand> getTimercmdList() {
+		return timercmdList;
+	}
+
+	public void setTimercmdList(List<TimerCommand> timercmdList) {
+		this.timercmdList = timercmdList;
+	}
+
+	public List<BrickCommand> getBrickcmdList() {
+		return brickcmdList;
+	}
+
+	public void setBrickcmdList(List<BrickCommand> brickcmdList) {
+		this.brickcmdList = brickcmdList;
+	}
+
+	public List<PaddleCommand> getPaddlecmdList() {
+		return paddlecmdList;
+	}
+
+	public void setPaddlecmdList(List<PaddleCommand> paddlecmdList) {
+		this.paddlecmdList = paddlecmdList;
+	}
+
+	public JButton getStartButton() {
+		return startButton;
+	}
+
+	public void setStartButton(JButton startButton) {
+		this.startButton = startButton;
+	}
+
+	public JButton getUndoButton() {
+		return undoButton;
+	}
+
+	public void setUndoButton(JButton undoButton) {
+		this.undoButton = undoButton;
+	}
+
 	public boolean allDead() {
 		int deadCount = 0;
 		for (GameBrick brick : brickList) {

@@ -705,3 +705,6 @@
 2017-09-10 20:44:25,988 DEBUG [Thread-2] - timeLogger.undo 45 - 00:02
 2017-09-10 20:44:26,019 DEBUG [Thread-2] - timeLogger.undo 45 - 00:02
 2017-09-10 20:44:26,050 DEBUG [Thread-2] - timeLogger.undo 45 - 00:02
+2017-09-10 23:50:48,257 DEBUG [main] - timeLogger.execute 37 - 00:00
+2017-09-10 23:50:48,339 DEBUG [main] - timeLogger.execute 37 - 00:00
+2017-09-10 23:50:48,411 DEBUG [main] - timeLogger.undo 45 - 00:00
