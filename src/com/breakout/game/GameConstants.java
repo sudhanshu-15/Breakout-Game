@@ -30,6 +30,7 @@ public class GameConstants {
 	public static int BALL_VEL_X = -5;	//Velocity on X-axis -1
 	public static int BALL_VEL_Y = -5;	//Velocity on Y-axis -2
 	public static Color BALL_COLOR = Color.RED;  //Ball Color
+	public static int BALL_POS_TEST_X = 200;
 	
 	//Paddle Constants
 	public static int PADDLE_POS_X = 300;
