@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.p532</groupId>
-	<artifactId>maven-project-template</artifactId>
+	<artifactId>fall2017_a4_team4</artifactId>
 	<version>0.1</version>
 
 	<properties>
@@ -26,9 +26,9 @@
 		<sonar.jacoco.itReportPath>${jacoco.outputDir}/${jacoco.out.it.file}</sonar.jacoco.itReportPath>
 
 		<!-- webstart and getdown properties -->
-		<base.project.name>maven-project-template</base.project.name>
-		<base.project.name.friendly>Example Project Template</base.project.name.friendly>
-		<assignment.name>examples </assignment.name>
+		<base.project.name>fall2017_a4_team4</base.project.name>
+		<base.project.name.friendly>team4</base.project.name.friendly>
+		<assignment.name>fall2017/a4 </assignment.name>
 		<code-root>.</code-root>
 		<wwwroot>/u/kspace/www/fluency</wwwroot>
 	</properties>
@@ -189,4 +189,4 @@
 		</plugins>
 	</build>
 
-</project>
+</project> 

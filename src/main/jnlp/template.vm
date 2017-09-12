@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0+" codebase="http://fluency.knownspace.org/student-files/examples/maven-project-template/" href="$outputFile">
+<jnlp spec="1.0+" codebase="http://fluency.knownspace.org/student-files/fall2017/a4/fall2017_a4_team4/" href="$outputFile">
  <information>
    <title>Hello World</title>
    <vendor>P532</vendor>
@@ -14,7 +14,7 @@
   </security>
   <resources>
     <j2se version="1.6+" />
-    <jar href="maven-project-template-0.1.jar" />
+    <jar href="fall2017_a4_team4-0.1.jar" />
   </resources>
  <application-desc main-class="$mainClass">
  </application-desc>
