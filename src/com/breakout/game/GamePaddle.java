@@ -1,6 +1,7 @@
 package com.breakout.game;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 
 public class GamePaddle implements GameElementsInterface{
@@ -10,7 +11,7 @@ public class GamePaddle implements GameElementsInterface{
 	private int width;
 	private int height;
 	private Color paddleColor;
-	public static boolean play = false;
+	public boolean play = false;
 	
 	
 	//Constuctor for paddle : needs postion, dimensions, color
@@ -76,35 +77,39 @@ public class GamePaddle implements GameElementsInterface{
 		g.fillRect(posX, posY, width, height);
 	}
 	
-	//Function checks for the direction key pressed and also takes in the parameters for
-	//Max and Min boundary
-	//If the paddle reaches Max/Min boundary it sticks to the boundary 
-	public void checkBounds(int direction, int boundaryMax, int boundaryMin){
-		if (direction == KeyEvent.VK_RIGHT) {
-			if (posX >= boundaryMax) {
-				posX = boundaryMax;
-			}else {
-				moveRight();
-			}
-		}else if (direction == KeyEvent.VK_LEFT) {
-			if (posX <= boundaryMin) {
-				posX = boundaryMin;
-			}else {
-				moveLeft();
-			}
-		}
+	public Rectangle createCollider(int x, int y, int width, int height){
+		return new Rectangle(x, y, width, height);
 	}
 	
-	//Function to move paddle to right
-	public void moveRight() {
-		play = true;
-		posX += 30;
-	}
-	
-	//Function to move paddle to left
-	public void moveLeft() {
-		play = true;
-		posX -= 30;
-	}	
+//	//Function checks for the direction key pressed and also takes in the parameters for
+//	//Max and Min boundary
+//	//If the paddle reaches Max/Min boundary it sticks to the boundary 
+//	public void checkBounds(int direction, int boundaryMax, int boundaryMin){
+//		if (direction == KeyEvent.VK_RIGHT) {
+//			if (posX >= boundaryMax) {
+//				posX = boundaryMax;
+//			}else {
+//				moveRight();
+//			}
+//		}else if (direction == KeyEvent.VK_LEFT) {
+//			if (posX <= boundaryMin) {
+//				posX = boundaryMin;
+//			}else {
+//				moveLeft();
+//			}
+//		}
+//	}
+//	
+//	//Function to move paddle to right
+//	public void moveRight() {
+//		play = true;
+//		posX += 30;
+//	}
+//	
+//	//Function to move paddle to left
+//	public void moveLeft() {
+//		play = true;
+//		posX -= 30;
+//	}	
 	
 }
