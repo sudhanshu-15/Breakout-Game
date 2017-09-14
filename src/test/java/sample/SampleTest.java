@@ -1,4 +1,4 @@
-package sample;
+package test.java.sample;
 
 import static org.mockito.Mockito.*;
 import java.util.List;
