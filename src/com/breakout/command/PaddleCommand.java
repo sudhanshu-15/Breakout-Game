@@ -11,9 +11,10 @@ public class PaddleCommand implements Command {
 	private int initX;
 	private int direction;
 	
-	public PaddleCommand(GamePaddle paddle, int direction){
+	public PaddleCommand(GamePaddle paddle){
 		this.paddle = paddle;
-		this.direction = direction;
+		this.direction = paddle.getPaddleDirection();
+		this.initX = paddle.getPosX();
 	}
 
 	@Override
@@ -35,6 +36,8 @@ public class PaddleCommand implements Command {
 				paddle.setPosX(paddle.getPosX() - GameConstants.PADDLE_MOVE);
 			}
 		}
+		
+		paddle.setPaddleDirection(1000);
 
 	}
 

@@ -1,11 +1,9 @@
 package com.breakout.game;
 
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 
-import javax.swing.JOptionPane;
 
 public class GameBall implements GameElementsInterface{
 	
@@ -92,5 +90,12 @@ public class GameBall implements GameElementsInterface{
 	
 	public Rectangle createCollider(int x, int y, int width, int height){
 		return new Rectangle(x, y, width, height);
+	}
+	
+	public void reset(){
+		this.setPosX(GameConstants.BALL_POS_X);
+		this.setPosY(GameConstants.BALL_POS_Y);
+		this.setVelX(GameConstants.BALL_VEL_X);
+		this.setVelY(GameConstants.BALL_VEL_Y);
 	}
 }
