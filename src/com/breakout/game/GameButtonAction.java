@@ -8,10 +8,18 @@ import org.apache.log4j.Logger;
 public class GameButtonAction implements ActionListener {
 	
 	private static Logger buttonLog = Logger.getLogger("buttonLogger");
+	
+	private GameBoard gameBoard;
+	
+	public GameButtonAction(GameBoard gameBoard){
+		this.gameBoard = gameBoard;
+	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		
+		System.out.println("Button");
 		
 		String action = e.getActionCommand();
 		

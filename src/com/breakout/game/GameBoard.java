@@ -56,7 +56,7 @@ public class GameBoard extends JPanel{
 		gamePaddleKey = new GamePaddleKey(paddle);
 		this.setSize(GameConstants.BOARD_DIMENSIONS);
 		this.setBackground(Color.WHITE);
-		this.setBounds(1, 10, GameConstants.BOARD_WIDTH,GameConstants.BOARD_HEIGHT-10);
+		this.setBounds(1, 40, GameConstants.BOARD_WIDTH,GameConstants.BOARD_HEIGHT-10);
 		this.addKeyListener(gamePaddleKey);
 		this.setFocusable(true);
 		this.requestFocusInWindow();

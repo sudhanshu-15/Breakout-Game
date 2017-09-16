@@ -16,6 +16,7 @@ public class GamePlay {
 	private GameTime timeDisplay;
 	private static boolean gameLoop = true;
 	private static GamePlay gamePlay;
+	private GameButtonPanel buttonPanel;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -51,6 +52,10 @@ public class GamePlay {
 		board.gameLoop();
 		
 		gameFrame.add(board);
+		
+		buttonPanel = new GameButtonPanel(board);
+		gameFrame.add(buttonPanel);
+		
 		gameFrame.setVisible(true);		
 	}
 }
