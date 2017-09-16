@@ -22,7 +22,7 @@ public class GameControl implements Observer {
 	private MacroCommand macroCommand;
 	private ArrayList<MacroCommand> macroCommandArray;
 	
-	private GameControl(GameBall ball, GamePaddle paddle, GameBrickList brickList, GameTime timer, Observable observable){
+	public GameControl(GameBall ball, GamePaddle paddle, GameBrickList brickList, GameTime timer, Observable observable){
 		this.ball = ball;
 		this.paddle = paddle;
 		this.brickList = brickList;
@@ -30,7 +30,7 @@ public class GameControl implements Observer {
 		this.observable = observable;
 		observable.register(this);
 		gameCollision = new GameCollision(ball, paddle, brickList);
-		this.play = false;
+		this.play = true;
 		macroCommandArray = new ArrayList<MacroCommand>();
 		
 	}
