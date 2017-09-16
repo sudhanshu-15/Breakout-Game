@@ -3,9 +3,10 @@ package com.breakout.game;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.io.Serializable;
 
 
-public class GameBall implements GameElementsInterface{
+public class GameBall implements GameElementsInterface,Serializable{
 	
 	//Ball class for the game breakout
 	

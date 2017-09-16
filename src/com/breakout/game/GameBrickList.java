@@ -1,9 +1,10 @@
 package com.breakout.game;
 
 import java.awt.Graphics;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class GameBrickList {
+public class GameBrickList implements Serializable {
 	private ArrayList<GameBrick> brickArrayList;
 	
 	public GameBrickList(){

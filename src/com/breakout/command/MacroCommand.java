@@ -1,8 +1,9 @@
 package com.breakout.command;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MacroCommand implements Command {
+public class MacroCommand implements Command,Serializable {
 	
 	private ArrayList<Command> commands;
 	

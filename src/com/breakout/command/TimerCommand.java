@@ -2,10 +2,11 @@ package com.breakout.command;
 
 import com.breakout.game.GameTime;
 
+import java.io.Serializable;
 
 import org.apache.log4j.Logger;
 
-public class TimerCommand implements Command{
+public class TimerCommand implements Command,Serializable{
 	private static Logger log = Logger.getLogger("timeLogger");
 	private GameTime timeDisplay;
 	private String initTime, text;
