@@ -29,7 +29,7 @@ public class GameControl implements Observer {
 		this.timer = timer;
 		this.observable = observable;
 		observable.register(this);
-		gameCollision = new GameCollision(ball, paddle, brickList);
+		gameCollision = new GameCollision(ball, paddle, brickList, this);
 		this.play = false;
 		macroCommandArray = new ArrayList<MacroCommand>();
 		
@@ -41,6 +41,8 @@ public class GameControl implements Observer {
 		if(play){
 			ball.checkBounds(GameConstants.BOARD_WIDTH - 20, GameConstants.BOARD_HEIGHT);
 			gameCollision.ballPaddleCollision();
+			gameCollision.gameOver();
+			gameCollision.gameWin();
 			ArrayList<Integer> deadBrickList = gameCollision.brickBallCollision();
 			BallCommand ballCommand = new BallCommand(ball);
 			PaddleCommand paddleCommand = new PaddleCommand(paddle);
