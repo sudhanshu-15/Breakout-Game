@@ -11,7 +11,7 @@ public class GamePaddle implements GameElementsInterface{
 	private int width;
 	private int height;
 	private Color paddleColor;
-	public boolean play = false;
+	private int paddleDirection;
 	
 	
 	//Constuctor for paddle : needs postion, dimensions, color
@@ -21,6 +21,7 @@ public class GamePaddle implements GameElementsInterface{
 		this.width = width;
 		this.height = height;
 		this.paddleColor = paddleColor;
+		this.setPaddleDirection(1000);
 	}
 	
 	//Constuctor with only position
@@ -72,6 +73,15 @@ public class GamePaddle implements GameElementsInterface{
 		this.height = height;
 	}
 	
+	
+	public int getPaddleDirection() {
+		return paddleDirection;
+	}
+
+	public void setPaddleDirection(int paddleDirection) {
+		this.paddleDirection = paddleDirection;
+	}
+
 	public void draw(Graphics g){
 		g.setColor(paddleColor);				
 		g.fillRect(posX, posY, width, height);
