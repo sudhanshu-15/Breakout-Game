@@ -21,7 +21,7 @@ public class GameSave {
 	public boolean Serialize() 
 	{
 		try {
-	         FileOutputStream fileOut = new FileOutputStream("C:\\Users\\mathu\\Desktop\\JSON\\gameData.txt");
+	         FileOutputStream fileOut = new FileOutputStream("C:\\gameData.ser");
 	         ObjectOutputStream out = new ObjectOutputStream(fileOut);
 	         out.writeObject(list);
 	         out.close();

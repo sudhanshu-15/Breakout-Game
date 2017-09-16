@@ -60,6 +60,7 @@ public class GameButtonAction implements ActionListener {
 			break;
 		case "Load":
 			buttonLog.info("Load pressed");
+			loadGame();
 			break;
 		case "Change":
 			buttonLog.info("Change layout");
@@ -67,6 +68,15 @@ public class GameButtonAction implements ActionListener {
 			break;
 		}
 
+	}
+
+	private void loadGame() {
+		GameLoad gameLoad = new GameLoad();
+		gameControl.setMacroCommandArray(gameLoad.Deserialize());
+		
+		MacroCommand macroUndo = gameControl.getMacroCommandArray().get((gameControl.getMacroCommandArray()).size() - 1);
+	    macroUndo.execute();
+	    gameBoard.draw();
 	}
 
 	private void saveGame() {

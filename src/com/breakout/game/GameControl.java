@@ -76,7 +76,7 @@ public class GameControl implements Observer {
 	}
 
 	public void setMacroCommandArray(ArrayList<MacroCommand> macroCommandArray) {
-		this.macroCommandArray = macroCommandArray;
+		this.macroCommandArray = new ArrayList<MacroCommand>(macroCommandArray);
 	}
 
 }
