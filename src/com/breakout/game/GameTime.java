@@ -13,7 +13,7 @@ public class GameTime extends JLabel{
 		this.setText(text);
 	}
 	
-public void updateText(int runningTime){
+	public void updateText(int runningTime){
 		
 		if (runningTime % 1000 == 0 ) {
 			int currTime = runningTime/1000;
@@ -32,5 +32,9 @@ public void updateText(int runningTime){
 	
 	public void setTime(int time) {
 		this.time = time;
+	}
+	
+	public void reset(){
+		this.setText("00:00");
 	}
 }
