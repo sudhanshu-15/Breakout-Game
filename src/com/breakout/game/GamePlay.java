@@ -10,10 +10,12 @@ import javax.swing.JFrame;
 public class GamePlay {
 	
 	private GameBoard board;
-	private GameBrick brick;
+	private GameBrickList brickList;
 	private GameBall ball;
 	private GamePaddle paddle;
 	private GameTime timeDisplay;
+	private static boolean gameLoop = true;
+	private static GamePlay gamePlay;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,9 +24,10 @@ public class GamePlay {
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				new GamePlay();	
+				gamePlay = new GamePlay();
 			}			
-		});		
+		});	
+		
 	}
 	
 	public GamePlay() {
@@ -39,11 +42,13 @@ public class GamePlay {
 		//Initialize GameBall, GamePaddle, GameBrick, GameTime
 		ball = new GameBall(GameConstants.BALL_POS_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
 		paddle = new GamePaddle(GameConstants.PADDLE_POS_X, GameConstants.PADDLE_POS_Y, GameConstants.PADDLE_WIDTH, GameConstants.PADDLE_HEIGHT, GameConstants.PADDLE_COLOR);
+		brickList = new GameBrickList();
 //		brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
 		timeDisplay = new GameTime();
 		
-		board = new GameBoard(ball, paddle, timeDisplay);
+		board = new GameBoard(ball, paddle, timeDisplay, brickList);
 		board.draw();
+		board.gameLoop();
 		
 		gameFrame.add(board);
 		gameFrame.setVisible(true);		

@@ -19,7 +19,7 @@ public class GameCollision {
 		Rectangle ballCollider = ball.createCollider(ball.getPosX(), ball.getPosY(), 20, 20);
 		Rectangle paddleCollider = paddle.createCollider(paddle.getPosX(), paddle.getPosY(), paddle.getWidth(), paddle.getHeight());
 		if(ballCollider.intersects(paddleCollider)){
-			ball.setVelX(-ball.getVelX());
+//			ball.setVelX(-ball.getVelX());
 			ball.setVelY(-ball.getVelY());
 		}
 	}
