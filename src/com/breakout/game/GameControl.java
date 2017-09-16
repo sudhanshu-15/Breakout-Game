@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.breakout.command.BallCommand;
 import com.breakout.command.BrickCommand;
+import com.breakout.command.MacroCommand;
 import com.breakout.command.PaddleCommand;
 import com.breakout.command.TimerCommand;
 import com.breakout.observer.Observable;
@@ -18,6 +19,8 @@ public class GameControl implements Observer {
 	private GameCollision gameCollision;
 	private GameTime timer;
 	private boolean play;
+	private MacroCommand macroCommand;
+	private ArrayList<MacroCommand> macroCommandArray;
 	
 	private GameControl(GameBall ball, GamePaddle paddle, GameBrickList brickList, GameTime timer, Observable observable){
 		this.ball = ball;
@@ -28,6 +31,7 @@ public class GameControl implements Observer {
 		observable.register(this);
 		gameCollision = new GameCollision(ball, paddle, brickList);
 		this.play = false;
+		macroCommandArray = new ArrayList<MacroCommand>();
 		
 	}
 
@@ -42,6 +46,13 @@ public class GameControl implements Observer {
 			PaddleCommand paddleCommand = new PaddleCommand(paddle);
 			BrickCommand brickCommand = new BrickCommand(brickList, deadBrickList);
 			TimerCommand timerCommand = new TimerCommand(timer);
+			macroCommand = new MacroCommand();
+			macroCommand.add(ballCommand);
+			macroCommand.add(paddleCommand);
+			macroCommand.add(brickCommand);
+			macroCommand.add(timerCommand);
+			macroCommand.execute();
+			macroCommandArray.add(macroCommand);
 		}
 
 	}
@@ -50,6 +61,22 @@ public class GameControl implements Observer {
 		ball.reset();
 		paddle.reset();
 		brickList.reset();
+	}
+
+	public boolean isPlay() {
+		return play;
+	}
+
+	public void setPlay(boolean play) {
+		this.play = play;
+	}
+
+	public ArrayList<MacroCommand> getMacroCommandArray() {
+		return macroCommandArray;
+	}
+
+	public void setMacroCommandArray(ArrayList<MacroCommand> macroCommandArray) {
+		this.macroCommandArray = macroCommandArray;
 	}
 
 }
