@@ -16,6 +16,7 @@ public class GameButtonPanel extends JPanel{
 	private JButton changeButton;
 	private GameButtonAction buttonAction;
 	private GameBoard board;
+	private GameControl gameControl;
 	
 	
 	public GameButtonPanel(GameBoard board){
@@ -26,7 +27,7 @@ public class GameButtonPanel extends JPanel{
 		replayButton = new JButton("Replay");
 		saveButton = new JButton("Save");
 		loadButton = new JButton("Load");
-		changeButton = new JButton("Change");
+		changeButton = new JButton("Change Layout");
 		
 		startButton.setFocusable(false);
 		pauseButton.setFocusable(false);
@@ -45,8 +46,9 @@ public class GameButtonPanel extends JPanel{
 		this.add(changeButton);
 		
 		this.board = board;
+		this.gameControl = board.getGameControl();
 		
-		buttonAction = new GameButtonAction(board);
+		buttonAction = new GameButtonAction(board, gameControl);
 		
 		startButton.addActionListener(buttonAction);
 		pauseButton.addActionListener(buttonAction);
@@ -55,6 +57,14 @@ public class GameButtonPanel extends JPanel{
 		saveButton.addActionListener(buttonAction);
 		loadButton.addActionListener(buttonAction);
 		changeButton.addActionListener(buttonAction);
+		
+		startButton.setActionCommand("Start");
+		pauseButton.setActionCommand("Pause");
+		undoButton.setActionCommand("Undo");
+		replayButton.setActionCommand("Replay");
+		saveButton.setActionCommand("Save");
+		loadButton.setActionCommand("Load");
+		changeButton.setActionCommand("Change");
 		
 		this.setSize(GameConstants.BUTTON_PANEL_DIMENSIONS);
 		

@@ -41,6 +41,7 @@ public class GameBoard extends JPanel{
 	private GameTime timeDisplay;
 	public GameObservable gameObservable;
 	private GameControl gameControl;
+
 	private GamePaddleKey gamePaddleKey;
 	private boolean gameLoop;
 	
@@ -119,6 +120,14 @@ public class GameBoard extends JPanel{
 				}
 			}
 		}.start();
+	}
+	
+	public GameControl getGameControl() {
+		return gameControl;
+	}
+
+	public void setGameControl(GameControl gameControl) {
+		this.gameControl = gameControl;
 	}
 
 //	@Override

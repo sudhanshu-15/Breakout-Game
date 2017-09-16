@@ -30,7 +30,7 @@ public class GameControl implements Observer {
 		this.observable = observable;
 		observable.register(this);
 		gameCollision = new GameCollision(ball, paddle, brickList);
-		this.play = true;
+		this.play = false;
 		macroCommandArray = new ArrayList<MacroCommand>();
 		
 	}
