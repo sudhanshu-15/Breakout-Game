@@ -1,21 +1,27 @@
 package com.breakout.command;
 
+import java.util.ArrayList;
+
 import com.breakout.game.GameBrick;
+import com.breakout.game.GameBrickList;
 
 public class BrickCommand implements Command {
 	
-	private GameBrick brick;
-	private boolean hit;
+	private GameBrickList brickList;
+	private ArrayList<GameBrick> brickArrayList;
+	private ArrayList<Integer> deadBrickList;
 	
-	public BrickCommand(GameBrick brick, boolean hit){
-		this.brick = brick;
-		this.hit = hit;
+	public BrickCommand(GameBrickList brickList, ArrayList<Integer> deadBrickList){
+		this.brickList = brickList;
+		this.brickArrayList = brickList.getBrickArrayList();
+		this.deadBrickList = deadBrickList;
 	}
 
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		if(hit){
+		for(Integer i : deadBrickList){
+			GameBrick brick = brickArrayList.get(i);
 			brick.setDead(true);
 		}
 	}
@@ -23,7 +29,10 @@ public class BrickCommand implements Command {
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub
-		brick.setDead(false);
+		for(Integer i : deadBrickList){
+			GameBrick brick = brickArrayList.get(i);
+			brick.setDead(!brick.isDead());
+		}
 	}
 
 }
