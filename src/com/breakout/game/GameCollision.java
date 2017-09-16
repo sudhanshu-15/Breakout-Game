@@ -3,16 +3,20 @@ package com.breakout.game;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 public class GameCollision {
 	
 	private GameBall ball;
 	private GamePaddle paddle;
 	private GameBrickList brickList;
+	private GameControl gameControl;
 	
-	public GameCollision(GameBall ball, GamePaddle paddle, GameBrickList brickList){
+	public GameCollision(GameBall ball, GamePaddle paddle, GameBrickList brickList, GameControl gameControl){
 		this.ball = ball;
 		this.paddle = paddle;
 		this.brickList = brickList;
+		this.gameControl = gameControl;
 	}
 	
 	public void ballPaddleCollision(){
@@ -36,5 +40,27 @@ public class GameCollision {
 			}
 		}
 		return deadBrickList;
+	}
+	
+	public void gameWin(){
+		boolean win = true;
+		for(GameBrick brick : brickList.getBrickArrayList()){
+			if(!brick.isDead()){
+				win = false;
+			}
+		}
+		if(win){
+			JOptionPane.showMessageDialog(null, "You Win");
+			gameControl.reset();
+			gameControl.setPlay(false);
+		}
+	}
+	
+	public void gameOver(){
+		if(ball.getPosY() > GameConstants.BOARD_HEIGHT){
+			JOptionPane.showMessageDialog(null, "Game Over! :(");
+			gameControl.reset();
+			gameControl.setPlay(false);
+		}
 	}
 }
