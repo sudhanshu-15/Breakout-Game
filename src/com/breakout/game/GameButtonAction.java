@@ -19,10 +19,12 @@ public class GameButtonAction implements ActionListener {
 	private GameControl gameControl;
 	private int undoCount;
 	private Iterator<MacroCommand> macroCommandIterator;
+	private GameButtonPanel gameButtonPanel;
 	
-	public GameButtonAction(GameBoard gameBoard, GameControl gameControl){
+	public GameButtonAction(GameBoard gameBoard, GameControl gameControl, GameButtonPanel gameButtonPanel){
 		this.gameBoard = gameBoard;
 		this.gameControl = gameControl;
+		this.gameButtonPanel = gameButtonPanel;
 		this.undoCount = 0;
 	}
 
@@ -59,6 +61,7 @@ public class GameButtonAction implements ActionListener {
 			break;
 		case "Change":
 			buttonLog.info("Change layout");
+			
 			break;
 		}
 
@@ -66,6 +69,7 @@ public class GameButtonAction implements ActionListener {
 	
 	public void undoStep(){
 		int i = gameControl.getMacroCommandArray().size() - undoCount -1;
+		buttonLog.info(i);
 		if (i >= 0){
 			MacroCommand macroUndo = gameControl.getMacroCommandArray().get(i);
 			macroUndo.undo();
