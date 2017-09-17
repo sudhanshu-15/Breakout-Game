@@ -5,6 +5,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class GameBrickList implements Serializable {
+	
+	private static final long serialVersionUID = 8L;
+	
 	private ArrayList<GameBrick> brickArrayList;
 	
 	public GameBrickList(){

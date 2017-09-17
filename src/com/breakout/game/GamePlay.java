@@ -10,10 +10,10 @@ import javax.swing.JFrame;
 public class GamePlay {
 	
 	private GameBoard board;
-	private GameBrickList brickList;
-	private GameBall ball;
-	private GamePaddle paddle;
-	private GameTime timeDisplay;
+	public GameBrickList brickList;
+	public GameBall ball;
+	public GamePaddle paddle;
+	public GameTime timeDisplay;
 	private static boolean gameLoop = true;
 	private static GamePlay gamePlay;
 	private GameButtonPanel buttonPanel;
@@ -47,13 +47,13 @@ public class GamePlay {
 //		brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
 		timeDisplay = new GameTime();
 		
-		board = new GameBoard(ball, paddle, timeDisplay, brickList);
-		board.draw();
-		board.gameLoop();
+//		board = new GameBoard(ball, paddle, timeDisplay, brickList, this);
+//		board.draw();
+//		board.gameLoop();
+//		
+//		gameFrame.add(board);
 		
-		gameFrame.add(board);
-		
-		buttonPanel = new GameButtonPanel(board);
+		buttonPanel = new GameButtonPanel(gameFrame);
 		gameFrame.add(buttonPanel);
 		
 		gameFrame.setVisible(true);		

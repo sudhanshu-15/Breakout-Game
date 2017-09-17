@@ -8,6 +8,8 @@ import java.io.Serializable;
 
 public class GameBall implements GameElementsInterface,Serializable{
 	
+	private static final long serialVersionUID = 6L;
+	
 	//Ball class for the game breakout
 	
 	private int posX; 	//X-coordinate position of ball

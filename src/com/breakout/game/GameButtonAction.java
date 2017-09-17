@@ -3,8 +3,10 @@ package com.breakout.game;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 import java.util.Iterator;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
@@ -21,10 +23,14 @@ public class GameButtonAction implements ActionListener {
 	private int undoCount;
 	private Iterator<MacroCommand> macroCommandIterator;
 	private GameButtonPanel gameButtonPanel;
+	private JFrame gameFrame;
+	private GameBall ball;
+	private GamePaddle paddle;
+	private GameBrickList brickList;
+	private GameTime timer;
 
-	public GameButtonAction(GameBoard gameBoard, GameControl gameControl, GameButtonPanel gameButtonPanel){
-		this.gameBoard = gameBoard;
-		this.gameControl = gameControl;
+	public GameButtonAction(JFrame gameFrame, GameButtonPanel gameButtonPanel){
+		this.gameFrame = gameFrame;
 		this.gameButtonPanel = gameButtonPanel;
 		this.undoCount = 0;
 	}
@@ -39,6 +45,17 @@ public class GameButtonAction implements ActionListener {
 		switch(action){
 		case "Start":
 			buttonLog.info("Start pressed");
+			ball = new GameBall(GameConstants.BALL_POS_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
+			paddle = new GamePaddle(GameConstants.PADDLE_POS_X, GameConstants.PADDLE_POS_Y, GameConstants.PADDLE_WIDTH, GameConstants.PADDLE_HEIGHT, GameConstants.PADDLE_COLOR);
+			brickList = new GameBrickList();
+			timer= new GameTime();
+			gameBoard = new GameBoard(ball, paddle, timer, brickList);
+			gameFrame.add(gameBoard);
+			gameBoard.draw();
+			gameBoard.setFocusable(true);
+			gameBoard.requestFocusInWindow();
+			gameBoard.gameLoop();
+			gameControl = gameBoard.getGameControl();
 			gameControl.setPlay(true);
 			undoCount = 0;
 			break;
@@ -59,8 +76,8 @@ public class GameButtonAction implements ActionListener {
 			saveGame();
 			break;
 		case "Load":
-			buttonLog.info("Load pressed");
-			loadGame();
+				buttonLog.info("Load pressed");
+				loadGame();
 			break;
 		case "Change":
 			buttonLog.info("Change layout");
@@ -72,11 +89,23 @@ public class GameButtonAction implements ActionListener {
 
 	private void loadGame() {
 		GameLoad gameLoad = new GameLoad();
-		gameControl.setMacroCommandArray(gameLoad.Deserialize());
+		ArrayList<MacroCommand> loadArray = gameLoad.Deserialize();
+//		System.out.println(loadArray.size());
+		MacroCommand macroUndo = loadArray.get(loadArray.size() - 1);
+		ball = macroUndo.ball;
+		paddle = macroUndo.paddle;
+		brickList = macroUndo.brickList;
+		timer = macroUndo.timer;
+		gameBoard = new GameBoard(ball, paddle, timer, brickList);
+		gameControl = gameBoard.getGameControl();
+		gameControl.setMacroCommandArray(loadArray);
+		gameFrame.add(gameBoard);
+		gameBoard.draw();
+		gameBoard.gameLoop();
+		gameControl.setPlay(true);
 		
-		MacroCommand macroUndo = gameControl.getMacroCommandArray().get((gameControl.getMacroCommandArray()).size() - 1);
-	    macroUndo.execute();
-	    gameBoard.draw();
+//	    macroUndo.undo();
+//	    gameBoard.draw();
 	}
 
 	private void saveGame() {

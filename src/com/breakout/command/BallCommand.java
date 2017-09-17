@@ -6,6 +6,8 @@ import com.breakout.game.GameBall;
 
 public class BallCommand implements Command,Serializable {
 	
+	private static final long serialVersionUID = 2L;
+	
 	private GameBall ball;
 	private int initX, initY;
 	

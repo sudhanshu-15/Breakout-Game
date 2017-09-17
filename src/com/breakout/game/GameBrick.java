@@ -8,6 +8,8 @@ import java.util.Random;
 
 public class GameBrick implements Serializable{
 	
+	private static final long serialVersionUID = 7L;
+	
 	private int posX;
 	private int posY;
 	private int brickHeight;

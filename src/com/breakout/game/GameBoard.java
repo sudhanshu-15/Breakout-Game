@@ -94,7 +94,7 @@ public class GameBoard extends JPanel{
 	public void paint(Graphics g){
 		super.paint(g);
 //		g.drawLine(0, GameConstants.BUTTON_BOTTOM_X_VALUE, this.getWidth(), GameConstants.BUTTON_BOTTOM_X_VALUE);
-		this.add(timeDisplay);
+//		this.add(timeDisplay);
 		ball.draw(g);
 		paddle.draw(g);
 		brickList.draw(g);

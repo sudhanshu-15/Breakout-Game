@@ -6,6 +6,8 @@ import java.io.Serializable;
 
 public class GamePaddle implements GameElementsInterface,Serializable{
 	
+	private static final long serialVersionUID = 9L;
+	
 	private int posX;
 	private int posY;
 	private int width;

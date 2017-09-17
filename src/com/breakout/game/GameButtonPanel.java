@@ -3,6 +3,7 @@ package com.breakout.game;
 import java.awt.FlowLayout;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class GameButtonPanel extends JPanel{
@@ -17,9 +18,10 @@ public class GameButtonPanel extends JPanel{
 	private GameButtonAction buttonAction;
 	private GameBoard board;
 	private GameControl gameControl;
+	private JFrame gameFrame;
 	
 	
-	public GameButtonPanel(GameBoard board){
+	public GameButtonPanel(JFrame gameFrame){
 		setLayout(new FlowLayout());
 		startButton = new JButton("Start");
 		pauseButton = new JButton("Pause");
@@ -45,10 +47,11 @@ public class GameButtonPanel extends JPanel{
 		this.add(loadButton);
 		this.add(changeButton);
 		
-		this.board = board;
-		this.gameControl = board.getGameControl();
+//		this.board = board;
+//		this.gameControl = board.getGameControl();
+		this.gameFrame = gameFrame;
 		
-		buttonAction = new GameButtonAction(board, gameControl, this);
+		buttonAction = new GameButtonAction(gameFrame, this);
 		
 		startButton.addActionListener(buttonAction);
 		pauseButton.addActionListener(buttonAction);
