@@ -182,6 +182,11 @@ public class GameButtonAction implements ActionListener {
 		gameControl.setPlay(false);
 		this.pauseFlag = true;
 		gameButtonPanel.getPauseButton().setEnabled(true);
+		gameButtonPanel.getPauseButton().setText("Resume");
+		gameButtonPanel.getStartButton().setText("Restart");
+		gameButtonPanel.getReplayButton().setEnabled(true);
+		gameButtonPanel.getUndoButton().setEnabled(true);
+		gameFrame.add(gameButtonPanel);
 		gameBoard.setFocusable(true);
 		gameBoard.requestFocusInWindow();
 		
