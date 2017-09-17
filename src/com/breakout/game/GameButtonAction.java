@@ -10,6 +10,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -91,9 +92,8 @@ public class GameButtonAction implements ActionListener {
 
 			//BorderLayout
 			layoutFlag = 0;
-			
-			gameButtonPanel.getSouthPanel();
 			gameButtonPanel.removeAll();
+			gameButtonPanel.getSouthPanel();
 			gameButtonPanel.getNorthPanel().removeAll();
 			gameButtonPanel.getSouthPanel().removeAll();
 			
@@ -109,13 +109,19 @@ public class GameButtonAction implements ActionListener {
 			gameButtonPanel.getSouthPanel().add(gameButtonPanel.getUndoButton());
 			gameButtonPanel.getSouthPanel().add(gameButtonPanel.getReplayButton());
 			
-			gameButtonPanel.add(gameButtonPanel.getNorthPanel(),BorderLayout.PAGE_START);
-			gameButtonPanel.add(gameButtonPanel.getStartButton(),BorderLayout.WEST);
-			gameButtonPanel.add(gameButtonPanel.getChangeButton(),BorderLayout.EAST);
-			gameButtonPanel.add(gameButtonPanel.getSouthPanel(),BorderLayout.PAGE_END);
-				
+			gameButtonPanel.add(gameButtonPanel.getNorthPanel(),BorderLayout.LINE_START);
+			gameButtonPanel.add(gameButtonPanel.getStartButton(),BorderLayout.PAGE_START);
+			gameButtonPanel.add(gameButtonPanel.getChangeButton(),BorderLayout.PAGE_END);
+			gameButtonPanel.add(gameButtonPanel.getSouthPanel(),BorderLayout.LINE_END);
+			gameButtonPanel.add(gameButtonPanel.getPauseButton(),BorderLayout.CENTER);
+//			gameFrame.setLayout(new BoxLayout(gameFrame.getContentPane(), BoxLayout.Y_AXIS));
+//			gameFrame.add(gameButtonPanel);
+//			if(gameBoard!=null){
+//				gameFrame.add(gameBoard);
+//			}
 		}
 		else{
+			//gameFrame.setLayout(new BorderLayout());
 			System.out.println("f2");
 
 			layoutFlag=1;	
@@ -124,9 +130,12 @@ public class GameButtonAction implements ActionListener {
 			gameButtonPanel.setBackground(Color.BLUE);
 
 			getButtons();
+			gameFrame.add(gameButtonPanel, BorderLayout.NORTH);
+
 		}
 		gameButtonPanel.revalidate();
 		gameButtonPanel.repaint();
+
 	}
 	public void getButtons(){
 		gameButtonPanel.add(gameButtonPanel.getStartButton());
@@ -148,11 +157,10 @@ public class GameButtonAction implements ActionListener {
 		brickList = new GameBrickList();
 		timer= new GameTime();
 		gameBoard = new GameBoard(ball, paddle, timer, brickList);
-		gameFrame.setLayout(new BorderLayout());
 		gameFrame.add(gameBoard,BorderLayout.NORTH);
-		gameBoard.draw();
 		gameBoard.setFocusable(true);
 		gameBoard.requestFocusInWindow();
+		gameBoard.setBounds(0,100,GameConstants.BOARD_WIDTH,GameConstants.BOARD_HEIGHT-60);
 		gameBoard.gameLoop();
 		gameControl = gameBoard.getGameControl();
 		gameControl.setPlay(true);
@@ -165,6 +173,8 @@ public class GameButtonAction implements ActionListener {
 		gameButtonPanel.getStartButton().setText("ReStart");
 		
 		gameFrame.add(gameButtonPanel,BorderLayout.NORTH);
+		gameBoard.draw();
+
 		}
 		else{
 			gameButtonPanel.getStartButton().setText("Start");
@@ -239,7 +249,6 @@ public class GameButtonAction implements ActionListener {
 		}
 		
 		gameBoard = new GameBoard(ball, paddle, timer, brickList);
-		gameFrame.setLayout(new BorderLayout());
 		gameControl = gameBoard.getGameControl();
 		gameControl.setMacroCommandArray(loadArray);
 		gameFrame.getContentPane().add(gameBoard,BorderLayout.CENTER);

@@ -10,7 +10,7 @@ import java.awt.Dimension;
 public class GameConstants {
 	
 	//Frame Constants
-	protected static final int BOARD_HEIGHT = 600;
+	protected static final int BOARD_HEIGHT = 700;
 	protected static final int BOARD_WIDTH = 620;
 	protected static final Dimension BOARD_DIMENSIONS= new Dimension(BOARD_WIDTH, BOARD_HEIGHT);
 	
