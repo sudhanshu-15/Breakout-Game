@@ -11,13 +11,21 @@ public class GameConstants {
 	
 	//Frame Constants
 	protected static final int BOARD_HEIGHT = 600;
-	protected static final int BOARD_WIDTH = 600;
+	protected static final int BOARD_WIDTH = 620;
 	protected static final Dimension BOARD_DIMENSIONS= new Dimension(BOARD_WIDTH, BOARD_HEIGHT);
 	
 	//Button Panel Constants
-	protected static int BUTTON_PANEL_HEIGHT = 100;
-	protected static int BUTTON_PANEL_WIDTH = 600;
+	protected static int BUTTON_PANEL_HEIGHT = 60;
+	protected static int BUTTON_PANEL_WIDTH = 620;
 	protected static final Dimension BUTTON_PANEL_DIMENSIONS= new Dimension(BUTTON_PANEL_WIDTH, BUTTON_PANEL_HEIGHT);
+
+	protected static int BUTTON_NPANEL_HEIGHT = 20;
+	protected static int BUTTON_NPANEL_WIDTH = 620;
+	protected static final Dimension BUTTON_NPANEL_DIMENSIONS= new Dimension(BUTTON_NPANEL_WIDTH, BUTTON_NPANEL_HEIGHT);
+
+	protected static int BUTTON_SPANEL_HEIGHT = 20;
+	protected static int BUTTON_SPANEL_WIDTH = 620;
+	protected static final Dimension BUTTON_SPANEL_DIMENSIONS= new Dimension(BUTTON_SPANEL_WIDTH, BUTTON_SPANEL_HEIGHT);
 
 	//Play start
 	public static boolean PLAY = false;
