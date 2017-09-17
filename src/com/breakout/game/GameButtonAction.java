@@ -77,6 +77,8 @@ public class GameButtonAction implements ActionListener {
 	}
 	
 	public void startGame(){
+		
+		if(gameButtonPanel.getStartButton().getText() == "Start"){
 		ball = new GameBall(GameConstants.BALL_POS_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
 		paddle = new GamePaddle(GameConstants.PADDLE_POS_X, GameConstants.PADDLE_POS_Y, GameConstants.PADDLE_WIDTH, GameConstants.PADDLE_HEIGHT, GameConstants.PADDLE_COLOR);
 		brickList = new GameBrickList();
@@ -98,6 +100,13 @@ public class GameButtonAction implements ActionListener {
 		gameButtonPanel.getStartButton().setText("ReStart");
 		
 		gameFrame.add(gameButtonPanel);
+		}
+		else{
+			gameButtonPanel.getStartButton().setText("Start");
+			
+			gameFrame.add(gameButtonPanel);
+			
+		}
 		
 	}
 	
@@ -113,8 +122,8 @@ public class GameButtonAction implements ActionListener {
 			 gameButtonPanel.getReplayButton().setEnabled(true);
 			 gameButtonPanel.getSaveButton().setEnabled(true);
 			 gameButtonPanel.getLoadButton().setEnabled(true);
-			 //gameButtonPanel.getPauseButton().setText("Resume");
-			 //gameBoard.draw();
+			 gameButtonPanel.getPauseButton().setText("Resume");
+			 gameFrame.add(gameButtonPanel);
 		 }
 		 else {
 			 gameControl.setPlay(true);
@@ -122,8 +131,8 @@ public class GameButtonAction implements ActionListener {
 			 gameButtonPanel.getReplayButton().setEnabled(false);
 			 gameButtonPanel.getSaveButton().setEnabled(false);
 			 gameButtonPanel.getLoadButton().setEnabled(false);
-			 //gameButtonPanel.getPauseButton().setText("Pause");
-			 //gameBoard.draw();
+			 gameButtonPanel.getPauseButton().setText("Pause");
+			 gameFrame.add(gameButtonPanel);
 		 }
 		/*
 		if(pauseFlag){
@@ -173,6 +182,8 @@ public class GameButtonAction implements ActionListener {
 		gameControl.setPlay(false);
 		this.pauseFlag = true;
 		gameButtonPanel.getPauseButton().setEnabled(true);
+		gameBoard.setFocusable(true);
+		gameBoard.requestFocusInWindow();
 		
 		
 		
