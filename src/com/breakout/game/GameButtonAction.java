@@ -95,7 +95,9 @@ public class GameButtonAction implements ActionListener {
 		gameButtonPanel.getSaveButton().setEnabled(false);
 		gameButtonPanel.getLoadButton().setEnabled(false);
 		gameButtonPanel.getPauseButton().setEnabled(true);
-		//gameButtonPanel.getStartButton().setText("ReStart");
+		gameButtonPanel.getStartButton().setText("ReStart");
+		
+		gameFrame.add(gameButtonPanel);
 		
 	}
 	
@@ -158,7 +160,9 @@ public class GameButtonAction implements ActionListener {
 		brickList = macroUndo.brickList;
 		timer = macroUndo.timer;
 		
+		if(gameBoard != null){
 		gameFrame.getContentPane().remove(gameBoard);
+		}
 		
 		gameBoard = new GameBoard(ball, paddle, timer, brickList);
 		gameControl = gameBoard.getGameControl();
@@ -167,6 +171,9 @@ public class GameButtonAction implements ActionListener {
 		gameBoard.draw();
 		gameBoard.gameLoop();
 		gameControl.setPlay(false);
+		this.pauseFlag = true;
+		gameButtonPanel.getPauseButton().setEnabled(true);
+		
 		
 		
 		
