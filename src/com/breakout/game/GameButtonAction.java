@@ -28,11 +28,12 @@ public class GameButtonAction implements ActionListener {
 	private GamePaddle paddle;
 	private GameBrickList brickList;
 	private GameTime timer;
-
+	private boolean pauseFlag = false;
 	public GameButtonAction(JFrame gameFrame, GameButtonPanel gameButtonPanel){
 		this.gameFrame = gameFrame;
 		this.gameButtonPanel = gameButtonPanel;
 		this.undoCount = 0;
+		
 	}
 
 	@Override
@@ -99,7 +100,31 @@ public class GameButtonAction implements ActionListener {
 	}
 	
 	public void pauseGame(){
-		if(gameButtonPanel.getPauseButton().getText() == "Pause"){
+		 if(pauseFlag == true){
+			 pauseFlag = false;
+		 }else{
+			 pauseFlag = true;
+		 }
+		 if(pauseFlag){
+			 gameControl.setPlay(false);
+			 gameButtonPanel.getUndoButton().setEnabled(true);
+			 gameButtonPanel.getReplayButton().setEnabled(true);
+			 gameButtonPanel.getSaveButton().setEnabled(true);
+			 gameButtonPanel.getLoadButton().setEnabled(true);
+			 //gameButtonPanel.getPauseButton().setText("Resume");
+			 //gameBoard.draw();
+		 }
+		 else {
+			 gameControl.setPlay(true);
+			 gameButtonPanel.getUndoButton().setEnabled(false);
+			 gameButtonPanel.getReplayButton().setEnabled(false);
+			 gameButtonPanel.getSaveButton().setEnabled(false);
+			 gameButtonPanel.getLoadButton().setEnabled(false);
+			 //gameButtonPanel.getPauseButton().setText("Pause");
+			 //gameBoard.draw();
+		 }
+		/*
+		if(pauseFlag){
 			//gameButtonPanel.getPauseButton().setText("Resume");
 			System.out.println("I pressed pause");
 			gameControl.setPlay(false);
@@ -118,6 +143,7 @@ public class GameButtonAction implements ActionListener {
 			gameButtonPanel.getLoadButton().setEnabled(false);
 			//gameButtonPanel.getPauseButton().setText("Pause");
 		}
+		*/
 		
 		
 	}
@@ -131,13 +157,18 @@ public class GameButtonAction implements ActionListener {
 		paddle = macroUndo.paddle;
 		brickList = macroUndo.brickList;
 		timer = macroUndo.timer;
+		
+		gameFrame.getContentPane().remove(gameBoard);
+		
 		gameBoard = new GameBoard(ball, paddle, timer, brickList);
 		gameControl = gameBoard.getGameControl();
 		gameControl.setMacroCommandArray(loadArray);
-		gameFrame.add(gameBoard);
+		gameFrame.getContentPane().add(gameBoard);
 		gameBoard.draw();
 		gameBoard.gameLoop();
-		gameControl.setPlay(true);
+		gameControl.setPlay(false);
+		
+		
 		
 //	    macroUndo.undo();
 //	    gameBoard.draw();

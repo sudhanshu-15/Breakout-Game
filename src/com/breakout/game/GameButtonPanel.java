@@ -74,6 +74,7 @@ public class GameButtonPanel extends JPanel{
 		loadButton.setActionCommand("Load");
 		changeButton.setActionCommand("Change");
 		
+		
 		this.setSize(GameConstants.BUTTON_PANEL_DIMENSIONS);
 		
 	}
