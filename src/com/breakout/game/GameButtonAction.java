@@ -45,23 +45,11 @@ public class GameButtonAction implements ActionListener {
 		switch(action){
 		case "Start":
 			buttonLog.info("Start pressed");
-			ball = new GameBall(GameConstants.BALL_POS_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
-			paddle = new GamePaddle(GameConstants.PADDLE_POS_X, GameConstants.PADDLE_POS_Y, GameConstants.PADDLE_WIDTH, GameConstants.PADDLE_HEIGHT, GameConstants.PADDLE_COLOR);
-			brickList = new GameBrickList();
-			timer= new GameTime();
-			gameBoard = new GameBoard(ball, paddle, timer, brickList);
-			gameFrame.add(gameBoard);
-			gameBoard.draw();
-			gameBoard.setFocusable(true);
-			gameBoard.requestFocusInWindow();
-			gameBoard.gameLoop();
-			gameControl = gameBoard.getGameControl();
-			gameControl.setPlay(true);
-			undoCount = 0;
+			startGame();
 			break;
 		case "Pause":
 			buttonLog.info("Pause pressed");
-			gameControl.setPlay(false);
+			pauseGame();
 			break;
 		case "Undo":
 			buttonLog.info("Undo pressed");
@@ -85,6 +73,53 @@ public class GameButtonAction implements ActionListener {
 			break;
 		}
 
+	}
+	
+	public void startGame(){
+		ball = new GameBall(GameConstants.BALL_POS_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
+		paddle = new GamePaddle(GameConstants.PADDLE_POS_X, GameConstants.PADDLE_POS_Y, GameConstants.PADDLE_WIDTH, GameConstants.PADDLE_HEIGHT, GameConstants.PADDLE_COLOR);
+		brickList = new GameBrickList();
+		timer= new GameTime();
+		gameBoard = new GameBoard(ball, paddle, timer, brickList);
+		gameFrame.add(gameBoard);
+		gameBoard.draw();
+		gameBoard.setFocusable(true);
+		gameBoard.requestFocusInWindow();
+		gameBoard.gameLoop();
+		gameControl = gameBoard.getGameControl();
+		gameControl.setPlay(true);
+		undoCount = 0;
+		gameButtonPanel.getUndoButton().setEnabled(false);
+		gameButtonPanel.getReplayButton().setEnabled(false);
+		gameButtonPanel.getSaveButton().setEnabled(false);
+		gameButtonPanel.getLoadButton().setEnabled(false);
+		gameButtonPanel.getPauseButton().setEnabled(true);
+		//gameButtonPanel.getStartButton().setText("ReStart");
+		
+	}
+	
+	public void pauseGame(){
+		if(gameButtonPanel.getPauseButton().getText() == "Pause"){
+			//gameButtonPanel.getPauseButton().setText("Resume");
+			System.out.println("I pressed pause");
+			gameControl.setPlay(false);
+			gameButtonPanel.getUndoButton().setEnabled(true);
+			gameButtonPanel.getReplayButton().setEnabled(true);
+			gameButtonPanel.getSaveButton().setEnabled(true);
+			gameButtonPanel.getLoadButton().setEnabled(true);
+			//gameButtonPanel.getPauseButton().setText("Resume");
+		}
+		else{
+			System.out.println("I pressed Resume");
+			gameControl.setPlay(false);
+			gameButtonPanel.getUndoButton().setEnabled(false);
+			gameButtonPanel.getReplayButton().setEnabled(false);
+			gameButtonPanel.getSaveButton().setEnabled(false);
+			gameButtonPanel.getLoadButton().setEnabled(false);
+			//gameButtonPanel.getPauseButton().setText("Pause");
+		}
+		
+		
 	}
 
 	private void loadGame() {
