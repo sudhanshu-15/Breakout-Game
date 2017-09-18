@@ -70,9 +70,9 @@ public class GameControl implements Observer {
 	}
 	
 	public void removeElementsFromMacroList(){
-		System.out.println(macroCommandArray);
+		//System.out.println(macroCommandArray);
 		macroCommandArray.removeAll(macroCommandArray);// = new ArrayList<MacroCommand>(macroCommandArray);
-		System.out.println(macroCommandArray);
+		//System.out.println(macroCommandArray);
 	}
 
 	public boolean isPlay() {
