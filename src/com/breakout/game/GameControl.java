@@ -60,9 +60,19 @@ public class GameControl implements Observer {
 	}
 	
 	public void reset(){
+		play = false;
 		ball.reset();
 		paddle.reset();
 		brickList.reset();
+		timer.reset();
+		
+		
+	}
+	
+	public void removeElementsFromMacroList(){
+		System.out.println(macroCommandArray);
+		macroCommandArray.removeAll(macroCommandArray);// = new ArrayList<MacroCommand>(macroCommandArray);
+		System.out.println(macroCommandArray);
 	}
 
 	public boolean isPlay() {

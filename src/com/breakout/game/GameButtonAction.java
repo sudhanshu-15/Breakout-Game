@@ -171,23 +171,17 @@ public class GameButtonAction implements ActionListener {
 		gameButtonPanel.getLoadButton().setEnabled(false);
 		gameButtonPanel.getPauseButton().setEnabled(true);
 		gameButtonPanel.getStartButton().setText("ReStart");
+		//gameButtonPanel.getStartButton().setEnabled(false);
 		
 		gameFrame.add(gameButtonPanel,BorderLayout.NORTH);
 		gameBoard.draw();
 
 		}
 		else if(gameButtonPanel.getStartButton().getText() == "ReStart"){
-			gameButtonPanel.getStartButton().setText("Start");
-			
-			gameFrame.add(gameButtonPanel,BorderLayout.CENTER);
-			if(gameBoard != null){
-				gameFrame.getContentPane().remove(gameBoard);
-				startGame();
-				}
-			
-			
+			gameControl.reset();
+			gameControl.removeElementsFromMacroList();
+			gameControl.setPlay(true);
 		}
-		
 	}
 	
 	public void pauseGame(){
@@ -241,6 +235,7 @@ public class GameButtonAction implements ActionListener {
 
 	private void loadGame() {
 		GameLoad gameLoad = new GameLoad();
+		if(gameLoad.Deserialize() !=null){
 		ArrayList<MacroCommand> loadArray = gameLoad.Deserialize();
 //		System.out.println(loadArray.size());
 		MacroCommand macroUndo = loadArray.get(loadArray.size() - 1);
@@ -271,7 +266,7 @@ public class GameButtonAction implements ActionListener {
 		gameBoard.requestFocusInWindow();
 		
 		
-		
+		}
 		
 //	    macroUndo.undo();
 //	    gameBoard.draw();
