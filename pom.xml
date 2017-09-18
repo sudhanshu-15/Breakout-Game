@@ -152,7 +152,7 @@
 
 				<configuration>
 					<jnlp>
-						<mainClass>sample.HelloWorld</mainClass>
+						<mainClass>main.java.sample.HelloWorld</mainClass>
 					</jnlp>
 					<sign>
 						<keystore>${project.basedir}/src/main/jnlp/foo1.jks</keystore>
