@@ -18,6 +18,7 @@ import com.breakout.command.TimerCommand;
 import com.breakout.game.GameBall;
 import com.breakout.game.GameBoard;
 import com.breakout.game.GameBrick;
+import com.breakout.game.GameBrickList;
 import com.breakout.game.GameConstants;
 import com.breakout.game.GamePaddle;
 import com.breakout.game.GameTime;
@@ -28,6 +29,7 @@ public class TestGameBoard {
 	private GameBall ball;
 	private GamePaddle paddle;
 	private GameTime timeDisplay;
+	private GameBrickList brickList;
 	private List<BallCommand> ballCmdUndoTest;
 	private List<BrickCommand> brickCmdUndoTest;
 	private List<PaddleCommand> paddleCmdUndoTest;
@@ -41,16 +43,17 @@ public class TestGameBoard {
 		timerCmdUndoTest = new ArrayList<TimerCommand>();
 		ball = new GameBall(GameConstants.BALL_POS_TEST_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
 		paddle = new GamePaddle(GameConstants.PADDLE_POS_X, GameConstants.PADDLE_POS_Y, GameConstants.PADDLE_WIDTH, GameConstants.PADDLE_HEIGHT, GameConstants.PADDLE_COLOR);
-//		brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
+	//brick = new GameBrick(GameConstants.BRICK_ROW, GameConstants.BRICK_COLUMN);
+		brickList = new GameBrickList();
 		paddle.play = true;
 		timeDisplay = new GameTime();
-		gameBoardTest = new GameBoard(ball, paddle, timeDisplay);
+		gameBoardTest = new GameBoard(ball, paddle, timeDisplay, brickList);
 		for (int i = 0 ; i < 3 ; i++) {
 			BallCommand ballCmd = new BallCommand(ball);
 			ballCmd.execute();
 			ballCmdUndoTest.add(ballCmd);
 			
-			PaddleCommand paddleCmd = new PaddleCommand(paddle, KeyEvent.VK_RIGHT);
+			PaddleCommand paddleCmd = new PaddleCommand(paddle);
 			paddleCmd.execute();
 			paddleCmdUndoTest.add(paddleCmd);
 			

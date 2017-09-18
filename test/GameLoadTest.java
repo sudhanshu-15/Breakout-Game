@@ -12,7 +12,7 @@ public class GameLoadTest {
 	GameControl gameControl;
 	@Before
 	public void executedBeforeEach() {
-	gameLoad = new GameLoad(gameControl);
+	gameLoad = new GameLoad();
 	}
 	
 	@Test

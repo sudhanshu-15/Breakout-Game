@@ -9,7 +9,7 @@ import javax.swing.filechooser.FileSystemView;
 
 public class GameLoad {
 	private ArrayList<MacroCommand> savedCommands;
-	public static void GameLoad(String args[]) {
+	public static void GameLoad() {
 		
 	}
 	
