@@ -7,6 +7,7 @@ public class GameTime extends JLabel{
 	private String text;
 	private int time;
 	
+	
 	//Constructor for game time display, initializes to 00:00
 	public GameTime(){
 		text = "00:00";
@@ -36,5 +37,6 @@ public class GameTime extends JLabel{
 	
 	public void reset(){
 		this.setText("00:00");
+		this.setTime(0);
 	}
 }
