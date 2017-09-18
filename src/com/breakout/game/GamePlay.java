@@ -1,5 +1,6 @@
 package com.breakout.game;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
@@ -39,6 +40,8 @@ public class GamePlay {
 		gameFrame.setResizable(false);
 		gameFrame.setSize(GameConstants.BOARD_WIDTH, GameConstants.BOARD_HEIGHT);
 		gameFrame.setLocationRelativeTo(null);
+		gameFrame.setLayout(new BorderLayout());
+
 		
 		//Initialize GameBall, GamePaddle, GameBrick, GameTime
 		ball = new GameBall(GameConstants.BALL_POS_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
@@ -54,7 +57,7 @@ public class GamePlay {
 //		gameFrame.add(board);
 		
 		buttonPanel = new GameButtonPanel(gameFrame);
-		gameFrame.add(buttonPanel);
+		gameFrame.add(buttonPanel,BorderLayout.NORTH);
 		
 		gameFrame.setVisible(true);		
 	}

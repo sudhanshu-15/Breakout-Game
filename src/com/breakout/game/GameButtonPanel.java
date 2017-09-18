@@ -17,12 +17,18 @@ public class GameButtonPanel extends JPanel{
 	private JButton changeButton;
 	private GameButtonAction buttonAction;
 	private GameBoard board;
+	private JPanel northPanel;
+	private JPanel southPanel;
 	private GameControl gameControl;
 	private JFrame gameFrame;
 	
 	
+	
+
 	public GameButtonPanel(JFrame gameFrame){
 		setLayout(new FlowLayout());
+		southPanel = new JPanel();
+		northPanel = new JPanel();
 		startButton = new JButton("Start");
 		pauseButton = new JButton("Pause");
 		undoButton = new JButton("Undo");
@@ -76,7 +82,22 @@ public class GameButtonPanel extends JPanel{
 		
 		
 		this.setSize(GameConstants.BUTTON_PANEL_DIMENSIONS);
-		
+		northPanel.setSize(GameConstants.BUTTON_NPANEL_DIMENSIONS);
+		southPanel.setSize(GameConstants.BUTTON_SPANEL_DIMENSIONS);
+		this.setBounds(0,0,60,GameConstants.BOARD_WIDTH);
+		northPanel.setBounds(0,0,20,GameConstants.BOARD_WIDTH);
+		southPanel.setBounds(0,40,20,GameConstants.BOARD_WIDTH);
+
+	}
+
+
+	public JButton getChangeButton() {
+		return changeButton;
+	}
+
+
+	public void setChangeButton(JButton changeButton) {
+		this.changeButton = changeButton;
 	}
 
 
@@ -138,5 +159,24 @@ public class GameButtonPanel extends JPanel{
 	public void setLoadButton(JButton loadButton) {
 		this.loadButton = loadButton;
 	}
+	public JPanel getNorthPanel() {
+		return northPanel;
+	}
+
+
+	public void setNorthPanel(JPanel northPanel) {
+		this.northPanel = northPanel;
+	}
+
+
+	public JPanel getSouthPanel() {
+		return southPanel;
+	}
+
+
+	public void setSouthPanel(JPanel southPanel) {
+		this.southPanel = southPanel;
+	}
+
 	
 }
