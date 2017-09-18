@@ -176,10 +176,15 @@ public class GameButtonAction implements ActionListener {
 		gameBoard.draw();
 
 		}
-		else{
+		else if(gameButtonPanel.getStartButton().getText() == "ReStart"){
 			gameButtonPanel.getStartButton().setText("Start");
 			
 			gameFrame.add(gameButtonPanel,BorderLayout.CENTER);
+			if(gameBoard != null){
+				gameFrame.getContentPane().remove(gameBoard);
+				startGame();
+				}
+			
 			
 		}
 		
