@@ -1,11 +1,14 @@
 package com.breakout.command;
 
 import java.awt.event.KeyEvent;
+import java.io.Serializable;
 
 import com.breakout.game.GameConstants;
 import com.breakout.game.GamePaddle;
 
-public class PaddleCommand implements Command {
+public class PaddleCommand implements Command,Serializable {
+	
+	private static final long serialVersionUID = 4L;
 	
 	private GamePaddle paddle;
 	private int initX;

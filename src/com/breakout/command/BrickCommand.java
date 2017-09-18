@@ -1,11 +1,14 @@
 package com.breakout.command;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import com.breakout.game.GameBrick;
 import com.breakout.game.GameBrickList;
 
-public class BrickCommand implements Command {
+public class BrickCommand implements Command ,Serializable{
+	
+	private static final long serialVersionUID = 3L;
 	
 	private GameBrickList brickList;
 	private ArrayList<GameBrick> brickArrayList;

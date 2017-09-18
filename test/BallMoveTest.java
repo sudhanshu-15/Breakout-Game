@@ -19,12 +19,19 @@ public class BallMoveTest {
     	}
 	
 	@Test
-	public void test() {
+	public void testPosX() {
 		BallCommand bc = new BallCommand(ball);
 		bc.execute();
-		System.out.println(ball.getVelX());
-		System.out.println(ball.getPosX());
+	//	System.out.println(ball.getVelX());
+	//	System.out.println(ball.getPosX());
 		assertEquals(201, ball.getPosX());
 		//fail("Not yet implemented");
+	}
+	
+	@Test
+	public void testPosY() {
+		BallCommand bc = new BallCommand(ball);
+		bc.execute();
+		assertEquals(401, ball.getPosY());
 	}
 }

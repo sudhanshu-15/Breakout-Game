@@ -3,9 +3,12 @@ package com.breakout.game;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.io.Serializable;
 import java.util.Random;
 
-public class GameBrick{
+public class GameBrick implements Serializable{
+	
+	private static final long serialVersionUID = 7L;
 	
 	private int posX;
 	private int posY;
