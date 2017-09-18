@@ -179,7 +179,7 @@ public class GameButtonAction implements ActionListener {
 		}
 		else if(gameButtonPanel.getStartButton().getText() == "ReStart"){
 			gameControl.reset();
-			gameControl.removeElementsFromMacroList();
+//			gameControl.removeElementsFromMacroList();
 			gameControl.setPlay(true);
 		}
 	}

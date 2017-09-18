@@ -65,7 +65,9 @@ public class GameControl implements Observer {
 		paddle.reset();
 		brickList.reset();
 		timer.reset();
-		
+		for (int i = 0; i < macroCommandArray.size(); i++){
+			macroCommandArray.remove(i);
+		}
 		
 	}
 	
