@@ -1,10 +1,17 @@
 package com.breakout.game;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 import java.util.Iterator;
 
+import javax.swing.BoxLayout;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
@@ -21,12 +28,18 @@ public class GameButtonAction implements ActionListener {
 	private int undoCount;
 	private Iterator<MacroCommand> macroCommandIterator;
 	private GameButtonPanel gameButtonPanel;
-
-	public GameButtonAction(GameBoard gameBoard, GameControl gameControl, GameButtonPanel gameButtonPanel){
-		this.gameBoard = gameBoard;
-		this.gameControl = gameControl;
+	private JFrame gameFrame;
+	private GameBall ball;
+	private GamePaddle paddle;
+	private int layoutFlag = 1;
+	private GameBrickList brickList;
+	private GameTime timer;
+	private boolean pauseFlag = false;
+	public GameButtonAction(JFrame gameFrame, GameButtonPanel gameButtonPanel){
+		this.gameFrame = gameFrame;
 		this.gameButtonPanel = gameButtonPanel;
 		this.undoCount = 0;
+		
 	}
 
 	@Override
@@ -39,12 +52,11 @@ public class GameButtonAction implements ActionListener {
 		switch(action){
 		case "Start":
 			buttonLog.info("Start pressed");
-			gameControl.setPlay(true);
-			undoCount = 0;
+			startGame();
 			break;
 		case "Pause":
 			buttonLog.info("Pause pressed");
-			gameControl.setPlay(false);
+			pauseGame();
 			break;
 		case "Undo":
 			buttonLog.info("Undo pressed");
@@ -59,24 +71,205 @@ public class GameButtonAction implements ActionListener {
 			saveGame();
 			break;
 		case "Load":
-			buttonLog.info("Load pressed");
-			loadGame();
+				buttonLog.info("Load pressed");
+				loadGame();
 			break;
 		case "Change":
 			buttonLog.info("Change layout");
-
+			changeStep();
+			System.out.println("switch");
 			break;
+			
 		}
 
+	}
+	
+	private void changeStep() {
+		// TODO Auto-generated method stub
+		System.out.println("f1");
+		if(layoutFlag==1){
+			System.out.println("f2");
+
+			//BorderLayout
+			layoutFlag = 0;
+			gameButtonPanel.removeAll();
+			gameButtonPanel.getSouthPanel();
+			gameButtonPanel.getNorthPanel().removeAll();
+			gameButtonPanel.getSouthPanel().removeAll();
+			
+			gameButtonPanel.setLayout(new BorderLayout());
+			
+			gameButtonPanel.setBackground(Color.BLUE);
+			gameButtonPanel.getNorthPanel().setBackground(Color.BLACK);
+			gameButtonPanel.getSouthPanel().setBackground(Color.BLACK);
+			
+			gameButtonPanel.getNorthPanel().add(gameButtonPanel.getSaveButton());
+			gameButtonPanel.getNorthPanel().add(gameButtonPanel.getLoadButton());
+			
+			gameButtonPanel.getSouthPanel().add(gameButtonPanel.getUndoButton());
+			gameButtonPanel.getSouthPanel().add(gameButtonPanel.getReplayButton());
+			
+			gameButtonPanel.add(gameButtonPanel.getNorthPanel(),BorderLayout.LINE_START);
+			gameButtonPanel.add(gameButtonPanel.getStartButton(),BorderLayout.PAGE_START);
+			gameButtonPanel.add(gameButtonPanel.getChangeButton(),BorderLayout.PAGE_END);
+			gameButtonPanel.add(gameButtonPanel.getSouthPanel(),BorderLayout.LINE_END);
+			gameButtonPanel.add(gameButtonPanel.getPauseButton(),BorderLayout.CENTER);
+//			gameFrame.setLayout(new BoxLayout(gameFrame.getContentPane(), BoxLayout.Y_AXIS));
+//			gameFrame.add(gameButtonPanel);
+//			if(gameBoard!=null){
+//				gameFrame.add(gameBoard);
+//			}
+		}
+		else{
+			//gameFrame.setLayout(new BorderLayout());
+			System.out.println("f2");
+
+			layoutFlag=1;	
+			gameButtonPanel.removeAll();
+			gameButtonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+			gameButtonPanel.setBackground(Color.BLUE);
+
+			getButtons();
+			gameFrame.add(gameButtonPanel, BorderLayout.NORTH);
+
+		}
+		gameButtonPanel.revalidate();
+		gameButtonPanel.repaint();
+
+	}
+	public void getButtons(){
+		gameButtonPanel.add(gameButtonPanel.getStartButton());
+		gameButtonPanel.add(gameButtonPanel.getPauseButton());
+		gameButtonPanel.add(gameButtonPanel.getUndoButton());
+		gameButtonPanel.add(gameButtonPanel.getReplayButton());
+		gameButtonPanel.add(gameButtonPanel.getLoadButton());
+		gameButtonPanel.add(gameButtonPanel.getSaveButton());
+		gameButtonPanel.add(gameButtonPanel.getChangeButton());
+
+
+	}
+
+	public void startGame(){
+		
+		if(gameButtonPanel.getStartButton().getText() == "Start"){
+		ball = new GameBall(GameConstants.BALL_POS_X, GameConstants.BALL_POS_Y, GameConstants.BALL_VEL_X, GameConstants.BALL_VEL_Y, GameConstants.BALL_COLOR);
+		paddle = new GamePaddle(GameConstants.PADDLE_POS_X, GameConstants.PADDLE_POS_Y, GameConstants.PADDLE_WIDTH, GameConstants.PADDLE_HEIGHT, GameConstants.PADDLE_COLOR);
+		brickList = new GameBrickList();
+		timer= new GameTime();
+		gameBoard = new GameBoard(ball, paddle, timer, brickList);
+		gameFrame.add(gameBoard,BorderLayout.NORTH);
+		gameBoard.setFocusable(true);
+		gameBoard.requestFocusInWindow();
+		gameBoard.setBounds(0,100,GameConstants.BOARD_WIDTH,GameConstants.BOARD_HEIGHT-60);
+		gameBoard.gameLoop();
+		gameControl = gameBoard.getGameControl();
+		gameControl.setPlay(true);
+		undoCount = 0;
+		gameButtonPanel.getUndoButton().setEnabled(false);
+		gameButtonPanel.getReplayButton().setEnabled(false);
+		gameButtonPanel.getSaveButton().setEnabled(false);
+		gameButtonPanel.getLoadButton().setEnabled(false);
+		gameButtonPanel.getPauseButton().setEnabled(true);
+		gameButtonPanel.getStartButton().setText("ReStart");
+		
+		gameFrame.add(gameButtonPanel,BorderLayout.NORTH);
+		gameBoard.draw();
+
+		}
+		else{
+			gameButtonPanel.getStartButton().setText("Start");
+			
+			gameFrame.add(gameButtonPanel,BorderLayout.CENTER);
+			
+		}
+		
+	}
+	
+	public void pauseGame(){
+		 if(pauseFlag == true){
+			 pauseFlag = false;
+		 }else{
+			 pauseFlag = true;
+		 }
+		 if(pauseFlag){
+			 gameControl.setPlay(false);
+			 gameButtonPanel.getUndoButton().setEnabled(true);
+			 gameButtonPanel.getReplayButton().setEnabled(true);
+			 gameButtonPanel.getSaveButton().setEnabled(true);
+			 gameButtonPanel.getLoadButton().setEnabled(true);
+			 gameButtonPanel.getPauseButton().setText("Resume");
+			 gameFrame.add(gameButtonPanel, BorderLayout.NORTH);
+		 }
+		 else {
+			 gameControl.setPlay(true);
+			 gameButtonPanel.getUndoButton().setEnabled(false);
+			 gameButtonPanel.getReplayButton().setEnabled(false);
+			 gameButtonPanel.getSaveButton().setEnabled(false);
+			 gameButtonPanel.getLoadButton().setEnabled(false);
+			 gameButtonPanel.getPauseButton().setText("Pause");
+			 gameFrame.add(gameButtonPanel,BorderLayout.NORTH);
+		 }
+		/*
+		if(pauseFlag){
+			//gameButtonPanel.getPauseButton().setText("Resume");
+			System.out.println("I pressed pause");
+			gameControl.setPlay(false);
+			gameButtonPanel.getUndoButton().setEnabled(true);
+			gameButtonPanel.getReplayButton().setEnabled(true);
+			gameButtonPanel.getSaveButton().setEnabled(true);
+			gameButtonPanel.getLoadButton().setEnabled(true);
+			//gameButtonPanel.getPauseButton().setText("Resume");
+		}
+		else{
+			System.out.println("I pressed Resume");
+			gameControl.setPlay(false);
+			gameButtonPanel.getUndoButton().setEnabled(false);
+			gameButtonPanel.getReplayButton().setEnabled(false);
+			gameButtonPanel.getSaveButton().setEnabled(false);
+			gameButtonPanel.getLoadButton().setEnabled(false);
+			//gameButtonPanel.getPauseButton().setText("Pause");
+		}
+		*/
+		
+		
 	}
 
 	private void loadGame() {
 		GameLoad gameLoad = new GameLoad();
-		gameControl.setMacroCommandArray(gameLoad.Deserialize());
+		ArrayList<MacroCommand> loadArray = gameLoad.Deserialize();
+//		System.out.println(loadArray.size());
+		MacroCommand macroUndo = loadArray.get(loadArray.size() - 1);
+		ball = macroUndo.ball;
+		paddle = macroUndo.paddle;
+		brickList = macroUndo.brickList;
+		timer = macroUndo.timer;
 		
-		MacroCommand macroUndo = gameControl.getMacroCommandArray().get((gameControl.getMacroCommandArray()).size() - 1);
-	    macroUndo.execute();
-	    gameBoard.draw();
+		if(gameBoard != null){
+		gameFrame.getContentPane().remove(gameBoard);
+		}
+		
+		gameBoard = new GameBoard(ball, paddle, timer, brickList);
+		gameControl = gameBoard.getGameControl();
+		gameControl.setMacroCommandArray(loadArray);
+		gameFrame.getContentPane().add(gameBoard,BorderLayout.CENTER);
+		gameBoard.draw();
+		gameBoard.gameLoop();
+		gameControl.setPlay(false);
+		this.pauseFlag = true;
+		gameButtonPanel.getPauseButton().setEnabled(true);
+		gameButtonPanel.getPauseButton().setText("Resume");
+		gameButtonPanel.getStartButton().setText("Restart");
+		gameButtonPanel.getReplayButton().setEnabled(true);
+		gameButtonPanel.getUndoButton().setEnabled(true);
+		gameFrame.add(gameButtonPanel);
+		gameBoard.setFocusable(true);
+		gameBoard.requestFocusInWindow();
+		
+		
+		
+		
+//	    macroUndo.undo();
+//	    gameBoard.draw();
 	}
 
 	private void saveGame() {

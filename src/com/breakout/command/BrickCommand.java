@@ -8,6 +8,8 @@ import com.breakout.game.GameBrickList;
 
 public class BrickCommand implements Command ,Serializable{
 	
+	private static final long serialVersionUID = 3L;
+	
 	private GameBrickList brickList;
 	private ArrayList<GameBrick> brickArrayList;
 	private ArrayList<Integer> deadBrickList;

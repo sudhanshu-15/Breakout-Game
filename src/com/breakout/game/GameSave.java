@@ -31,7 +31,7 @@ public class GameSave {
 			jfc.setApproveButtonText("Save");
 			jfc.setApproveButtonMnemonic('s');
 			jfc.setApproveButtonToolTipText("Save Game");
-			int returnValue = jfc.showOpenDialog(null);
+			int returnValue = jfc.showSaveDialog(null);
 			if (returnValue == JFileChooser.APPROVE_OPTION) {
 				File selectedFile = jfc.getSelectedFile();
 				FileOutputStream fileOut = new FileOutputStream(selectedFile.getPath()+".txt");

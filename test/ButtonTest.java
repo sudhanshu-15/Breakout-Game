@@ -6,13 +6,14 @@ import org.junit.Test;
 import com.breakout.game.GameBall;
 import com.breakout.game.GameConstants;
 import com.breakout.game.GamePaddle;
+import com.breakout.game.GameButtonPanel;
 
 public class ButtonTest {
-
-	//needs more work
-/*	@Test
+	private GameButtonPanel gameButtonPanel;
+/*	
+	@Test
 	public void testReset() {
-		JButton resetButton = gameBoardTest.getStartButton();
+		JButton resetButton = gameButtonPanel.getStartButton();
 		resetButton.setText("RESTART");
 		resetButton.doClick();
 		GameBall ballTest = gameBoardTest.getBall();

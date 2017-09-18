@@ -46,7 +46,7 @@ public class GameControl implements Observer {
 			PaddleCommand paddleCommand = new PaddleCommand(paddle);
 			BrickCommand brickCommand = new BrickCommand(brickList, deadBrickList);
 			TimerCommand timerCommand = new TimerCommand(timer);
-			macroCommand = new MacroCommand();
+			macroCommand = new MacroCommand(ball, paddle, brickList, timer);
 			macroCommand.add(ballCommand);
 			macroCommand.add(paddleCommand);
 			macroCommand.add(brickCommand);
