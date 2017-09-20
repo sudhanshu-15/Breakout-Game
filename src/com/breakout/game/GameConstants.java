@@ -10,6 +10,8 @@ import java.awt.Dimension;
 public class GameConstants {
 	
 	//Frame Constants
+	protected static final int FRAME_HEIGHT = 750;
+	protected static final int FRAME_WIDTH = 620;
 	protected static final int BOARD_HEIGHT = 700;
 	protected static final int BOARD_WIDTH = 620;
 	protected static final Dimension BOARD_DIMENSIONS= new Dimension(BOARD_WIDTH, BOARD_HEIGHT);
@@ -19,12 +21,12 @@ public class GameConstants {
 	protected static int BUTTON_PANEL_WIDTH = 620;
 	protected static final Dimension BUTTON_PANEL_DIMENSIONS= new Dimension(BUTTON_PANEL_WIDTH, BUTTON_PANEL_HEIGHT);
 
-	protected static int BUTTON_NPANEL_HEIGHT = 20;
-	protected static int BUTTON_NPANEL_WIDTH = 620;
+	protected static int BUTTON_NPANEL_HEIGHT = 40;
+	protected static int BUTTON_NPANEL_WIDTH = 400;
 	protected static final Dimension BUTTON_NPANEL_DIMENSIONS= new Dimension(BUTTON_NPANEL_WIDTH, BUTTON_NPANEL_HEIGHT);
 
 	protected static int BUTTON_SPANEL_HEIGHT = 20;
-	protected static int BUTTON_SPANEL_WIDTH = 620;
+	protected static int BUTTON_SPANEL_WIDTH = 60;
 	protected static final Dimension BUTTON_SPANEL_DIMENSIONS= new Dimension(BUTTON_SPANEL_WIDTH, BUTTON_SPANEL_HEIGHT);
 
 	//Play start
