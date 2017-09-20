@@ -38,7 +38,7 @@ public class GamePlay {
 		gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		gameFrame.setTitle("Breakout");
 		gameFrame.setResizable(false);
-		gameFrame.setSize(GameConstants.BOARD_WIDTH, GameConstants.BOARD_HEIGHT);
+		gameFrame.setSize(GameConstants.FRAME_WIDTH, GameConstants.FRAME_HEIGHT);
 		gameFrame.setLocationRelativeTo(null);
 		gameFrame.setLayout(new BorderLayout());
 

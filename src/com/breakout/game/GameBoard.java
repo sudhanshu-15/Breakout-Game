@@ -55,7 +55,7 @@ public class GameBoard extends JPanel{
 		gameObservable = new GameObservable();
 		gameControl = new GameControl(ball, paddle, brickList, timeDisplay, gameObservable);
 		gamePaddleKey = new GamePaddleKey(paddle);
-		this.setSize(GameConstants.BOARD_DIMENSIONS);
+		this.setPreferredSize(GameConstants.BOARD_DIMENSIONS);
 		this.setBackground(Color.WHITE);
 		this.setBounds(1, 40, GameConstants.BOARD_WIDTH,GameConstants.BOARD_HEIGHT-10);
 		this.addKeyListener(gamePaddleKey);
@@ -91,8 +91,8 @@ public class GameBoard extends JPanel{
 //		this.add(replayButton);
 	}
 	
-	public void paint(Graphics g){
-		super.paint(g);
+	public void paintComponent(Graphics g){
+		super.paintComponent(g);
 //		g.drawLine(0, GameConstants.BUTTON_BOTTOM_X_VALUE, this.getWidth(), GameConstants.BUTTON_BOTTOM_X_VALUE);
 	//this.add(timeDisplay);
 		g.setFont(new Font("TimesRoman", Font.BOLD, 20));
